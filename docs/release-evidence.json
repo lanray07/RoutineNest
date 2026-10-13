@@ -20,20 +20,6 @@
   ],
   "executed_unit_tests": [
     {
-      "suite": "com.routinenest.core.EngineTest",
-      "tests": 20,
-      "failures": 0,
-      "errors": 0,
-      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.EngineTest.xml"
-    },
-    {
-      "suite": "com.routinenest.core.VoicePolicyTest",
-      "tests": 6,
-      "failures": 0,
-      "errors": 0,
-      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.VoicePolicyTest.xml"
-    },
-    {
       "suite": "com.routinenest.app.billing.TestBillingTest",
       "tests": 1,
       "failures": 0,
@@ -46,6 +32,20 @@
       "failures": 0,
       "errors": 0,
       "path": "app\\build\\test-results\\testDebugUnitTest\\TEST-com.routinenest.app.ScheduleHistoryTest.xml"
+    },
+    {
+      "suite": "com.routinenest.core.EngineTest",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.EngineTest.xml"
+    },
+    {
+      "suite": "com.routinenest.core.VoicePolicyTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.VoicePolicyTest.xml"
     }
   ],
   "executed_python_tests": [
@@ -100,35 +100,181 @@
   },
   "instrumentation": {
     "compiled": true,
-    "executed": false,
-    "reason": "Device tests have not executed; a connected booted device is required"
+    "executed": true,
+    "reason": "See executed device results; visual acceptance and corrected harness status are recorded separately"
   },
   "artifacts": [
     {
       "path": "app\\build\\outputs\\apk\\debug\\app-debug.apk",
-      "bytes": 19398274,
-      "sha256": "7be8e142f748d3def7a4a9260f41db26944181ac248280e1b07b1ba0f9e56357",
+      "bytes": 19123689,
+      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
       "signing": "debug key only; verify with apksigner"
     },
     {
       "path": "app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
-      "bytes": 1235218,
-      "sha256": "afcd18fca273bee0942b5947d18de64bff1a0ca0b4468c10c5fad87108597b1a",
+      "bytes": 1233770,
+      "sha256": "e4675e21c23e4d6bc27bd508eac0296b0e9f9958f784813d4849248f71f77c0e",
       "signing": "debug key only; verify with apksigner"
     },
     {
       "path": "app\\build\\outputs\\apk\\release\\app-release-unsigned.apk",
-      "bytes": 1987561,
-      "sha256": "db12d0782b24a9206f22864ccb2e9c3e77d3c19ebd92d780171c627e16e0347d",
+      "bytes": 2003945,
+      "sha256": "e4576b93d268923136e1676011dbccfe64e6c5f576a862ffe1f69b8ceb982f01",
       "signing": "unsigned"
     }
   ],
   "blockers": [
-    "Amazon product/app key absent; RVS policy implemented but authenticated endpoint and Android verification client/integration tests remain pending",
+    "Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending",
     "Release publisher signing/identity approval pending",
     "Ten locales and listing translations pending; twelve-locale selection provisional",
-    "Physical Fire device testing pending",
-    "Real screenshots and visual/accessibility device verification pending",
+    "Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet",
+    "English tablet screenshots captured; remaining locale/device exports and final store-asset approval remain pending",
     "Privacy disclosures need publisher review and public policy URL"
-  ]
+  ],
+  "device_tests": {
+    "model": "KFTRWI",
+    "androidApi": 28,
+    "androidVersion": "9",
+    "fireOsProperty": "7.0",
+    "firmware": "PS7331.4463N",
+    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+    "debugApkSha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
+    "executed": true,
+    "tests": 4,
+    "failures": 0,
+    "errors": [],
+    "captureTestReportedPassed": true,
+    "capturesVisuallyAccepted": true,
+    "reason": "Final four-test run passed; sixteen genuine English tablet captures accepted for publisher review",
+    "validScreenshots": 16,
+    "harnessFixesImplemented": true,
+    "recordedAtUtc": "2026-10-13T16:41:32.199990+00:00",
+    "storageAndKeystoreRun": {
+      "sourceCommit": "adf008f4b8431f500c05beaa146a17f1625d260f",
+      "tests": 2,
+      "failures": 0,
+      "passed": [
+        "Room create/complete/undo/edit/archive/duplicate/delete and database reopen",
+        "Android Keystore encrypted session persistence and tamper rejection"
+      ],
+      "debugApkSha256": "7806097c04f83170478f5d6b23fa036c0360466a615bf46f4d5ae5fd2245d1ce"
+    },
+    "correctedUiHarnessExecuted": true,
+    "runtimeBugFound": "Localized context hid ActivityResultRegistryOwner after onboarding",
+    "runtimeBugFix": "Original activity registry preserved; stable activity-backed localized context",
+    "runtimeBugFixBuildVerified": true,
+    "runtimeBugFixDeviceUiVerified": true,
+    "successfulUiRun": {
+      "sourceCommit": "db528ceeabb6aeb8f15b93dc86cad3bff722ff33",
+      "tests": 2,
+      "failures": 0,
+      "passed": [
+        "Template/checklist, typed assistant, settings/theme and privacy navigation",
+        "Eight real en-GB captures with blank-frame rejection"
+      ]
+    },
+    "recognitionServiceAvailableOnThisDevice": false,
+    "guardBlockedRun": {
+      "sourceCommit": "db528ceeabb6aeb8f15b93dc86cad3bff722ff33",
+      "tests": 4,
+      "failures": 2,
+      "storageAndKeystorePassed": true,
+      "uiBlockedBy": "Tablet relocked during rebuild; DeviceScreenRule refused UI execution",
+      "installedDebugApkSha256": "5b5a8d6233f96bf175860a1dc87b31c1b44f971c1f5502bb4659e537c1b71350"
+    },
+    "latestRun": {
+      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+      "tests": 4,
+      "failures": 0,
+      "passed": [
+        "Room persistence/reopen",
+        "Keystore session persistence and tamper rejection",
+        "Template/checklist, typed assistant, themes and privacy navigation",
+        "Actual screenshot capture with blank-frame rejection"
+      ],
+      "installedDebugApkSha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350"
+    },
+    "screenDimensions": "1920x1200",
+    "captureLocales": [
+      "en-GB",
+      "en-US"
+    ],
+    "darkNavigationContrastVerified": true,
+    "originalStayAwakeSettingRestored": true,
+    "additionalLocaleCapture": {
+      "locale": "en-US",
+      "tests": 1,
+      "failures": 0
+    },
+    "initialRun": {
+      "sourceCommit": "bd839e976f2f763ac881f0855318d3aed26aeeb9",
+      "debugApkSha256": "7be8e142f748d3def7a4a9260f41db26944181ac248280e1b07b1ba0f9e56357",
+      "tests": 3,
+      "failures": 2,
+      "errors": [
+        "Persistence JUnit method inferred a Boolean return instead of void",
+        "UI queried Compose hierarchy while display was asleep"
+      ],
+      "captureTestReportedPassed": true,
+      "reason": "All eight initial captures were uniform black; no app images accepted",
+      "recordedAtUtc": "2026-10-13T16:41:32.199990+00:00",
+      "capturesVisuallyAccepted": false
+    }
+  },
+  "supabase": {
+    "projectRef": "guigiqacxpvcxrnajvlz",
+    "projectName": "lanray07's Project",
+    "organizationPlan": "free",
+    "function": "routinenest-verify-receipt",
+    "version": 1,
+    "verifyJwt": true,
+    "deploymentStatus": "ACTIVE",
+    "localContractTests": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "transport": "synthetic"
+    },
+    "liveChecks": [
+      {
+        "request": "missing Authorization",
+        "status": 401
+      },
+      {
+        "request": "invalid JWT",
+        "status": 401
+      }
+    ],
+    "anonymousSignInsEnabled": false,
+    "databaseChanges": false,
+    "globalAuthChanges": false,
+    "realAmazonVerificationExecuted": false,
+    "recordedAtUtc": "2026-10-13T15:41:39.144517+00:00"
+  },
+  "artifact_origins": {
+    "release": {
+      "provider": "GitHub Actions",
+      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+      "conclusion": "success"
+    },
+    "debug": {
+      "provider": "GitHub Actions",
+      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+      "conclusion": "success",
+      "signing": "Existing local debug key; re-signed for device update"
+    },
+    "androidTest": {
+      "provider": "GitHub Actions",
+      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+      "conclusion": "success",
+      "signing": "Existing local debug key"
+    },
+    "installedDebug": {
+      "path": "app/build/outputs/apk/debug/app-debug.apk",
+      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350"
+    }
+  }
 }

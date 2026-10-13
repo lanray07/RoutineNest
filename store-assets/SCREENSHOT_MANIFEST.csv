@@ -1,12 +1,4 @@
 locale,device,concept,headline,status,path,dimensions
-en-US,tablet,01,Daily Routine Planner,capture_pending,,
-en-US,tablet,02,Habit Tracker & Streaks,capture_pending,,
-en-US,tablet,03,Voice-Powered Routine Planner,capture_pending,,
-en-US,tablet,04,Morning & Evening Routines,capture_pending,,
-en-US,tablet,05,Track Your Daily Progress,capture_pending,,
-en-US,tablet,06,Daily Reminders & Checklists,capture_pending,,
-en-US,tablet,07,Offline Habit Tracker,capture_pending,,
-en-US,tablet,08,"Your Routine, Your Way",capture_pending,,
 en-GB,phone,01,Daily Routine Planner,capture_pending,,
 en-GB,phone,02,Habit Tracker & Streaks,capture_pending,,
 en-GB,phone,03,Voice-Powered Routine Planner,capture_pending,,
@@ -23,11 +15,19 @@ en-US,phone,05,Track Your Daily Progress,capture_pending,,
 en-US,phone,06,Daily Reminders & Checklists,capture_pending,,
 en-US,phone,07,Offline Habit Tracker,capture_pending,,
 en-US,phone,08,"Your Routine, Your Way",capture_pending,,
-en-GB,tablet,01,Daily Routine Planner,capture_pending,,
-en-GB,tablet,02,Habit Tracker & Streaks,capture_pending,,
-en-GB,tablet,03,Voice-Powered Routine Planner,capture_pending,,
-en-GB,tablet,04,Morning & Evening Routines,capture_pending,,
-en-GB,tablet,05,Track Your Daily Progress,capture_pending,,
-en-GB,tablet,06,Daily Reminders & Checklists,capture_pending,,
-en-GB,tablet,07,Offline Habit Tracker,capture_pending,,
-en-GB,tablet,08,"Your Routine, Your Way",capture_pending,,
+en-GB,tablet,01,Daily Routine Planner,captured_review_pending,store-assets\screenshots\en-GB\tablet\01.png,1920x1200
+en-GB,tablet,02,Habit Tracker & Streaks,captured_review_pending,store-assets\screenshots\en-GB\tablet\02.png,1920x1200
+en-GB,tablet,03,Voice-Powered Routine Planner,captured_review_pending,store-assets\screenshots\en-GB\tablet\03.png,1920x1200
+en-GB,tablet,04,Morning & Evening Routines,captured_review_pending,store-assets\screenshots\en-GB\tablet\04.png,1920x1200
+en-GB,tablet,05,Track Your Daily Progress,captured_review_pending,store-assets\screenshots\en-GB\tablet\05.png,1920x1200
+en-GB,tablet,06,Daily Reminders & Checklists,captured_review_pending,store-assets\screenshots\en-GB\tablet\06.png,1920x1200
+en-GB,tablet,07,Offline Habit Tracker,captured_review_pending,store-assets\screenshots\en-GB\tablet\07.png,1920x1200
+en-GB,tablet,08,"Your Routine, Your Way",captured_review_pending,store-assets\screenshots\en-GB\tablet\08.png,1920x1200
+en-US,tablet,01,Daily Routine Planner,captured_review_pending,store-assets\screenshots\en-US\tablet\01.png,1920x1200
+en-US,tablet,02,Habit Tracker & Streaks,captured_review_pending,store-assets\screenshots\en-US\tablet\02.png,1920x1200
+en-US,tablet,03,Voice-Powered Routine Planner,captured_review_pending,store-assets\screenshots\en-US\tablet\03.png,1920x1200
+en-US,tablet,04,Morning & Evening Routines,captured_review_pending,store-assets\screenshots\en-US\tablet\04.png,1920x1200
+en-US,tablet,05,Track Your Daily Progress,captured_review_pending,store-assets\screenshots\en-US\tablet\05.png,1920x1200
+en-US,tablet,06,Daily Reminders & Checklists,captured_review_pending,store-assets\screenshots\en-US\tablet\06.png,1920x1200
+en-US,tablet,07,Offline Habit Tracker,captured_review_pending,store-assets\screenshots\en-US\tablet\07.png,1920x1200
+en-US,tablet,08,"Your Routine, Your Way",captured_review_pending,store-assets\screenshots\en-US\tablet\08.png,1920x1200

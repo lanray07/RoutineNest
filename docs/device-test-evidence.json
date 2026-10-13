@@ -1,0 +1,90 @@
+{
+  "model": "KFTRWI",
+  "androidApi": 28,
+  "androidVersion": "9",
+  "fireOsProperty": "7.0",
+  "firmware": "PS7331.4463N",
+  "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+  "debugApkSha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
+  "executed": true,
+  "tests": 4,
+  "failures": 0,
+  "errors": [],
+  "captureTestReportedPassed": true,
+  "capturesVisuallyAccepted": true,
+  "reason": "Final four-test run passed; sixteen genuine English tablet captures accepted for publisher review",
+  "validScreenshots": 16,
+  "harnessFixesImplemented": true,
+  "recordedAtUtc": "2026-10-13T16:41:32.199990+00:00",
+  "storageAndKeystoreRun": {
+    "sourceCommit": "adf008f4b8431f500c05beaa146a17f1625d260f",
+    "tests": 2,
+    "failures": 0,
+    "passed": [
+      "Room create/complete/undo/edit/archive/duplicate/delete and database reopen",
+      "Android Keystore encrypted session persistence and tamper rejection"
+    ],
+    "debugApkSha256": "7806097c04f83170478f5d6b23fa036c0360466a615bf46f4d5ae5fd2245d1ce"
+  },
+  "correctedUiHarnessExecuted": true,
+  "runtimeBugFound": "Localized context hid ActivityResultRegistryOwner after onboarding",
+  "runtimeBugFix": "Original activity registry preserved; stable activity-backed localized context",
+  "runtimeBugFixBuildVerified": true,
+  "runtimeBugFixDeviceUiVerified": true,
+  "successfulUiRun": {
+    "sourceCommit": "db528ceeabb6aeb8f15b93dc86cad3bff722ff33",
+    "tests": 2,
+    "failures": 0,
+    "passed": [
+      "Template/checklist, typed assistant, settings/theme and privacy navigation",
+      "Eight real en-GB captures with blank-frame rejection"
+    ]
+  },
+  "recognitionServiceAvailableOnThisDevice": false,
+  "guardBlockedRun": {
+    "sourceCommit": "db528ceeabb6aeb8f15b93dc86cad3bff722ff33",
+    "tests": 4,
+    "failures": 2,
+    "storageAndKeystorePassed": true,
+    "uiBlockedBy": "Tablet relocked during rebuild; DeviceScreenRule refused UI execution",
+    "installedDebugApkSha256": "5b5a8d6233f96bf175860a1dc87b31c1b44f971c1f5502bb4659e537c1b71350"
+  },
+  "latestRun": {
+    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+    "tests": 4,
+    "failures": 0,
+    "passed": [
+      "Room persistence/reopen",
+      "Keystore session persistence and tamper rejection",
+      "Template/checklist, typed assistant, themes and privacy navigation",
+      "Actual screenshot capture with blank-frame rejection"
+    ],
+    "installedDebugApkSha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350"
+  },
+  "screenDimensions": "1920x1200",
+  "captureLocales": [
+    "en-GB",
+    "en-US"
+  ],
+  "darkNavigationContrastVerified": true,
+  "originalStayAwakeSettingRestored": true,
+  "additionalLocaleCapture": {
+    "locale": "en-US",
+    "tests": 1,
+    "failures": 0
+  },
+  "initialRun": {
+    "sourceCommit": "bd839e976f2f763ac881f0855318d3aed26aeeb9",
+    "debugApkSha256": "7be8e142f748d3def7a4a9260f41db26944181ac248280e1b07b1ba0f9e56357",
+    "tests": 3,
+    "failures": 2,
+    "errors": [
+      "Persistence JUnit method inferred a Boolean return instead of void",
+      "UI queried Compose hierarchy while display was asleep"
+    ],
+    "captureTestReportedPassed": true,
+    "reason": "All eight initial captures were uniform black; no app images accepted",
+    "recordedAtUtc": "2026-10-13T16:41:32.199990+00:00",
+    "capturesVisuallyAccepted": false
+  }
+}

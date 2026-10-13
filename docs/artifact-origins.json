@@ -1,0 +1,26 @@
+{
+  "release": {
+    "provider": "GitHub Actions",
+    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+    "conclusion": "success"
+  },
+  "debug": {
+    "provider": "GitHub Actions",
+    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+    "conclusion": "success",
+    "signing": "Existing local debug key; re-signed for device update"
+  },
+  "androidTest": {
+    "provider": "GitHub Actions",
+    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
+    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
+    "conclusion": "success",
+    "signing": "Existing local debug key"
+  },
+  "installedDebug": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350"
+  }
+}

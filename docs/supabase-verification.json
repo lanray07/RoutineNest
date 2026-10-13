@@ -1,0 +1,30 @@
+{
+  "projectRef": "guigiqacxpvcxrnajvlz",
+  "projectName": "lanray07's Project",
+  "organizationPlan": "free",
+  "function": "routinenest-verify-receipt",
+  "version": 1,
+  "verifyJwt": true,
+  "deploymentStatus": "ACTIVE",
+  "localContractTests": {
+    "tests": 12,
+    "passed": 12,
+    "failed": 0,
+    "transport": "synthetic"
+  },
+  "liveChecks": [
+    {
+      "request": "missing Authorization",
+      "status": 401
+    },
+    {
+      "request": "invalid JWT",
+      "status": 401
+    }
+  ],
+  "anonymousSignInsEnabled": false,
+  "databaseChanges": false,
+  "globalAuthChanges": false,
+  "realAmazonVerificationExecuted": false,
+  "recordedAtUtc": "2026-10-13T15:41:39.144517+00:00"
+}

@@ -2,7 +2,10 @@
 
 `rvs.py` is an executable, dependency-free verification component for a future
 authenticated service. It is not a deployed service or a public HTTP endpoint.
-The Android app still uses `UnconfiguredReceiptVerifier` and cannot unlock premium.
+The Android app now uses `SupabaseReceiptVerifier`, and the authenticated Edge
+Function is implemented under `supabase/`. Checkout remains disabled pending
+Amazon credentials, Auth setup, abuse controls and real integration tests. This
+Python component remains the independent reference policy, not the deployed runtime.
 
 Set `AMAZON_RVS_SHARED_SECRET`, `AMAZON_PREMIUM_SKU` and
 `AMAZON_RVS_ENVIRONMENT=production` in the **server** environment. Use `sandbox`
