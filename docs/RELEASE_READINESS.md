@@ -90,6 +90,8 @@ Required work includes publisher app/SKU/public authentication PEM, an RVS serve
 
 ## H. Submission decision and required actions
 
+Follow-up after GitHub push: source is on `lanray07/RoutineNest` main. Added a server-side Amazon RVS verification component and 12 passing synthetic contract tests (21 Python tests total). The component rejects mismatched/revoked/test receipts in production and distinguishes retryable outages. An authenticated HTTP service, Android client and real Amazon integration remain pending. GitHub Actions now builds candidates, runs JVM/Python checks and both lint variants; device tests and store readiness are separate gates.
+
 Submission is blocked. Next actions, in order:
 
 1. Enable emulator acceleration or provide a connected test device; execute the compiled integration/UI tests and resolve their findings. Complete the Fire OS 7/8 and 7/8/10-inch physical-device checklist, speech/TTS, notifications, offline persistence, orientation and accessibility checks in `docs/DEVICE_TESTING.md`.

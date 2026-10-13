@@ -50,12 +50,21 @@
   ],
   "executed_python_tests": [
     {
+      "suite": "Amazon RVS server contract (synthetic transport)",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "executedAtUtc": "2026-10-13T13:46:48.391069+00:00",
+      "failedCases": []
+    },
+    {
       "suite": "localization guards",
       "tests": 5,
       "failures": 0,
       "errors": 0,
       "skipped": 0,
-      "executedAtUtc": "2026-10-13T13:20:17.012663+00:00",
+      "executedAtUtc": "2026-10-13T13:46:48.850989+00:00",
       "failedCases": []
     },
     {
@@ -64,7 +73,7 @@
       "failures": 0,
       "errors": 0,
       "skipped": 0,
-      "executedAtUtc": "2026-10-13T13:20:22.466316+00:00",
+      "executedAtUtc": "2026-10-13T13:46:52.727311+00:00",
       "failedCases": []
     }
   ],
@@ -92,7 +101,7 @@
   "instrumentation": {
     "compiled": true,
     "executed": false,
-    "reason": "No connected booted device; emulator acceleration driver unavailable"
+    "reason": "Device tests have not executed; a connected booted device is required"
   },
   "artifacts": [
     {
@@ -115,7 +124,7 @@
     }
   ],
   "blockers": [
-    "Amazon product/app key absent; RVS server and verification client require implementation and integration tests",
+    "Amazon product/app key absent; RVS policy implemented but authenticated endpoint and Android verification client/integration tests remain pending",
     "Release publisher signing/identity approval pending",
     "Ten locales and listing translations pending; twelve-locale selection provisional",
     "Physical Fire device testing pending",

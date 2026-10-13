@@ -4,6 +4,8 @@ The app includes native Appstore SDK **3.0.9**, the required protected/exported 
 
 `verificationConfigured` is deliberately false. `UnconfiguredReceiptVerifier` always denies verification. The paywall explains the blocker, and neither tapping purchase nor restore enables premium. This is a buildable integration boundary, not a tested production purchase service.
 
+The server-side `backend/rvs.py` component now implements Amazon HTTPS verification, receipt/SKU/ENTITLED/cancellation matching, production rejection of test transactions, bounded responses, disabled redirects and distinct retry/revocation/configuration outcomes. Twelve synthetic contract tests pass. It does not expose an authenticated endpoint or connect to Android yet. See `backend/README.md`; the RVS secret stays server-side. Amazon binds the user through the successful request path, not a nonexistent `userId` JSON field.
+
 Complete the following before enabling checkout:
 
 1. Confirm publisher account, package identifier and one-time **ENTITLED** SKU. Validate the proposed UK £2.99 price against the market; provide prices in Amazon's product setup. The app uses the store-returned price and does not hardcode £2.99.
