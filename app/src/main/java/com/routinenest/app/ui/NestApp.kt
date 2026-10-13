@@ -22,6 +22,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.saveable.Saver
 import androidx.compose.ui.*
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.*
 import androidx.compose.ui.res.stringResource
@@ -66,7 +67,7 @@ fun NestApp(model: NestViewModel) {
     val context = LocalContext.current
     val activityResultOwner = checkNotNull(LocalActivityResultRegistryOwner.current) { "RoutineNest requires an activity permission registry." }
     val darkTheme = prefs.theme == "dark" || (prefs.theme == "system" && isSystemInDarkTheme())
-    SideEffect { if (context is Activity) WindowCompat.getInsetsController(context.window, context.window.decorView).apply { isAppearanceLightStatusBars = !darkTheme; isAppearanceLightNavigationBars = !darkTheme } }
+    SideEffect { if (context is Activity) { context.window.navigationBarColor = (if (darkTheme) dark.background else light.background).toArgb(); WindowCompat.getInsetsController(context.window, context.window.decorView).apply { isAppearanceLightStatusBars = !darkTheme; isAppearanceLightNavigationBars = !darkTheme } } }
     val baseConfiguration = LocalConfiguration.current
     val configuration = remember(baseConfiguration, prefs.language, darkTheme) { Configuration(baseConfiguration).apply { setLocale(Locale.forLanguageTag(prefs.language)); uiMode = (uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or if (darkTheme) Configuration.UI_MODE_NIGHT_YES else Configuration.UI_MODE_NIGHT_NO } }
     val localized = remember(context, configuration) { android.view.ContextThemeWrapper(context, context.theme).apply { applyOverrideConfiguration(configuration) } }
