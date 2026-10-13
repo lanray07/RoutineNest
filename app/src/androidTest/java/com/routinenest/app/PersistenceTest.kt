@@ -13,7 +13,7 @@ import java.time.*
 
 @RunWith(AndroidJUnit4::class)
 class PersistenceTest {
-    @Test fun createCompleteUndoEditArchiveAndReopen() = runBlocking {
+    @Test fun createCompleteUndoEditArchiveAndReopen(): Unit = runBlocking {
         val context = ApplicationProvider.getApplicationContext<Context>()
         val name = "persistence-instrumentation.db"
         context.deleteDatabase(name)
@@ -36,6 +36,6 @@ class PersistenceTest {
         assertTrue(repo.all().single().routine.archived)
         repo.duplicate(repo.all().single()); assertEquals(2, repo.all().size)
         repo.deleteAll(); assertTrue(repo.all().isEmpty()); assertTrue(repo.history().isEmpty())
-        db.close(); context.deleteDatabase(name)
+        db.close(); context.deleteDatabase(name); Unit
     }
 }

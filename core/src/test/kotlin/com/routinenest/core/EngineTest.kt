@@ -27,4 +27,5 @@ class EngineTest {
     @Test fun ambiguousCommandNotGuessed() { assertTrue(CommandParser.parse("do it") is Command.Unknown) }
     @Test fun unverifiedReceiptCannotUnlock() { assertFalse(Entitlement("u", "r", false).permits(Feature.MORE_ROUTINES)); assertFalse(Entitlement("u", "r", true, true).permits(Feature.DUPLICATION)); assertTrue(Entitlement("u", "r", true).permits(Feature.MONTHLY_INSIGHTS)) }
     @Test fun emptyReceiptCannotUnlock() { assertFalse(Entitlement("u", "", true).permits(Feature.MORE_ROUTINES)) }
+    @Test fun expiredVerifiedReceiptCannotUnlock() { assertFalse(Entitlement("u", "r", true, expiresAt = 1000).permits(Feature.MORE_ROUTINES, 1000)); assertTrue(Entitlement("u", "r", true, expiresAt = 1001).permits(Feature.MORE_ROUTINES, 1000)) }
 }

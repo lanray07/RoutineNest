@@ -8,7 +8,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
-from PIL import Image, ImageDraw, features
+from PIL import Image, ImageDraw, ImageStat, features
 from generate_assets import font
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +41,7 @@ def main():
         source=raw/f'{concept["id"]}.png'; dest=output/f'{concept["id"]}.png'
         if not source.exists(): rows.append([args.locale,args.device,concept["id"],concept["headline"],"capture_pending","", ""]); continue
         screen=Image.open(source).convert("RGB"); width,height=screen.size
+        if max(ImageStat.Stat(screen).stddev) < 2: raise SystemExit(f"Blank device capture rejected: {source.name}. Wake/unlock the device and recapture.")
         supported=(width,height) in SIZES or (height,width) in SIZES
         if args.device=="tablet" and not supported: raise SystemExit(f"Unsupported Amazon tablet dimensions: {screen.size}")
         image=Image.new("RGB",screen.size,"#F6F4ED"); draw=ImageDraw.Draw(image)

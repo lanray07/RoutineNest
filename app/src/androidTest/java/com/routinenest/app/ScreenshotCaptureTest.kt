@@ -16,7 +16,8 @@ import java.util.Locale
 
 /** Run only against the dedicated .debug package; never a user's release database. */
 class ScreenshotCaptureTest {
-    @get:Rule val compose = createAndroidComposeRule<MainActivity>()
+    @get:Rule(order = 0) val display = DeviceScreenRule()
+    @get:Rule(order = 1) val compose = createAndroidComposeRule<MainActivity>()
     @Test fun captureStoreScreens() {
         val instrumentation = InstrumentationRegistry.getInstrumentation()
         val context = instrumentation.targetContext
@@ -44,7 +45,7 @@ class ScreenshotCaptureTest {
             }
         }
         lateinit var model: NestViewModel
-        compose.runOnUiThread { model = ViewModelProvider(compose.activity)[NestViewModel::class.java] }
+        compose.runOnUiThread { compose.activity.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); model = ViewModelProvider(compose.activity)[NestViewModel::class.java] }
         compose.waitUntil(10_000) { model.routines.value.size == 3 && model.completions.value.size == 46 && model.prefs.value.onboarded }
         val output = File(context.getExternalFilesDir(null), "screenshots/$locale").apply { mkdirs() }
         listOf("today","today","voice","library","progress","library","library","settings").forEachIndexed { index, screen ->
@@ -53,6 +54,8 @@ class ScreenshotCaptureTest {
             compose.runOnUiThread { model.screen.value = screen }
             compose.waitForIdle()
             val bitmap = instrumentation.uiAutomation.takeScreenshot() ?: error("Screenshot unavailable")
+            val colors = (0 until bitmap.height step 40).flatMap { y -> (0 until bitmap.width step 40).map { x -> bitmap.getPixel(x,y) } }.toSet()
+            check(colors.size > 5) { "Blank capture: check the device display and app visibility." }
             File(output,"${(index+1).toString().padStart(2,'0')}.png").outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG,100,it) }; bitmap.recycle()
         }
         File(output,"seed-date.txt").writeText(today.toString())

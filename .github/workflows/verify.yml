@@ -35,6 +35,7 @@ jobs:
           python scripts/test_localization.py
           python scripts/test_database_schema.py
           python scripts/test_rvs.py
+          node --test supabase/functions/routinenest-verify-receipt/handler.test.mjs
           python scripts/validate_translations.py
           python scripts/release_check.py
       - name: Preserve candidate APKs and verification reports

@@ -1,0 +1,5 @@
+project_id = "RoutineNest"
+
+[functions.routinenest-verify-receipt]
+verify_jwt = true
+entrypoint = "./functions/routinenest-verify-receipt/index.ts"

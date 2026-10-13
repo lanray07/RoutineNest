@@ -17,6 +17,8 @@ android {
         versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "PREMIUM_SKU", "\"com.routinenest.app.premium\"")
+        buildConfigField("String", "SUPABASE_URL", "\"https://guigiqacxpvcxrnajvlz.supabase.co\"")
+        buildConfigField("String", "SUPABASE_PUBLISHABLE_KEY", "\"sb_publishable_A9OWP_f5V1-dJKKZKmQmGg_3x75H9FF\"")
     }
     buildTypes {
         debug { applicationIdSuffix = ".debug" }

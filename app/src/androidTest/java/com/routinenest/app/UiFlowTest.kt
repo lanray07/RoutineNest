@@ -13,7 +13,8 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
 class UiFlowTest {
-    @get:Rule val compose = createAndroidComposeRule<MainActivity>()
+    @get:Rule(order = 0) val display = DeviceScreenRule()
+    @get:Rule(order = 1) val compose = createAndroidComposeRule<MainActivity>()
     @Before fun resetDedicatedDebugData() = runBlocking {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         check(context.packageName.endsWith(".debug"))
@@ -24,7 +25,11 @@ class UiFlowTest {
     }
     @Test fun onboardingTemplateChecklistAndNavigation() {
         compose.waitForIdle()
-        compose.waitUntil(10_000) { compose.onAllNodesWithText("Build my first routine").fetchSemanticsNodes().isNotEmpty() || compose.onAllNodesWithText("Routines").fetchSemanticsNodes().isNotEmpty() }
+        compose.runOnUiThread { compose.activity.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON) }
+        compose.waitUntil(30_000) {
+            try { compose.onAllNodesWithText("Build my first routine").fetchSemanticsNodes().isNotEmpty() || compose.onAllNodesWithText("Routines").fetchSemanticsNodes().isNotEmpty() }
+            catch (_: IllegalStateException) { false } // The cold-launch composition may not have registered yet.
+        }
         if (compose.onAllNodesWithText("Build my first routine").fetchSemanticsNodes().isNotEmpty()) compose.onNodeWithText("Build my first routine").performClick()
         compose.onNode(hasText("Routines") and hasClickAction()).performClick()
         compose.onNodeWithText("Morning rhythm").performScrollTo().performClick()

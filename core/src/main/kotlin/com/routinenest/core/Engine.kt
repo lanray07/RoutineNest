@@ -78,6 +78,6 @@ object CommandParser {
 }
 
 enum class Feature { MORE_ROUTINES, DUPLICATION, MONTHLY_INSIGHTS }
-data class Entitlement(val userId: String, val receiptId: String, val verified: Boolean, val revoked: Boolean = false) {
-    fun permits(feature: Feature): Boolean = verified && !revoked && userId.isNotBlank() && receiptId.isNotBlank()
+data class Entitlement(val userId: String, val receiptId: String, val verified: Boolean, val revoked: Boolean = false, val expiresAt: Long = Long.MAX_VALUE) {
+    fun permits(feature: Feature, nowMillis: Long = System.currentTimeMillis()): Boolean = verified && !revoked && userId.isNotBlank() && receiptId.isNotBlank() && expiresAt > nowMillis
 }
