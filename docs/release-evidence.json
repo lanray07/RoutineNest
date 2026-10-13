@@ -107,7 +107,7 @@
     {
       "path": "app\\build\\outputs\\apk\\debug\\app-debug.apk",
       "bytes": 19398274,
-      "sha256": "b40e51a696623de6effe2de779415a0d9e1d72135dc2fe799309a282110f35c2",
+      "sha256": "7be8e142f748d3def7a4a9260f41db26944181ac248280e1b07b1ba0f9e56357",
       "signing": "debug key only; verify with apksigner"
     },
     {
@@ -119,7 +119,7 @@
     {
       "path": "app\\build\\outputs\\apk\\release\\app-release-unsigned.apk",
       "bytes": 1987561,
-      "sha256": "37b1bafc2d8bbafed0270d90aef991e355d22cc8cd3480fadf60ee226315cc44",
+      "sha256": "db12d0782b24a9206f22864ccb2e9c3e77d3c19ebd92d780171c627e16e0347d",
       "signing": "unsigned"
     }
   ],

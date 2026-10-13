@@ -12,7 +12,7 @@ Architecture: `core` is a pure Kotlin engine with JVM tests; `app` uses Compose 
 
 Versions: Java 17, Gradle 8.13, AGP 8.11.1, Kotlin/Compose compiler 2.1.20, Compose BOM 2025.04.01, Room 2.7.1, DataStore 1.1.7, Hilt 2.56.2, WorkManager 2.10.1, Amazon Appstore SDK 3.0.9. Provisional release ID `com.routinenest.app`; debug ID `com.routinenest.app.debug`. Version 0.1.0, code 1, minimum API 26, target/compile API 36. Older Fire OS 6 devices are excluded by this minimum; Fire OS 7/8 are intended targets and still require physical testing.
 
-The repository was initially empty and had no Git history. Git was initialized; no existing source was overwritten and no commits were made. No publisher signing key, RVS secret or translation credential was created or committed. Local SDK paths, private signing files, `.env`, build outputs and caches are ignored.
+The repository was initially empty and had no Git history. Git was initialized; no existing source was overwritten. Source, assets and verification tooling are now committed and pushed to `https://github.com/lanray07/RoutineNest` main. No publisher signing key, RVS secret or translation credential was created or committed. Local SDK paths, private signing files, `.env`, build outputs and caches are ignored.
 
 Major files: Gradle configuration/wrapper; `core/src/main/kotlin/com/routinenest/core/`; `app/src/main/java/com/routinenest/app/` (data, UI, voice, reminders, billing); `app/schemas/`; debug-only test support; Android/JVM tests; `scripts/`; `localization/`; `store-assets/`; and these release documents.
 
@@ -20,9 +20,9 @@ Major files: Gradle configuration/wrapper; `core/src/main/kotlin/com/routinenest
 
 Debug assembly, release Kotlin/Java compilation, minified release assembly and instrumentation APK assembly **passed**. Both lint variants have **0 errors and 45 warnings**. Warnings include newer dependency versions, unused resources and vector sizing; Amazon's jar also emits D8/R8 stack-map warnings. These warnings were retained. SDK warnings require particular attention during real purchasing tests.
 
-- [app-debug.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/debug/app-debug.apk>) — 19,398,274 bytes; debug key only; verify with apksigner. SHA-256: `b40e51a696623de6effe2de779415a0d9e1d72135dc2fe799309a282110f35c2`.
+- [app-debug.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/debug/app-debug.apk>) — 19,398,274 bytes; debug key only; verify with apksigner. SHA-256: `7be8e142f748d3def7a4a9260f41db26944181ac248280e1b07b1ba0f9e56357`.
 - [app-debug-androidTest.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk>) — 1,235,218 bytes; debug key only; verify with apksigner. SHA-256: `afcd18fca273bee0942b5947d18de64bff1a0ca0b4468c10c5fad87108597b1a`.
-- [app-release-unsigned.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/release/app-release-unsigned.apk>) — 1,987,561 bytes; unsigned. SHA-256: `37b1bafc2d8bbafed0270d90aef991e355d22cc8cd3480fadf60ee226315cc44`.
+- [app-release-unsigned.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/release/app-release-unsigned.apk>) — 1,987,561 bytes; unsigned. SHA-256: `db12d0782b24a9206f22864ccb2e9c3e77d3c19ebd92d780171c627e16e0347d`.
 
 `apksigner verify --verbose` passed for the final debug APK using v2 signing, with one debug signer. Release verification returned **DOES NOT VERIFY / Missing META-INF/MANIFEST.MF**, confirming the release candidate is unsigned. `zipalign -c -P 16 4` passed on the release APK. This is ZIP alignment evidence, not a passed 16 KB native-runtime or Fire-device test. Publisher signing/submission identity remains a manual decision; use the signed debug APK for local installation.
 
@@ -32,7 +32,7 @@ Debug assembly, release Kotlin/Java compilation, minified release assembly and i
 
 **30 JVM tests passed, 0 failures/errors:** engine 20; voice availability/TTS policy 6; schedule-history/task-removal 3; development billing fixture 1.
 
-**9 Python tests passed, 0 failures/errors:** translation guards 5; real host SQLite against Room's exported schema 4. SQLite tests cover file reopen/identity/integrity, task/day completion uniqueness and scoped undo, transaction rollback on foreign-key failure, and cascading task/schedule-state deletion. They do not execute Android Room repository calls and do not replace the Android reopen test.
+**21 Python tests passed, 0 failures/errors:** translation guards 5; real host SQLite against Room's exported schema 4; synthetic Amazon RVS contracts 12. SQLite tests cover file reopen/identity/integrity, task/day completion uniqueness and scoped undo, transaction rollback on foreign-key failure, and cascading task/schedule-state deletion. They do not execute Android Room repository calls and do not replace the Android reopen test. RVS tests use synthetic responses, not a real Amazon service or purchase.
 
 Both Android lint variants passed with zero errors. Icon transparency/dimensions and English metadata byte/character limits passed. Python tools executed; translation-provider mode explicitly reported configuration pending. No test is reported passed merely because its source compiled.
 
@@ -91,6 +91,8 @@ Required work includes publisher app/SKU/public authentication PEM, an RVS serve
 ## H. Submission decision and required actions
 
 Follow-up after GitHub push: source is on `lanray07/RoutineNest` main. Added a server-side Amazon RVS verification component and 12 passing synthetic contract tests (21 Python tests total). The component rejects mismatched/revoked/test receipts in production and distinguishes retryable outages. An authenticated HTTP service, Android client and real Amazon integration remain pending. GitHub Actions now builds candidates, runs JVM/Python checks and both lint variants; device tests and store readiness are separate gates.
+
+GitHub verification **passed** for source commit `ff68b3bb998e8d8df94f09283c31c61ccaeefd99`: [run 38408173323](https://github.com/lanray07/RoutineNest/actions/runs/38408173323). Both APK variants and the instrumentation APK compiled, JVM/Python checks passed, and both lint variants completed. Candidate APKs and reports are retained on that run for 14 days. The follow-up source also respects the selected locale for template/weekday text and layout direction, handles keyboard insets, indexes progress completions and uses the current date when writing completions. Visual/RTL and midnight device interaction checks still need execution.
 
 Submission is blocked. Next actions, in order:
 
