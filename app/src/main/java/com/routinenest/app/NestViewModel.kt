@@ -1,6 +1,7 @@
 package com.routinenest.app
 
 import android.app.Application
+import android.content.res.Configuration
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.routinenest.app.billing.AmazonBilling
@@ -15,6 +16,7 @@ import kotlinx.coroutines.sync.withLock
 import org.json.JSONArray
 import org.json.JSONObject
 import java.time.*
+import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
@@ -40,7 +42,7 @@ class NestViewModel @Inject constructor(val repository: NestRepository, val pref
         repository.all().find { it.routine.id == key }?.let { reminders.schedule(it.routine) }
         onSaved()
     }
-    fun toggle(task: TaskEntity, done: Boolean) = action { repository.complete(task, day.value, done) }
+    fun toggle(task: TaskEntity, done: Boolean) = action { val today = LocalDate.now(); day.value = today; repository.complete(task, today, done) }
     fun changeState(routine: RoutineEntity, paused: Boolean = routine.paused, archived: Boolean = routine.archived) = action {
         require(archived || !routine.archived || billing.state.value.premium || repository.all().count { !it.routine.archived } < 3) { "Three free routines are already active." }
         repository.setState(routine, paused, archived); reminders.schedule(routine.copy(paused = paused, archived = archived))
@@ -49,7 +51,11 @@ class NestViewModel @Inject constructor(val repository: NestRepository, val pref
         require(billing.state.value.premium) { "Duplication requires Premium." }
         val id = repository.duplicate(routine); repository.all().find { it.routine.id == id }?.let { reminders.schedule(it.routine) }
     }
-    fun template(title: Int, tasks: List<Int>) = save(null, application.getString(title), tasks.map { null to application.getString(it) }, DayOfWeek.entries.toSet(), "", {})
+    private fun localizedString(id: Int): String {
+        val configuration = Configuration(application.resources.configuration).apply { setLocale(Locale.forLanguageTag(prefs.value.language)) }
+        return application.createConfigurationContext(configuration).getString(id)
+    }
+    fun template(title: Int, tasks: List<Int>) = save(null, localizedString(title), tasks.map { null to localizedString(it) }, DayOfWeek.entries.toSet(), "", {})
     fun deleteAll() = action { reminders.cancelAll(); repository.deleteAll(); message.value = "Routine data deleted." }
     fun streak(routine: RoutineWithTasks): Int {
         val doneDays = completions.value.filter { it.routineId == routine.routine.id }.groupBy { LocalDate.parse(it.day) }.filter { (date, done) -> val tasks = routine.activeTasks(date); tasks.isNotEmpty() && tasks.all { task -> done.any { it.taskId == task.id } } }.keys
@@ -57,23 +63,25 @@ class NestViewModel @Inject constructor(val repository: NestRepository, val pref
     }
     fun stats(length: Long): Pair<Int, Int> {
         var total = 0; var done = 0
+        val completedByDate = completions.value.groupBy { it.day }.mapValues { (_, items) -> items.map { it.taskId }.toSet() }
         for (offset in 0 until length) {
             val date = day.value.minusDays(offset)
+            val completed = completedByDate[date.toString()].orEmpty()
             routines.value.filter { it.dueOn(date) }.forEach { routine ->
-                val tasks = routine.activeTasks(date); total += tasks.size; done += tasks.count { task -> completions.value.any { it.taskId == task.id && it.day == date.toString() } }
+                val tasks = routine.activeTasks(date); total += tasks.size; done += tasks.count { it.id in completed }
             }
         }
         return done to total
     }
     fun execute(command: Command) = action {
         val all = repository.all().filter { !it.routine.archived && !it.routine.paused }
-        val today = day.value
+        val today = LocalDate.now().also { day.value = it }
         when (command) {
             is Command.Create -> {
                 require(billing.state.value.premium || repository.all().count { !it.routine.archived } < 3) { "The free plan includes three routines." }
                 require(all.none { it.routine.name.equals(command.name, true) }) { "A routine already has that name." }
                 val starters = if (command.name.contains("morning", true)) listOf(R.string.drink_water, R.string.stretch, R.string.plan_day) else if (command.name.contains("evening", true)) listOf(R.string.reading, R.string.tidy, R.string.reflect) else listOf(R.string.plan_day)
-                repository.save(null, command.name, starters.map { null to application.getString(it) }, DayOfWeek.entries.toSet(), "")
+                repository.save(null, command.name, starters.map { null to localizedString(it) }, DayOfWeek.entries.toSet(), "")
                 message.value = "Created ${command.name}. Edit it to personalise your steps."; screen.value = "library"
             }
             is Command.Add -> {

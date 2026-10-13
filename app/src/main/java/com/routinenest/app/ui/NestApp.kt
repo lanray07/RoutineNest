@@ -27,6 +27,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -67,7 +68,8 @@ fun NestApp(model: NestViewModel) {
     val configuration = Configuration(LocalConfiguration.current).apply { setLocale(Locale.forLanguageTag(prefs.language)); uiMode = (uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or if (darkTheme) Configuration.UI_MODE_NIGHT_YES else Configuration.UI_MODE_NIGHT_NO }
     val localized = context.createConfigurationContext(configuration)
     MaterialTheme(colorScheme = if (darkTheme) dark else light) {
-        CompositionLocalProvider(LocalContext provides localized, LocalConfiguration provides configuration) {
+        CompositionLocalProvider(LocalContext provides localized, LocalConfiguration provides configuration,
+            LocalLayoutDirection provides if (configuration.layoutDirection == android.view.View.LAYOUT_DIRECTION_RTL) LayoutDirection.Rtl else LayoutDirection.Ltr) {
             Surface(Modifier.fillMaxSize()) {
                 if (!ready) Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
                 else if (!prefs.onboarded) Onboarding(model)
@@ -85,7 +87,7 @@ fun NestApp(model: NestViewModel) {
                     Scaffold(snackbarHost = { SnackbarHost(snackbar) }, bottomBar = {
                         if (!wide && !editor) NavigationBar { destinations.forEach { item -> NavigationBarItem(selected = screen == item.key, onClick = { model.screen.value = item.key }, icon = { Icon(item.icon, null) }, label = { Text(stringResource(item.label)) }) } }
                     }) { padding ->
-                        Row(Modifier.fillMaxSize().padding(padding)) {
+                        Row(Modifier.fillMaxSize().padding(padding).imePadding()) {
                             if (wide && !editor) NavigationRail { Spacer(Modifier.height(24.dp)); Icon(Icons.Default.Spa, null, tint = MaterialTheme.colorScheme.primary); Spacer(Modifier.height(32.dp)); destinations.forEach { item -> NavigationRailItem(selected = screen == item.key, onClick = { model.screen.value = item.key }, icon = { Icon(item.icon, null) }, label = { Text(stringResource(item.label)) }) } }
                             Column(Modifier.weight(1f).fillMaxHeight().verticalScroll(rememberScrollState()).padding(horizontal = if (wide) 40.dp else 20.dp, vertical = 24.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
                                 if (editor && editingId != null && editing == null) CircularProgressIndicator()
@@ -190,7 +192,8 @@ fun NestApp(model: NestViewModel) {
     Header(stringResource(R.string.editor_heading), stringResource(if (routine == null) R.string.add_routine else R.string.edit))
     OutlinedTextField(name, { name = it }, label = { Text(stringResource(R.string.routine_name)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) { FilterChip(days.size == 7, { days = DayOfWeek.entries.toSet() }, label = { Text(stringResource(R.string.daily)) }); FilterChip(days.size < 7, { days = setOf(DayOfWeek.MONDAY) }, label = { Text(stringResource(R.string.weekly)) }) }
-    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(4.dp)) { DayOfWeek.entries.forEach { day -> FilterChip(day in days, { days = if (day in days) days - day else days + day }, label = { Text(day.getDisplayName(TextStyle.SHORT, Locale.getDefault())) }) } }
+    val selectedLocale = LocalConfiguration.current.locales[0]
+    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(4.dp)) { DayOfWeek.entries.forEach { day -> FilterChip(day in days, { days = if (day in days) days - day else days + day }, label = { Text(day.getDisplayName(TextStyle.SHORT, selectedLocale)) }) } }
     tasks.forEachIndexed { index, task -> Row(verticalAlignment = Alignment.CenterVertically) { OutlinedTextField(task.second, { value -> tasks = tasks.toMutableList().also { it[index] = task.first to value } }, Modifier.weight(1f), singleLine = true, label = { Text(stringResource(R.string.task_name)) }); IconButton(onClick = { tasks = tasks.filterIndexed { i, _ -> i != index } }) { Icon(Icons.Default.Close, stringResource(R.string.remove_task)) } } }
     Row(verticalAlignment = Alignment.CenterVertically) { OutlinedTextField(newTask, { newTask = it }, Modifier.weight(1f), singleLine = true, label = { Text(stringResource(R.string.task_name)) }); IconButton(onClick = { if (newTask.isNotBlank()) { tasks = tasks + (null to newTask.trim()); newTask = "" } }, enabled = newTask.isNotBlank()) { Icon(Icons.Default.Add, stringResource(R.string.add_task)) } }
     OutlinedTextField(reminder, { reminder = it }, Modifier.fillMaxWidth(), label = { Text(stringResource(R.string.reminder)) }, singleLine = true, isError = reminder.isNotBlank() && runCatching { LocalTime.parse(reminder) }.isFailure)
