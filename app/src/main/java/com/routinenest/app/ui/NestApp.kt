@@ -7,6 +7,7 @@ import android.content.res.Configuration
 import android.os.Build
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -63,12 +64,14 @@ fun NestApp(model: NestViewModel) {
     val screen by model.screen.collectAsStateWithLifecycle()
     val message by model.message.collectAsStateWithLifecycle()
     val context = LocalContext.current
+    val activityResultOwner = LocalActivityResultRegistryOwner.current
     val darkTheme = prefs.theme == "dark" || (prefs.theme == "system" && isSystemInDarkTheme())
     SideEffect { if (context is Activity) WindowCompat.getInsetsController(context.window, context.window.decorView).apply { isAppearanceLightStatusBars = !darkTheme; isAppearanceLightNavigationBars = !darkTheme } }
     val configuration = Configuration(LocalConfiguration.current).apply { setLocale(Locale.forLanguageTag(prefs.language)); uiMode = (uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or if (darkTheme) Configuration.UI_MODE_NIGHT_YES else Configuration.UI_MODE_NIGHT_NO }
     val localized = context.createConfigurationContext(configuration)
     MaterialTheme(colorScheme = if (darkTheme) dark else light) {
         CompositionLocalProvider(LocalContext provides localized, LocalConfiguration provides configuration,
+            LocalActivityResultRegistryOwner provides activityResultOwner,
             LocalLayoutDirection provides if (configuration.layoutDirection == android.view.View.LAYOUT_DIRECTION_RTL) LayoutDirection.Rtl else LayoutDirection.Ltr) {
             Surface(Modifier.fillMaxSize()) {
                 if (!ready) Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { CircularProgressIndicator() }
