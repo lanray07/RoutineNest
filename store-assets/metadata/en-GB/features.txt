@@ -1,0 +1,7 @@
+Daily and weekly routines
+On-device checklist and history
+Weekly progress and streaks
+Voice recognition where available; equivalent text commands
+Light and dark appearance
+Configurable reminders
+Data export and deletion

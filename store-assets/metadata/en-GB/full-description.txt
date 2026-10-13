@@ -1,0 +1,16 @@
+Make room for a better day with RoutineNest, a daily routine planner and habit tracker designed for a calmer rhythm.
+
+Create morning, evening and focus routines with your own steps. Choose daily or selected weekday schedules, tick off your checklist and undo a completion when plans change. Your routines and completion history stay on your device and work offline.
+
+Start with a template or build a routine from scratch. See weekly progress and scheduled-day streaks. Pause or archive routines whenever you need space. Choose light, dark or system appearance and a layout that adapts to your tablet.
+
+Use the assistant to create routines, add tasks, complete a step or read your checklist. Speech input requires a compatible speech service and microphone permission; equivalent text commands are available when recognition is unavailable. Commands currently support English. Optional spoken responses require a compatible text-to-speech engine.
+
+Set reminders to help you return to your routine. Notification permission and device battery settings affect delivery, so reminders are not guaranteed exact alarms.
+
+The free plan includes up to three active routines, checklists, templates, weekly insights, reminders and the assistant. Premium is intended to unlock unlimited routines, duplication and monthly insights through a one-time Amazon purchase. Premium purchasing is not yet configured in this development build; the store price will be shown when available.
+
+Export routine data to a file you control or delete it from the app. RoutineNest includes no advertising or analytics trackers. Your speech service and Amazon may process audio or purchase information respectively.
+
+This listing is a pre-submission draft. Premium billing and Fire hardware validation must be completed before publication.
+

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01",
+    "screen": "today",
+    "headline": "Daily Routine Planner",
+    "caption": "Small steps for a calmer day."
+  },
+  {
+    "id": "02",
+    "screen": "today",
+    "headline": "Habit Tracker & Streaks",
+    "caption": "See your small wins add up."
+  },
+  {
+    "id": "03",
+    "screen": "voice",
+    "headline": "Voice-Powered Routine Planner",
+    "caption": "Speak where supported, or type the same commands."
+  },
+  {
+    "id": "04",
+    "screen": "library",
+    "headline": "Morning & Evening Routines",
+    "caption": "Start with a template. Make it your own."
+  },
+  {
+    "id": "05",
+    "screen": "progress",
+    "headline": "Track Your Daily Progress",
+    "caption": "Reflect on the steps you completed."
+  },
+  {
+    "id": "06",
+    "screen": "library",
+    "headline": "Daily Reminders & Checklists",
+    "caption": "Plan your rhythm and tick off each step."
+  },
+  {
+    "id": "07",
+    "screen": "library",
+    "headline": "Offline Habit Tracker",
+    "caption": "Your routines and checklist stay on your device."
+  },
+  {
+    "id": "08",
+    "screen": "settings",
+    "headline": "Your Routine, Your Way",
+    "caption": "Choose the appearance that feels right."
+  }
+]

@@ -1,0 +1,125 @@
+{
+  "submission_ready": false,
+  "checks": [
+    {
+      "check": "transparent icon 114",
+      "passed": true
+    },
+    {
+      "check": "transparent icon 512",
+      "passed": true
+    },
+    {
+      "check": "metadata limits en-GB",
+      "passed": true
+    },
+    {
+      "check": "metadata limits en-US",
+      "passed": true
+    }
+  ],
+  "executed_unit_tests": [
+    {
+      "suite": "com.routinenest.core.EngineTest",
+      "tests": 20,
+      "failures": 0,
+      "errors": 0,
+      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.EngineTest.xml"
+    },
+    {
+      "suite": "com.routinenest.core.VoicePolicyTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.VoicePolicyTest.xml"
+    },
+    {
+      "suite": "com.routinenest.app.billing.TestBillingTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "path": "app\\build\\test-results\\testDebugUnitTest\\TEST-com.routinenest.app.billing.TestBillingTest.xml"
+    },
+    {
+      "suite": "com.routinenest.app.ScheduleHistoryTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "path": "app\\build\\test-results\\testDebugUnitTest\\TEST-com.routinenest.app.ScheduleHistoryTest.xml"
+    }
+  ],
+  "executed_python_tests": [
+    {
+      "suite": "localization guards",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "executedAtUtc": "2026-10-13T13:20:17.012663+00:00",
+      "failedCases": []
+    },
+    {
+      "suite": "exported Room schema on host SQLite",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "executedAtUtc": "2026-10-13T13:20:22.466316+00:00",
+      "failedCases": []
+    }
+  ],
+  "lint": [
+    {
+      "variant": "debug",
+      "errors": 0,
+      "warnings": 45,
+      "report": "app\\build\\reports\\lint-results-debug.xml"
+    },
+    {
+      "variant": "release",
+      "errors": 0,
+      "warnings": 45,
+      "report": "app\\build\\reports\\lint-results-release.xml"
+    }
+  ],
+  "localization": {
+    "published": [
+      "en-GB",
+      "en-US"
+    ],
+    "pending_issues": 1040
+  },
+  "instrumentation": {
+    "compiled": true,
+    "executed": false,
+    "reason": "No connected booted device; emulator acceleration driver unavailable"
+  },
+  "artifacts": [
+    {
+      "path": "app\\build\\outputs\\apk\\debug\\app-debug.apk",
+      "bytes": 19398274,
+      "sha256": "b40e51a696623de6effe2de779415a0d9e1d72135dc2fe799309a282110f35c2",
+      "signing": "debug key only; verify with apksigner"
+    },
+    {
+      "path": "app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
+      "bytes": 1235218,
+      "sha256": "afcd18fca273bee0942b5947d18de64bff1a0ca0b4468c10c5fad87108597b1a",
+      "signing": "debug key only; verify with apksigner"
+    },
+    {
+      "path": "app\\build\\outputs\\apk\\release\\app-release-unsigned.apk",
+      "bytes": 1987561,
+      "sha256": "37b1bafc2d8bbafed0270d90aef991e355d22cc8cd3480fadf60ee226315cc44",
+      "signing": "unsigned"
+    }
+  ],
+  "blockers": [
+    "Amazon product/app key absent; RVS server and verification client require implementation and integration tests",
+    "Release publisher signing/identity approval pending",
+    "Ten locales and listing translations pending; twelve-locale selection provisional",
+    "Physical Fire device testing pending",
+    "Real screenshots and visual/accessibility device verification pending",
+    "Privacy disclosures need publisher review and public policy URL"
+  ]
+}

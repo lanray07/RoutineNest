@@ -1,0 +1,27 @@
+locale,search_intent,placement,evidence,review
+en-GB,daily routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,morning routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,evening routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,daily checklist,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,offline habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,routine reminders,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-GB,voice routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,daily routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,morning routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,evening routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,daily checklist,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,offline habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,routine reminders,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+en-US,voice routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
+fr-FR,pending native-language research,pending,no research metrics claimed,translation pending
+de-DE,pending native-language research,pending,no research metrics claimed,translation pending
+es-ES,pending native-language research,pending,no research metrics claimed,translation pending
+it-IT,pending native-language research,pending,no research metrics claimed,translation pending
+pt-BR,pending native-language research,pending,no research metrics claimed,translation pending
+ja-JP,pending native-language research,pending,no research metrics claimed,translation pending
+ko-KR,pending native-language research,pending,no research metrics claimed,translation pending
+zh-CN,pending native-language research,pending,no research metrics claimed,translation pending
+ar-SA,pending native-language research,pending,no research metrics claimed,translation pending
+hi-IN,pending native-language research,pending,no research metrics claimed,translation pending

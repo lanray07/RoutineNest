@@ -1,0 +1,24 @@
+[
+  {
+    "variant": "debug",
+    "testBillingFixturePresent": true,
+    "debugEntryPointPresent": true,
+    "nativeAbis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  },
+  {
+    "variant": "release",
+    "testBillingFixturePresent": false,
+    "debugEntryPointPresent": false,
+    "nativeAbis": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ]
+  }
+]

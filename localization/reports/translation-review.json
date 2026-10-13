@@ -1,0 +1,110 @@
+[
+  {
+    "locale": "en-GB",
+    "published": true,
+    "reviewed": true,
+    "issues": 0,
+    "entries": 104,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "en-US",
+    "published": true,
+    "reviewed": true,
+    "issues": 0,
+    "entries": 104,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "fr-FR",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "de-DE",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "es-ES",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "it-IT",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "pt-BR",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "ja-JP",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "ko-KR",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "zh-CN",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "ar-SA",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": true,
+    "visual_review": "pending on real device"
+  },
+  {
+    "locale": "hi-IN",
+    "published": false,
+    "reviewed": false,
+    "issues": 104,
+    "entries": 0,
+    "rtl": false,
+    "visual_review": "pending on real device"
+  }
+]
