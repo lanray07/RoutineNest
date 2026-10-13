@@ -64,7 +64,7 @@ fun NestApp(model: NestViewModel) {
     val screen by model.screen.collectAsStateWithLifecycle()
     val message by model.message.collectAsStateWithLifecycle()
     val context = LocalContext.current
-    val activityResultOwner = LocalActivityResultRegistryOwner.current
+    val activityResultOwner = checkNotNull(LocalActivityResultRegistryOwner.current) { "RoutineNest requires an activity permission registry." }
     val darkTheme = prefs.theme == "dark" || (prefs.theme == "system" && isSystemInDarkTheme())
     SideEffect { if (context is Activity) WindowCompat.getInsetsController(context.window, context.window.decorView).apply { isAppearanceLightStatusBars = !darkTheme; isAppearanceLightNavigationBars = !darkTheme } }
     val baseConfiguration = LocalConfiguration.current
