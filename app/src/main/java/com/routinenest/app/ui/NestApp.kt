@@ -67,8 +67,9 @@ fun NestApp(model: NestViewModel) {
     val activityResultOwner = LocalActivityResultRegistryOwner.current
     val darkTheme = prefs.theme == "dark" || (prefs.theme == "system" && isSystemInDarkTheme())
     SideEffect { if (context is Activity) WindowCompat.getInsetsController(context.window, context.window.decorView).apply { isAppearanceLightStatusBars = !darkTheme; isAppearanceLightNavigationBars = !darkTheme } }
-    val configuration = Configuration(LocalConfiguration.current).apply { setLocale(Locale.forLanguageTag(prefs.language)); uiMode = (uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or if (darkTheme) Configuration.UI_MODE_NIGHT_YES else Configuration.UI_MODE_NIGHT_NO }
-    val localized = context.createConfigurationContext(configuration)
+    val baseConfiguration = LocalConfiguration.current
+    val configuration = remember(baseConfiguration, prefs.language, darkTheme) { Configuration(baseConfiguration).apply { setLocale(Locale.forLanguageTag(prefs.language)); uiMode = (uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or if (darkTheme) Configuration.UI_MODE_NIGHT_YES else Configuration.UI_MODE_NIGHT_NO } }
+    val localized = remember(context, configuration) { android.view.ContextThemeWrapper(context, context.theme).apply { applyOverrideConfiguration(configuration) } }
     MaterialTheme(colorScheme = if (darkTheme) dark else light) {
         CompositionLocalProvider(LocalContext provides localized, LocalConfiguration provides configuration,
             LocalActivityResultRegistryOwner provides activityResultOwner,
