@@ -24,6 +24,6 @@ The signed `com.routinenest.app` version 0.1.0/code 1 APK is uploaded to app ID
 
 ## Remaining work
 
-Amazon's export-compliance checkbox is a publisher certification, covering applicable import/export laws and encryption in selected countries. The publisher explicitly confirmed this certification on 14 October 2026 and authorized checking the box; the checkbox is now checked. Clicking Submit App is a separate action and has not been requested or performed.
+Amazon's export-compliance checkbox is a publisher certification, covering applicable import/export laws and encryption in selected countries. The publisher explicitly confirmed this certification on 14 October 2026 and authorized checking the box; the checkbox is now checked. After reloading, Amazon shows the certification checked and its form status as Ready to Submit. This is form completeness, not release acceptance. Clicking Submit App is a separate action and has not been requested or performed.
 
 The completed draft forms do not resolve the release report's billing, additional-language and broader-device blockers. The current APK containing the Amazon authentication public key still needs SDK/device validation. The privacy policy and disclosures must change before billing accounts or receipt verification are enabled.
