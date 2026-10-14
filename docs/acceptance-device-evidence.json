@@ -1,7 +1,6 @@
 {
   "recordedAtUtc": "2026-10-14T13:27:09.241249+00:00",
   "device": "KFTRWI",
-  "serial": "G001KT0620330AWU",
   "api": 28,
   "package": "com.routinenest.app.debug",
   "tests": 8,
@@ -27,5 +26,24 @@
     "Notification permission denial on Android 13+",
     "Real Amazon purchases"
   ],
-  "usbStayAwakeRestored": true
+  "usbStayAwakeRestored": true,
+  "runtimeSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+  "nativeAmazonSandboxProbe": {
+    "tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "sdk": "3.0.9",
+    "transport": "Real Appstore SDK to installed Amazon App Tester",
+    "checks": [
+      "Tester account callback succeeds",
+      "Premium ENTITLED SKU discovered",
+      "SDK supplies a nonempty price"
+    ],
+    "purchaseMade": false,
+    "receiptVerified": false,
+    "releaseCheckoutEnabled": false,
+    "originalCatalogRestoredExactly": true,
+    "sandboxModeRestored": "none",
+    "testApkSha256": "2a2603ae22d8a11bc5e3fc547bc682f2bbf19fb4de94d42233d053afb69e3961"
+  }
 }

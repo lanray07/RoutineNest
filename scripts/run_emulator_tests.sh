@@ -3,17 +3,24 @@
 set -euo pipefail
 sdk="${ANDROID_HOME:?Android SDK required}"
 image='system-images;android-35;google_apis;x86_64'
+export ANDROID_AVD_HOME="${RUNNER_TEMP:?CI temporary directory required}/routinenest-avd"
+mkdir -p "$ANDROID_AVD_HOME"
 mkdir -p build
 sudo chmod a+rw /dev/kvm
 "$sdk/cmdline-tools/latest/bin/sdkmanager" "$image" 'emulator'
-printf 'no\n' | "$sdk/cmdline-tools/latest/bin/avdmanager" create avd -n RoutineNestCI -k "$image" --device pixel_2
+printf 'no\n' | "$sdk/cmdline-tools/latest/bin/avdmanager" create avd -n RoutineNestCI -k "$image" --device pixel_2 --path "$ANDROID_AVD_HOME/RoutineNestCI.avd"
+test -f "$ANDROID_AVD_HOME/RoutineNestCI.avd/config.ini"
+# New emulator and older command-line tools may resolve different default AVD roots.
+printf 'avd.ini.encoding=UTF-8\npath=%s\ntarget=android-35\n' "$ANDROID_AVD_HOME/RoutineNestCI.avd" > "$ANDROID_AVD_HOME/RoutineNestCI.ini"
 "$sdk/emulator/emulator" -avd RoutineNestCI -no-window -no-audio -no-snapshot -no-boot-anim -gpu swiftshader -accel on > build/emulator-boot.log 2>&1 &
 emulator_pid=$!
 trap 'kill "$emulator_pid" 2>/dev/null || true' EXIT
 adb="$sdk/platform-tools/adb"
 booted=false
-for attempt in $(seq 1 180); do
-  if [[ "$("$adb" -s emulator-5554 shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" == '1' ]]; then booted=true; break; fi
+deadline=$((SECONDS + 360))
+while ((SECONDS < deadline)); do
+  kill -0 "$emulator_pid" 2>/dev/null || { cat build/emulator-boot.log; exit 1; }
+  if [[ "$(timeout 5s "$adb" -s emulator-5554 shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" == '1' ]]; then booted=true; break; fi
   sleep 2
 done
 [[ "$booted" == true ]] || { echo 'Emulator boot timed out'; exit 1; }
