@@ -1,13 +1,13 @@
 {
-  "recordedAtUtc": "2026-10-14T13:27:09.241249+00:00",
+  "recordedAtUtc": "2026-10-14T15:19:59.457605+00:00",
   "device": "KFTRWI",
   "api": 28,
   "package": "com.routinenest.app.debug",
   "tests": 8,
   "passed": 8,
   "failed": 0,
-  "appSha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e",
-  "testApkSha256": "dc174bdd3d56f85c62b53fb0a164ee13036dfb9c52bcb416f5c4f6b5931949dc",
+  "appSha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
+  "testApkSha256": "305e3ecbdf4091b8092130f72149952abd50dba7f73918cdc16dbf38b3c49ff6",
   "checks": [
     "Single named checkbox with 48dp minimum target and persisted toggle",
     "Android English and Polish plural categories",
@@ -16,7 +16,8 @@
     "Real English TTS engine generates audio beyond WAV header",
     "Persistence across Room reopen and archive",
     "Genuine screen capture",
-    "Onboarding template checklist navigation"
+    "Onboarding template checklist navigation",
+    "Current English singular completion/streak and French completed-count plural selection"
   ],
   "scope": "Debug package; signed release smoke remains separately recorded",
   "speechRecognition": "Previously absent on this Fire tablet; typed fallback supported",
@@ -27,7 +28,7 @@
     "Real Amazon purchases"
   ],
   "usbStayAwakeRestored": true,
-  "runtimeSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+  "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
   "nativeAmazonSandboxProbe": {
     "tests": 1,
     "passed": 1,
@@ -45,5 +46,18 @@
     "originalCatalogRestoredExactly": true,
     "sandboxModeRestored": "none",
     "testApkSha256": "2a2603ae22d8a11bc5e3fc547bc682f2bbf19fb4de94d42233d053afb69e3961"
+  },
+  "previousPhysicalAcceptance": {
+    "runtimeSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+    "appSha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e",
+    "testApkSha256": "dc174bdd3d56f85c62b53fb0a164ee13036dfb9c52bcb416f5c4f6b5931949dc",
+    "recordedAtUtc": "2026-10-14T13:27:09.241249+00:00"
+  },
+  "harnessSourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3",
+  "nativeAmazonSandboxReceipt": {
+    "tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "evidence": "docs/native-sandbox-receipt-evidence.json"
   }
 }

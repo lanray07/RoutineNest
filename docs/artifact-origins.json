@@ -8,16 +8,16 @@
   "debug": {
     "provider": "Local Gradle",
     "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
-    "conclusion": "Current debug assembly passed; final Fire rerun pending stable USB",
+    "conclusion": "Eight current Fire acceptance tests passed; separate native sandbox receipt integration passed",
     "signing": "Existing local debug key",
-    "deviceExecuted": false
+    "deviceExecuted": true
   },
   "androidTest": {
     "provider": "Local Gradle",
     "appSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
-    "harness": "Adds sandbox-only App Tester confirmation helper, not yet device executed",
-    "conclusion": "Current harness compiles; earlier Fire acceptance and discovery evidence refer to their recorded prior APK hashes",
-    "harnessSourceCommit": "Pending commit; runtime source is separately pinned"
+    "harness": "Sandbox-only App Tester confirmation helper; actual purchase/receipt/restore component test passed",
+    "conclusion": "Eight current Fire tests plus one separate native receipt integration passed",
+    "harnessSourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3"
   },
   "signedRelease": {
     "provider": "Local Gradle and apksigner",
@@ -32,13 +32,13 @@
     ],
     "zipAlignmentVerified": true,
     "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
-    "deviceExecuted": false,
+    "deviceExecuted": true,
     "versionName": "0.2.0",
     "versionCode": 2,
     "deviceEvidence": "docs/current-candidate-evidence.json",
-    "deviceAcceptance": "USB disconnected during debug installation; final signed candidate checks pending",
-    "uploadedToAmazonDraft": false,
-    "downloadedDraftMatchesExactly": false
+    "deviceAcceptance": "Current signed smoke, persistence, offline checklist and background reminder checks passed; wider acceptance pending",
+    "uploadedToAmazonDraft": true,
+    "downloadedDraftMatchesExactly": true
   },
   "previousSignedRelease": {
     "provider": "Local apksigner",
@@ -58,7 +58,23 @@
     "deviceEvidence": "docs/signed-release-smoke-evidence.json",
     "deviceAcceptance": "Partial smoke check only; full release acceptance pending"
   },
-  "amazonDraftRelease": {
+  "previousDeviceDebug": {
+    "provider": "Local Gradle",
+    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+    "conclusion": "Assemble passed; eight Fire tests and one native SDK sandbox discovery probe passed",
+    "signing": "Existing local debug key",
+    "deviceExecuted": true
+  },
+  "previousInstalledDebug": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e"
+  },
+  "builtDebug": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
+    "installedOnPhysicalFire": true
+  },
+  "previousAmazonDraftRelease": {
     "provider": "Local Gradle and apksigner",
     "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
     "inputRunUrl": null,
@@ -79,20 +95,9 @@
     "uploadedToAmazonDraft": true,
     "downloadedDraftMatchesExactly": true
   },
-  "previousDeviceDebug": {
-    "provider": "Local Gradle",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "conclusion": "Assemble passed; eight Fire tests and one native SDK sandbox discovery probe passed",
-    "signing": "Existing local debug key",
-    "deviceExecuted": true
-  },
-  "previousInstalledDebug": {
-    "path": "app/build/outputs/apk/debug/app-debug.apk",
-    "sha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e"
-  },
-  "builtDebug": {
-    "path": "app/build/outputs/apk/debug/app-debug.apk",
-    "sha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
-    "installedOnPhysicalFire": false
+  "latestCi": {
+    "sourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3",
+    "conclusion": "success",
+    "url": "https://github.com/lanray07/RoutineNest/actions/runs/38587862747"
   }
 }

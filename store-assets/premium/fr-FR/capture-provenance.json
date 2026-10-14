@@ -3,66 +3,66 @@
     "id": "01",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\01.png",
-    "source_sha256": "1ef2e1a0eb4798829037ad3d65b5ce2ab37b14f9331c2eefe6d82fa417804784",
+    "source_sha256": "557a3dfd20c11728e85bf98003fac71526c55382bd48cfb0cba1513cd8b892dd",
     "output": "store-assets\\premium\\fr-FR\\tablet\\01.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "f133b7b20343c1f50faebecfb9d1b14b66dfaaf3f4a3133210f513ee3382efaa"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "68c000494d391e90a4c94617dd889f81b255ca0c0638c28baa73df412b4ea7a3",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "03",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\03.png",
-    "source_sha256": "edb016f3d6dfcd242d9d695246bdece34d00bf276c0563a637f2ff2284e64637",
+    "source_sha256": "d49cb6b33a0f073f5ade4b18ea636807a207015997d476d3772b57637bd5b861",
     "output": "store-assets\\premium\\fr-FR\\tablet\\03.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "2f22fba2d468b7f1c32267270f32fa2634ea348b2c53f584b8bccc75180a647e"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "37004c24f3ca06d600fb7f233d6781ec6b8e7fce652f08d76662e8eba180c3f2",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "04",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\04.png",
-    "source_sha256": "1b92d9c010184061e085a3aa966880ad2f1a095df69d85467d7a439ebce858a8",
+    "source_sha256": "40190ebcea698d768f9c9d3694be2fd1edf966c0c923bf0201cceb845ac5b8e8",
     "output": "store-assets\\premium\\fr-FR\\tablet\\04.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "6c99424e86dd9d33ebb0c2f1f0a4f6bb0eff9cc1e1e4c8e159d0ec613f17eb32"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "2e7478d5338e980af60a20cf2344907e49c46c3e39152a1383b2fce310bc18f8",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "05",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\05.png",
-    "source_sha256": "340462b72360103a8a1ce1aea19dcd7f8426f41485a83d5e280b96a83667cd32",
+    "source_sha256": "bf404cebd7c98fbfb692514d923a545821770b8344e1157e0621b6dd0613dfae",
     "output": "store-assets\\premium\\fr-FR\\tablet\\05.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "530c37e3d3c3a112cc2de74a1798b63b6b0aef35c7ffd29961eb977b77268be3"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "999d8bd425f7f4d028f84ef81a9724f8e7f1a944d2f45c3a450a9f9f4e9695b5",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "07",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\07.png",
-    "source_sha256": "926777d19ca293b27591ffc5284db719b8271dd76748802629092b6ea698614e",
+    "source_sha256": "639a051c3985aefdb049e066cf811def1ab5fe59c392ba7635af8c49f3a5c4c4",
     "output": "store-assets\\premium\\fr-FR\\tablet\\07.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "488593f9ed09c431b36e28370c607f98eb8d37d7630ef7087bd5edbbe185bd2c"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "d99c9a3b1f4d8eddfc8e095dde32bedf2bbf828abaf450046e4489a675e106a5",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "08",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\fr-FR\\tablet\\08.png",
-    "source_sha256": "1adf042ef180a692605525560e3ea8240e851f22020e1a913eca4dd24a7a13f4",
+    "source_sha256": "0113c3a26561e13beb64171acfad2d798267be61e7d4db485250a2eff3b0adcf",
     "output": "store-assets\\premium\\fr-FR\\tablet\\08.png",
     "dimensions": "1920x1200",
-    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
-    "ui_pixels_preserved_after_uniform_scaling": true,
-    "output_sha256": "129d4df6cb739236ab8d70e482610a1fb5521240d395098943bec26f70632cd1"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "fde2a624cdab02615c024c1426994630492ac197a63b0e9e8b9897683c8313f3",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   }
 ]

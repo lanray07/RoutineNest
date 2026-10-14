@@ -3,66 +3,66 @@
     "id": "01",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\01.png",
-    "source_sha256": "f4205f7ef71e655dc68395ed356c2f6568933ee14dac492691a1bb03fd0f9fea",
+    "source_sha256": "f9ee97fcfed255f3aa049cbf6d0dbda62d0f6eea5ebce7015b0b1f716e30e9ef",
     "output": "store-assets\\premium\\pl-PL\\tablet\\01.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "c088f02834bd82f786fa0479ec26ca48cdf042a51158c2f9b0e4319e65a27ce8",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "99df0f2948ef123a97d07c0cc7587a40fa13f9a51a59d2a7e698f377f7fe9e7b",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "03",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\03.png",
-    "source_sha256": "622831d7baa8273f22d7e9812bb0bfb3f68c5fd704c688f90bd95593ae63a1b1",
+    "source_sha256": "42020ef9bbc749030a9295fad167767d0f06afa67e2ffb19443771b01f2ba324",
     "output": "store-assets\\premium\\pl-PL\\tablet\\03.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "1816349be135b7a09c91bb233193e34ece56e25d2b36028a17a2aa7b7f475f63",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "b2d4113b2f65472ebb6ea7f078a7a38447a44a1a31dd62a604db3e4c7c7327d4",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "04",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\04.png",
-    "source_sha256": "71ef3b609425f78064c60b532b699686c5a117f66c9bcba94646c3659f1a59b9",
+    "source_sha256": "18804304544c799f9a96089d23a4809f4939605245dcd93ac21b35d02d0fb735",
     "output": "store-assets\\premium\\pl-PL\\tablet\\04.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "7323a7a3dcb7f8de05107fb7a7d49326ddcfc3ba426b8dd5c5aadb8bce9341ea",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "8e4b7ab9b1a6d11c0e3a91010a649e6fe243fc2fb3a57aa91d66ee40dd60d1ce",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "05",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\05.png",
-    "source_sha256": "185f1ed5503d7e8ca9e34ee813c709d061f4d10ecfd6e3b35064fb367e978e82",
+    "source_sha256": "ab1016adf5a7eae363078d43c1af43adc581f2c14a82ed6aa1c21aa4ed065665",
     "output": "store-assets\\premium\\pl-PL\\tablet\\05.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "74f4901478dfe1afee39862d637dbbfe0bdc90adfd2c35e704da5609fbf001e5",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "cd371f33abb5e3398f92014510cc423ba21120b145f7d9420dc59c8b770f2073",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "07",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\07.png",
-    "source_sha256": "8da68a070db5cac75b42852e3ad57881e9a51d5c7e136fe7dc23a05c412aec4f",
+    "source_sha256": "6ac779bab48209c2bc61b1cc059ef369af6b134bb3c89e145f173602ecf464f4",
     "output": "store-assets\\premium\\pl-PL\\tablet\\07.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "5740402edafb7c1c7e9ed5d13f078f9cde58184879427be2b5ec0a5f1e6ff38f",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "84d2827be81c1eac36f02e9a6907813f16cb649f4014e41c868c50c18eef911e",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   },
   {
     "id": "08",
     "status": "captured_visual_reviewed",
     "source": "store-assets\\screenshots\\raw\\pl-PL\\tablet\\08.png",
-    "source_sha256": "63e3112c2ef1776587f5244791176c3f53228ddb13a336a88c8dd675ff92fa26",
+    "source_sha256": "1f7973e85b898a9326d34ecfc2359f551f65e551ab2e7fbda58d375d2d12053c",
     "output": "store-assets\\premium\\pl-PL\\tablet\\08.png",
     "dimensions": "1920x1200",
-    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-    "output_sha256": "925eb4753c06eebad0ed1272ffff3f217185e8f41ed2632f759d9326771ce767",
-    "review_scope": "All six refreshed layouts visually inspected in build/polish-refresh-review.png; exact scaled UI pixels verified"
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "output_sha256": "54c5e4b4700336d613cec850e06e0a8900b6a2ebc159873381b542ad37d50d90",
+    "review_scope": "All six layouts visually inspected in current locale review sheets; exact uniformly scaled UI pixels verified"
   }
 ]

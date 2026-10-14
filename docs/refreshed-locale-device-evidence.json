@@ -1,9 +1,23 @@
 {
   "version": "0.2.0",
-  "appSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
-  "appSha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e",
+  "appSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+  "appSha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
   "captureGuard": "locale preference must match requested locale before screenshot",
   "locales": [
+    {
+      "locale": "fr-FR",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "it-IT",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
     {
       "locale": "ar-SA",
       "tests": 1,
@@ -24,5 +38,5 @@
     "reason": "Capture-only run; separate acceptance evidence applies"
   },
   "originalStayAwakeRestored": true,
-  "recordedAtUtc": "2026-10-14T13:46:01.517807+00:00"
+  "recordedAtUtc": "2026-10-14T15:20:44.968337+00:00"
 }

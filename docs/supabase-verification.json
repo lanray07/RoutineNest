@@ -49,8 +49,8 @@
   "anonymousSignInsEnabled": false,
   "databaseChanges": true,
   "globalAuthChanges": "Temporarily enabled with publisher permission; restored disabled and verified after reload",
-  "realAmazonVerificationExecuted": false,
-  "recordedAtUtc": "2026-10-14T15:15:09.915719+00:00",
+  "realAmazonVerificationExecuted": true,
+  "recordedAtUtc": "2026-10-14T15:37:58.016588+00:00",
   "databaseChangesScope": [
     "routinenest_private.receipt_rate_buckets",
     "public.routinenest_take_receipt_slot(text)"
@@ -76,7 +76,7 @@
     "existingAuthLeakedPasswordProtection": "Disabled; unrelated shared-project setting not changed"
   },
   "testCleanup": {
-    "ownAnonymousUsersRemoved": 3,
+    "ownAnonymousUsersRemoved": 4,
     "otherUsersChanged": false
   },
   "configuration": {
@@ -85,8 +85,10 @@
     "sharedSecret": "Public test-only dummy accepted by Amazon Cloud Sandbox; no production RVS credential configured"
   },
   "sandboxReceiptTest": {
-    "passed": false,
-    "lastExecutedAttempt": "Timed out waiting for App Tester confirmation; no successful receipt verification",
-    "retest": "Compiled confirmation helper; USB disconnected before APK installation"
-  }
+    "tests": 1,
+    "passed": 1,
+    "failed": 0,
+    "evidence": "docs/native-sandbox-receipt-evidence.json"
+  },
+  "productionAmazonVerificationExecuted": false
 }

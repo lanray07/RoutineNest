@@ -1,6 +1,6 @@
 {
   "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
-  "recordedAtUtc": "2026-10-14T15:15:09.915719+00:00",
+  "recordedAtUtc": "2026-10-14T15:37:58.016588+00:00",
   "sha256": "deac306265d62dafb5ac02c648cfc8f9ced42fdebd39e366586975a3087df307",
   "signatureVerified": true,
   "signatureSchemes": [
@@ -8,9 +8,44 @@
     "v3"
   ],
   "zipAlignmentVerified": true,
-  "installedOnPhysicalFire": false,
-  "uploadedToAmazonDraft": false,
-  "reason": "USB disconnected during debug installation; final signed candidate checks pending",
+  "installedOnPhysicalFire": true,
+  "uploadedToAmazonDraft": true,
+  "reason": null,
   "previousAmazonDraftEvidence": "docs/refreshed-release-evidence.json",
-  "submissionPerformed": false
+  "submissionPerformed": false,
+  "amazonDraftDownloadMatchesExactly": true,
+  "uiSmokeExecuted": true,
+  "checks": [
+    "Existing own routine survives signed update",
+    "Singular completion and streak labels",
+    "Task label toggles 56dp checkbox row",
+    "Checkbox state persists after force-stop/restart",
+    "Scheduled reminder posts while app is in background",
+    "Saved checklist opens with Wi-Fi disabled",
+    "Checklist undo works while offline",
+    "Own reminder removed and routine archived reversibly"
+  ],
+  "notification": {
+    "package": "com.routinenest.app",
+    "channel": "routines",
+    "ownRecordsBefore": 0,
+    "ownRecordsAfter": 1,
+    "creationTimeMs": 1791991620121,
+    "scope": "Background with tablet awake; no Doze/reboot claim"
+  },
+  "cleanup": {
+    "wifiRestored": 1,
+    "stayAwakeRestored": 0,
+    "sandboxModeRestored": "none",
+    "originalTesterCatalogRestoredExactly": true,
+    "testRoutineArchived": true,
+    "testReminderRemoved": true
+  },
+  "scope": "Current publisher-signed minified APK; partial acceptance on one physical Fire model",
+  "remaining": [
+    "Other Fire models",
+    "Doze/reboot and permission denial",
+    "Recognition-capable device",
+    "Full production billing acceptance"
+  ]
 }

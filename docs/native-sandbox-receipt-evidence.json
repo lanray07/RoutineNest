@@ -1,0 +1,37 @@
+{
+  "recordedAtUtc": "2026-10-14T15:37:58.016588+00:00",
+  "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+  "harnessSourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3",
+  "appSha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
+  "testApkSha256": "305e3ecbdf4091b8092130f72149952abd50dba7f73918cdc16dbf38b3c49ff6",
+  "device": "KFTRWI",
+  "api": 28,
+  "tests": 1,
+  "passed": 1,
+  "failed": 0,
+  "seconds": 19.232,
+  "transport": "Real Amazon Appstore SDK 3.0.9 → installed App Tester → real Supabase Auth/Edge Function → Amazon RVS Cloud Sandbox",
+  "checks": [
+    "Documented fictitious App Tester User 1 asserted before simulated purchase",
+    "ENTITLED SKU and SDK product response confirmed",
+    "App Tester confirmation restricted to its own package",
+    "Simulated receipt verified through real authenticated server RVS",
+    "Encrypted fixture lease written and read before fulfillment call",
+    "SDK restore returns matching owned receipt and server verifies it again"
+  ],
+  "scope": "Component integration; main AmazonBilling checkout orchestration remains disabled and needs its full acceptance matrix",
+  "liveCharge": false,
+  "productionReceiptVerified": false,
+  "releaseCheckoutEnabled": false,
+  "originalTesterCatalogRestoredExactly": true,
+  "sandboxModeRestored": "none",
+  "temporaryAnonymousSignInsRestoredDisabled": true,
+  "ownTestAccountRemoved": true,
+  "notCovered": [
+    "Production/LAT purchase flows",
+    "Adapter pagination and reconciliation",
+    "Refund/revocation/account changes",
+    "Verification outage and retry",
+    "Offline entitlement expiry/clock changes"
+  ]
+}

@@ -52,7 +52,7 @@ def main():
     if acceptance_path.exists():
         acceptance=json.loads(acceptance_path.read_text(encoding='utf-8'))
         report['updated_device_acceptance']=acceptance
-        report['instrumentation'].update(executed=acceptance.get('failed')==0,reason='Updated debug APK: eight Fire tests and separate native SDK discovery probe; signed acceptance is recorded separately')
+        report['instrumentation'].update(executed=acceptance.get('failed')==0,reason='Eight current Fire tests and native sandbox receipt component integration passed; signed smoke checks are recorded separately')
     supabase_path=ROOT/"docs/supabase-verification.json"
     report["supabase"]=json.loads(supabase_path.read_text(encoding="utf-8")) if supabase_path.exists() else None
     origins_path=ROOT/"docs/artifact-origins.json"
@@ -68,11 +68,11 @@ def main():
         report['executed_unit_tests']=ci['executed_unit_tests']
         report['lint']=ci['lint']
         report['jvm_test_provenance']={'provider':'GitHub Actions',**provenance}
-    report["blockers"][0]="Live temporary Auth, Android refresh and distributed rate limits passed; positive sandbox receipts, production RVS credentials, permanent Auth/abuse controls and full billing flows remain pending"
-    report["blockers"][1]="Current publisher-signed candidate prepared; final device installation and secure off-machine key/password backup pending. Conditional submission authorization exists but readiness condition is unmet."
-    report["blockers"][3]="Eight updated Fire tests and native SDK discovery pass; broader Fire models, signed-candidate final checks, recognition-capable devices, permission denial and reboot/Doze delivery remain pending"
+    report["blockers"][0]="Native SDK purchase/restore and authenticated Amazon Cloud Sandbox receipt verification passed; production RVS credentials, permanent Auth/abuse controls, privacy disclosures and full adapter billing acceptance remain pending"
+    report["blockers"][1]="Current publisher-signed candidate passes device smoke checks and matches downloaded Amazon draft; secure off-machine key/password backup awaits a destination. Conditional submission authorization exists but readiness condition is unmet."
+    report["blockers"][3]="Eight current Fire tests, seven Android 15 phone tests, native sandbox receipts and partial signed checks pass; other Fire models, recognition-capable devices, permission denial and reboot/Doze delivery remain pending"
     report['blockers'][2]='19 interface locale variants and 15 storefront descriptions authored and structurally checked; native-speaker review remains pending. Assistant grammar/replies remain English-only.'
-    report["blockers"][4]="Premium artwork and 90 genuine localized layouts exported; four corrected locale capture sets, French/Italian draft media refresh and final publisher review remain pending"
+    report["blockers"][4]="Premium artwork and 90 genuine localized layouts exported; four corrected locale capture sets and French/Italian draft media refreshed. Final publisher/native-language review remains pending."
     report['blockers'][5]='Public GitHub privacy policy and Amazon draft disclosures supplied; publisher/provider review remains required before enabling billing accounts'
     out=ROOT/"docs/release-evidence.json"; out.write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(json.dumps(report,indent=2))
