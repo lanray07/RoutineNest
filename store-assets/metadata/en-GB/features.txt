@@ -1,7 +1,5 @@
-Daily and weekly routines
-On-device checklist and history
-Weekly progress and streaks
-Voice recognition where available; equivalent text commands
-Light and dark appearance
-Configurable reminders
-Data export and deletion
+Create daily or weekday routines with custom steps and ready-made templates
+Check off tasks, undo completions and review routine history
+Track scheduled-day streaks and weekly habit progress
+Set reminders and use typed English commands; voice input where supported
+Keep core routine data on-device with offline access, export and deletion

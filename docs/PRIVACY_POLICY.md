@@ -18,7 +18,7 @@ Optional spoken responses use your installed text-to-speech engine. That engine 
 
 ## Amazon services and purchasing
 
-The app includes the Amazon Appstore SDK for product and account availability. The SDK exchanges information with Amazon and can return an Amazon account identifier, marketplace and product information to the app. Amazon's services process data under Amazon's own privacy terms. RoutineNest does not receive your payment card details.
+The app includes the Amazon Appstore SDK for product and account availability. The SDK exchanges information with Amazon and can return an Amazon account identifier, marketplace and product information to the app. Service connections can expose network/device identifiers, such as an IP address, to the provider. Amazon's services process data under Amazon's own privacy terms. RoutineNest does not receive your payment card details.
 
 Purchasing and receipt verification remain disabled in this version. The app does not currently create a Supabase billing account or send receipts to its configured verification service. Any future release enabling billing accounts or receipt verification will update this policy before those features are enabled.
 
@@ -44,6 +44,6 @@ The current release is intended for adults aged 18 and over and is not directed 
 
 ## Contact and changes
 
-For privacy questions, use the customer-support email shown on RoutineNest's Amazon Appstore listing. You may also contact the publisher through the [RoutineNest GitHub repository](https://github.com/lanray07/RoutineNest/issues). GitHub issues are public: do not post account identifiers, receipts, private routine data or other sensitive information there. Information you voluntarily send for support is used to respond to your request; the email or GitHub provider also processes it under its own terms.
+For privacy questions, contact the publisher at **banksmi@mail.com**, the support email supplied in RoutineNest's Amazon listing. You may also contact the publisher through the [RoutineNest GitHub repository](https://github.com/lanray07/RoutineNest/issues). GitHub issues are public: do not post account identifiers, receipts, private routine data or other sensitive information there. Information you voluntarily send for support is used to respond to your request; the email or GitHub provider also processes it under its own terms.
 
 Updates to this policy will be published at this URL with a revised effective date. The policy and store disclosures must be updated when the app's data practices change.
