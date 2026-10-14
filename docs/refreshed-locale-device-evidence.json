@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "appSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+  "appSha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e",
+  "captureGuard": "locale preference must match requested locale before screenshot",
+  "locales": [
+    {
+      "locale": "ar-SA",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "pl-PL",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    }
+  ],
+  "acceptance": {
+    "executed": false,
+    "reason": "Capture-only run; separate acceptance evidence applies"
+  },
+  "originalStayAwakeRestored": true,
+  "recordedAtUtc": "2026-10-14T13:46:01.517807+00:00"
+}

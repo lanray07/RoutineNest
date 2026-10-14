@@ -48,6 +48,11 @@ def main():
         report['instrumentation'].update(executed=localized.get('acceptance',{}).get('failures')==0,reason='Four acceptance tests and locale capture results are recorded in localized-device-evidence.json')
     if device_tests:
         report["instrumentation"].update(executed=device_tests["executed"],reason="See executed device results; visual acceptance and corrected harness status are recorded separately")
+    acceptance_path=ROOT/'docs/acceptance-device-evidence.json'
+    if acceptance_path.exists():
+        acceptance=json.loads(acceptance_path.read_text(encoding='utf-8'))
+        report['updated_device_acceptance']=acceptance
+        report['instrumentation'].update(executed=acceptance.get('failed')==0,reason='Updated debug APK: eight Fire tests and separate native SDK discovery probe; signed acceptance is recorded separately')
     supabase_path=ROOT/"docs/supabase-verification.json"
     report["supabase"]=json.loads(supabase_path.read_text(encoding="utf-8")) if supabase_path.exists() else None
     origins_path=ROOT/"docs/artifact-origins.json"
@@ -63,11 +68,11 @@ def main():
         report['executed_unit_tests']=ci['executed_unit_tests']
         report['lint']=ci['lint']
         report['jvm_test_provenance']={'provider':'GitHub Actions',**provenance}
-    report["blockers"][0]="Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending"
-    report["blockers"][1]="Dedicated publisher-signed candidate prepared; secure key/password backup and submission/version approval pending"
-    report["blockers"][3]="Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet"
+    report["blockers"][0]="Live temporary Auth, Android refresh and distributed rate limits passed; positive sandbox receipts, production RVS credentials, permanent Auth/abuse controls and full billing flows remain pending"
+    report["blockers"][1]="Current publisher-signed candidate prepared; final device installation and secure off-machine key/password backup pending. Conditional submission authorization exists but readiness condition is unmet."
+    report["blockers"][3]="Eight updated Fire tests and native SDK discovery pass; broader Fire models, signed-candidate final checks, recognition-capable devices, permission denial and reboot/Doze delivery remain pending"
     report['blockers'][2]='19 interface locale variants and 15 storefront descriptions authored and structurally checked; native-speaker review remains pending. Assistant grammar/replies remain English-only.'
-    report["blockers"][4]="Premium artwork and 90 genuine localized tablet layouts exported; broader-device captures and final publisher approval remain pending"
+    report["blockers"][4]="Premium artwork and 90 genuine localized layouts exported; four corrected locale capture sets, French/Italian draft media refresh and final publisher review remain pending"
     report['blockers'][5]='Public GitHub privacy policy and Amazon draft disclosures supplied; publisher/provider review remains required before enabling billing accounts'
     out=ROOT/"docs/release-evidence.json"; out.write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(json.dumps(report,indent=2))

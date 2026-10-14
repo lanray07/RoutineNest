@@ -129,5 +129,17 @@
     "pl-PL",
     "pt-PT",
     "sv-SE"
-  ]
+  ],
+  "followUpCaptures": {
+    "pl-PL": {
+      "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+      "scope": "Six layouts reviewed with exact scaled UI preservation; further streak grammar refresh pending"
+    },
+    "pendingCurrentRuntimeLocales": [
+      "fr-FR",
+      "it-IT",
+      "pl-PL",
+      "ar-SA"
+    ]
+  }
 }

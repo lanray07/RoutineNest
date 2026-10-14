@@ -3,12 +3,12 @@
   "projectName": "lanray07's Project",
   "organizationPlan": "free",
   "function": "routinenest-verify-receipt",
-  "version": 2,
+  "version": 6,
   "verifyJwt": true,
   "deploymentStatus": "ACTIVE",
   "localContractTests": {
-    "tests": 16,
-    "passed": 16,
+    "tests": 17,
+    "passed": 17,
     "failed": 0,
     "transport": "synthetic"
   },
@@ -20,13 +20,37 @@
     {
       "request": "invalid JWT",
       "status": 401
+    },
+    {
+      "request": "Real temporary Auth JWT, missing receipt fields",
+      "status": 400
+    },
+    {
+      "request": "Synthetic receipt identifiers before sandbox configuration",
+      "status": 503
+    },
+    {
+      "request": "Android Auth creation, encrypted session and token refresh",
+      "tests": 1,
+      "passed": 1,
+      "receiptUnlock": false
+    },
+    {
+      "requests": 61,
+      "statuses": {
+        "400": 60,
+        "429": 1
+      },
+      "retryAfterPresent": true,
+      "transport": "Concurrent HTTPS requests to deployed service with a real temporary Auth JWT",
+      "payload": "Missing receipt fields; no Amazon requests or purchases"
     }
   ],
   "anonymousSignInsEnabled": false,
   "databaseChanges": true,
-  "globalAuthChanges": false,
+  "globalAuthChanges": "Temporarily enabled with publisher permission; restored disabled and verified after reload",
   "realAmazonVerificationExecuted": false,
-  "recordedAtUtc": "2026-10-14T13:21:14.121714+00:00",
+  "recordedAtUtc": "2026-10-14T15:15:09.915719+00:00",
   "databaseChangesScope": [
     "routinenest_private.receipt_rate_buckets",
     "public.routinenest_take_receipt_slot(text)"
@@ -50,5 +74,19 @@
   "advisors": {
     "privateTableRlsNoPolicy": "Expected deny-all client access",
     "existingAuthLeakedPasswordProtection": "Disabled; unrelated shared-project setting not changed"
+  },
+  "testCleanup": {
+    "ownAnonymousUsersRemoved": 3,
+    "otherUsersChanged": false
+  },
+  "configuration": {
+    "environment": "sandbox",
+    "sku": "com.routinenest.app.premium",
+    "sharedSecret": "Public test-only dummy accepted by Amazon Cloud Sandbox; no production RVS credential configured"
+  },
+  "sandboxReceiptTest": {
+    "passed": false,
+    "lastExecutedAttempt": "Timed out waiting for App Tester confirmation; no successful receipt verification",
+    "retest": "Compiled confirmation helper; USB disconnected before APK installation"
   }
 }

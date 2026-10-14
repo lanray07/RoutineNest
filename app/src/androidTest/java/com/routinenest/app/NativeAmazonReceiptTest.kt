@@ -16,6 +16,8 @@ import org.junit.Test
 import java.io.File
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
+import android.accessibilityservice.AccessibilityServiceInfo
+import android.view.accessibility.AccessibilityNodeInfo
 
 /** Component integration through App Tester and RVS Cloud Sandbox; never a live charge. */
 class NativeAmazonReceiptTest {
@@ -61,6 +63,27 @@ class NativeAmazonReceiptTest {
             assertEquals(ProductDataResponse.RequestStatus.SUCCESSFUL, product!!.requestStatus)
             assertEquals(ProductType.ENTITLED, product!!.productData[BuildConfig.PREMIUM_SKU]!!.productType)
             instrumentation.runOnMainSync { PurchasingService.purchase(BuildConfig.PREMIUM_SKU) }
+            // Confirm only the App Tester overlay. Never click a production Appstore window.
+            val automation = instrumentation.uiAutomation
+            val previousInfo = automation.serviceInfo
+            val previousFlags = previousInfo.flags
+            try {
+                previousInfo.flags = previousFlags or AccessibilityServiceInfo.FLAG_RETRIEVE_INTERACTIVE_WINDOWS
+                automation.serviceInfo = previousInfo
+                val deadline = System.nanoTime() + TimeUnit.SECONDS.toNanos(30)
+                while (purchaseReady.count > 0 && System.nanoTime() < deadline) {
+                    for (window in automation.windows) {
+                        val root = window.root ?: continue
+                        if (root.packageName?.toString() != "com.amazon.sdktestclient") continue
+                        if (root.findAccessibilityNodeInfosByText("RoutineNest Premium").isEmpty()) continue
+                        root.findAccessibilityNodeInfosByText("Get Item").firstOrNull { it.isClickable }?.performAction(AccessibilityNodeInfo.ACTION_CLICK)
+                    }
+                    Thread.sleep(200)
+                }
+            } finally {
+                previousInfo.flags = previousFlags
+                automation.serviceInfo = previousInfo
+            }
             assertTrue("App Tester purchase callback timed out", purchaseReady.await(90, TimeUnit.SECONDS))
             assertEquals(PurchaseResponse.RequestStatus.SUCCESSFUL, purchase!!.requestStatus)
             val response = purchase!!

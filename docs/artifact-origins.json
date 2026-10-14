@@ -1,33 +1,49 @@
 {
   "release": {
-    "provider": "GitHub Actions",
-    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
-    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
-    "conclusion": "success",
-    "signing": "CI unsigned APK signed locally with dedicated publisher key"
+    "provider": "Local Gradle",
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "conclusion": "Local assembly, 31 JVM tests and both lint variants passed; Android 15 CI passed seven tests",
+    "signing": "Unsigned local APK signed with dedicated publisher key"
   },
   "debug": {
     "provider": "Local Gradle",
-    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
-    "conclusion": "assembleDebug passed",
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "conclusion": "Current debug assembly passed; final Fire rerun pending stable USB",
     "signing": "Existing local debug key",
-    "deviceExecuted": true
+    "deviceExecuted": false
   },
   "androidTest": {
     "provider": "Local Gradle",
-    "appSourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
-    "harness": "locale preference readiness guard and scroll-to summary assertion",
-    "conclusion": "assembleDebugAndroidTest passed; four acceptance tests plus nineteen capture runs passed"
-  },
-  "installedDebug": {
-    "path": "app/build/outputs/apk/debug/app-debug.apk",
-    "sha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4"
+    "appSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "harness": "Adds sandbox-only App Tester confirmation helper, not yet device executed",
+    "conclusion": "Current harness compiles; earlier Fire acceptance and discovery evidence refer to their recorded prior APK hashes",
+    "harnessSourceCommit": "Pending commit; runtime source is separately pinned"
   },
   "signedRelease": {
+    "provider": "Local Gradle and apksigner",
+    "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "inputRunUrl": null,
+    "path": "app/build/outputs/apk/release/app-release.apk",
+    "sha256": "deac306265d62dafb5ac02c648cfc8f9ced42fdebd39e366586975a3087df307",
+    "signatureVerified": true,
+    "signatureSchemes": [
+      "v2",
+      "v3"
+    ],
+    "zipAlignmentVerified": true,
+    "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
+    "deviceExecuted": false,
+    "versionName": "0.2.0",
+    "versionCode": 2,
+    "deviceEvidence": "docs/current-candidate-evidence.json",
+    "deviceAcceptance": "USB disconnected during debug installation; final signed candidate checks pending",
+    "uploadedToAmazonDraft": false,
+    "downloadedDraftMatchesExactly": false
+  },
+  "previousSignedRelease": {
     "provider": "Local apksigner",
     "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
     "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
-    "path": "app/build/outputs/apk/release/app-release.apk",
     "sha256": "2dcece3b807b92a01cdad22d25f8f5c36f2bf627d8b6b084a6bdcd5765ad6d33",
     "signatureVerified": true,
     "signatureSchemes": [
@@ -41,5 +57,42 @@
     "versionCode": 2,
     "deviceEvidence": "docs/signed-release-smoke-evidence.json",
     "deviceAcceptance": "Partial smoke check only; full release acceptance pending"
+  },
+  "amazonDraftRelease": {
+    "provider": "Local Gradle and apksigner",
+    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+    "inputRunUrl": null,
+    "path": "app/build/outputs/apk/release/app-release.apk",
+    "sha256": "d8dc6b208f544d92b52451d2969c96a17e52b8c68dc42c4f50c0547e921224ac",
+    "signatureVerified": true,
+    "signatureSchemes": [
+      "v2",
+      "v3"
+    ],
+    "zipAlignmentVerified": true,
+    "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
+    "deviceExecuted": true,
+    "versionName": "0.2.0",
+    "versionCode": 2,
+    "deviceEvidence": "docs/refreshed-release-evidence.json",
+    "deviceAcceptance": "Partial persistence, archive/restore, task undo and foreground due notification checks passed",
+    "uploadedToAmazonDraft": true,
+    "downloadedDraftMatchesExactly": true
+  },
+  "previousDeviceDebug": {
+    "provider": "Local Gradle",
+    "sourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+    "conclusion": "Assemble passed; eight Fire tests and one native SDK sandbox discovery probe passed",
+    "signing": "Existing local debug key",
+    "deviceExecuted": true
+  },
+  "previousInstalledDebug": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e"
+  },
+  "builtDebug": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "sha256": "6fdb9961a232eb625486da7399957c8756ab52b3efeca4a36ec1e7e6856fd18e",
+    "installedOnPhysicalFire": false
   }
 }

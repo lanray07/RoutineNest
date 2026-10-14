@@ -1,0 +1,22 @@
+{
+  "runtimeSourceCommit": "4184918239186a0e145285a0a30fef17ec9b6e51",
+  "sha256": "d8dc6b208f544d92b52451d2969c96a17e52b8c68dc42c4f50c0547e921224ac",
+  "signatureVerified": true,
+  "zipAlignmentVerified": true,
+  "installedOnPhysicalFire": true,
+  "amazonDraftDownloadMatchesExactly": true,
+  "uiSmokeExecuted": true,
+  "reason": null,
+  "priorSignedSmokeEvidence": "docs/signed-release-smoke-evidence.json",
+  "submissionPerformed": false,
+  "recordedAtUtc": "2026-10-14T13:44:45.428980+00:00",
+  "checks": [
+    "Startup and previously saved own test routine survive update",
+    "Archive/restore own test routine",
+    "Singular library summary",
+    "Task row undo",
+    "Own scheduled reminder reaches NotificationManager"
+  ],
+  "notificationScope": "Due reminder while app foreground; no reboot/Doze acceptance claim",
+  "fixtureCleanupPending": true
+}

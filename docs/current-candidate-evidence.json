@@ -1,0 +1,16 @@
+{
+  "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+  "recordedAtUtc": "2026-10-14T15:15:09.915719+00:00",
+  "sha256": "deac306265d62dafb5ac02c648cfc8f9ced42fdebd39e366586975a3087df307",
+  "signatureVerified": true,
+  "signatureSchemes": [
+    "v2",
+    "v3"
+  ],
+  "zipAlignmentVerified": true,
+  "installedOnPhysicalFire": false,
+  "uploadedToAmazonDraft": false,
+  "reason": "USB disconnected during debug installation; final signed candidate checks pending",
+  "previousAmazonDraftEvidence": "docs/refreshed-release-evidence.json",
+  "submissionPerformed": false
+}

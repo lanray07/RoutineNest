@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+  "api": 35,
+  "image": "google_apis/x86_64",
+  "deviceProfile": "pixel_2",
+  "tests": 7,
+  "failed": 0,
+  "scope": "Core UI, persistence, Keystore, checkbox accessibility, Android plurals, real notification delivery with permission granted",
+  "notCovered": [
+    "Other Fire models",
+    "Amazon checkout",
+    "TTS engine",
+    "Notification permission denial",
+    "Reboot/Doze delivery"
+  ]
+}
