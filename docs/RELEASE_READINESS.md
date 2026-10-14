@@ -12,23 +12,24 @@ Architecture: `core` is a pure Kotlin engine with JVM tests; `app` uses Compose 
 
 Versions: Java 17, Gradle 8.13, AGP 8.11.1, Kotlin/Compose compiler 2.1.20, Compose BOM 2025.04.01, Room 2.7.1, DataStore 1.1.7, Hilt 2.56.2, WorkManager 2.10.1, Amazon Appstore SDK 3.0.9. Provisional release ID `com.routinenest.app`; debug ID `com.routinenest.app.debug`. Version 0.1.0, code 1, minimum API 26, target/compile API 36. Older Fire OS 6 devices are excluded by this minimum; One Fire OS 7/API 28 tablet has passed the checks below; additional Fire OS 7/8 models still require physical testing.
 
-The repository was initially empty and had no Git history. Git was initialized; no existing source was overwritten. Source, assets and verification tooling are now committed and pushed to `https://github.com/lanray07/RoutineNest` main. No publisher signing key, RVS secret or translation credential was created or committed. Local SDK paths, private signing files, `.env`, build outputs and caches are ignored.
+The repository was initially empty and had no Git history. Git was initialized; no existing source was overwritten. Source, assets and verification tooling are now committed and pushed to `https://github.com/lanray07/RoutineNest` main. A dedicated publisher signing key was created on 14 October at the publisher's request and stored outside Git. No private signing key, RVS secret or translation credential was committed. Local SDK paths, private signing files, `.env`, build outputs and caches are ignored.
 
 Major files: Gradle configuration/wrapper; `core/src/main/kotlin/com/routinenest/core/`; `app/src/main/java/com/routinenest/app/` (data, UI, voice, reminders, billing); `app/schemas/`; debug-only test support; Android/JVM tests; `scripts/`; `localization/`; `store-assets/`; and these release documents.
 
 ## B. Build and artifacts
 
-The final candidates were built by [GitHub run 38431357950](https://github.com/lanray07/RoutineNest/actions/runs/38431357950) from `4763b4dfd81be00ae834a532284c711ad532ec0c` and copied to the canonical local output paths. Debug/test APKs were re-signed with the existing local debug key for device updates. `docs/artifact-origins.json` records provenance.
+The current public-key source is `3dc65a9`. [GitHub run 38535671144](https://github.com/lanray07/RoutineNest/actions/runs/38535671144) passed the full verification workflow, including minified release assembly. The release APK from that run contains the exact downloaded Amazon authentication PEM. It was signed locally with the publisher-requested dedicated RoutineNest key. Local debug assembly passed; the slow local release attempt was interrupted after the successful CI candidate was obtained.
 
-Debug assembly, release Kotlin/Java compilation, minified release assembly and instrumentation APK assembly **passed**. Both lint variants have **0 errors and 45 warnings**. Warnings include newer dependency versions, unused resources and vector sizing; Amazon's jar also emits D8/R8 stack-map warnings. These warnings were retained. SDK warnings require particular attention during real purchasing tests.
+Current output files:
 
-- [app-debug.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/debug/app-debug.apk>) â€” 19,123,689 bytes; debug key only; verify with apksigner. SHA-256: `0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350`.
-- [app-debug-androidTest.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk>) â€” 1,233,770 bytes; debug key only; verify with apksigner. SHA-256: `e4675e21c23e4d6bc27bd508eac0296b0e9f9958f784813d4849248f71f77c0e`.
-- [app-release-unsigned.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/release/app-release-unsigned.apk>) â€” 2,003,945 bytes; unsigned. SHA-256: `e4576b93d268923136e1676011dbccfe64e6c5f576a862ffe1f69b8ceb982f01`.
+- [app-debug.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/debug/app-debug.apk>) — 19,105,372 bytes; SHA-256 `60f14ad1506b9ab75ecd95f3fa608654621381adf1f7c87c978ddbc6ea8d6803`.
+- [app-release-unsigned.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/release/app-release-unsigned.apk>) — 2,004,455 bytes; SHA-256 `e2ff1aa4e4e9a58591fb1b2c2351a333039e9849056f03ca0dbc0f45636515da`.
+- [app-release.apk](<D:/App Projects/RoutineNest/app/build/outputs/apk/release/app-release.apk>) — 2,028,526 bytes; SHA-256 `3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213`.
 
-`apksigner verify --verbose` passed for the final debug APK using v2/v3 signing, with one debug signer. Release verification returned **DOES NOT VERIFY / Missing META-INF/MANIFEST.MF**, confirming the release candidate is unsigned. `zipalign -c -P 16 4` passed on the release APK. This is ZIP alignment evidence, not a passed 16 KB native-runtime or Fire-device test. Publisher signing/submission identity remains a manual decision; use the signed debug APK for local installation.
+The signed release passed `apksigner verify --verbose --print-certs` with one dedicated publisher signer and v2/v3 signatures. Certificate SHA-256: `c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c`. `zipalign -c -P 16 4` passed. This is signature/ZIP alignment evidence, not a new device acceptance run or a 16 KB native-runtime claim. Key-backup instructions are in `docs/SIGNING.md`; APK signing does not approve publication.
 
-`aapt dump badging` confirmed release package/version and APIs. The merged manifest includes microphone, notifications, Internet and WorkManager's wake-lock/network/boot/foreground-service permissions. Microphone hardware is optional. APK native ABI folders include arm64-v8a, armeabi-v7a, x86 and x86_64. The release DEX scan found neither `TestBillingAdapter` nor `DebugDataAccess`; both appear only in debug sources/artifact. Source-set isolation is the primary guarantee, corroborated by this scan.
+The previous four-test physical acceptance run and sixteen screenshots are from `4763b4d`. The newly packaged authentication key activates Amazon SDK registration, so SDK initialization and product discovery require new device testing. No new billing/device result is inferred from compilation. The previous instrumentation APK remains separate from the current debug/release artifacts. `docs/artifact-origins.json` records provenance.
+
 
 ## C. Executed checks and limitations
 
@@ -88,7 +89,7 @@ Listing drafts: `store-assets/metadata/en-GB/` and `en-US/` contain title, short
 
 The proposed UK Â£2.99 one-time unlock is documented for validation, not hardcoded as a universal store price. The UI uses Amazon's returned price when available. Free access allows three non-archived routines plus checklist, reminders, weekly insights and assistant; premium gates unlimited routines, duplication and monthly insights.
 
-The authenticated Supabase function is now deployed in the selected existing free project, and the Android HTTPS client is implemented. Tokens and six-hour cached entitlement leases use Android Keystore authenticated encryption, with account/receipt guards. Checkout stays disabled. Required work includes publisher app/SKU/public authentication PEM, server secrets, Auth and abuse-control setup, callback/offline-clock integration checks and genuine App Tester/Live App Testing. The RVS secret stays server-side. See `docs/BILLING_INTEGRATION.md`.
+The authenticated Supabase function is now deployed in the selected existing free project, and the Android HTTPS client is implemented. Tokens and six-hour cached entitlement leases use Android Keystore authenticated encryption, with account/receipt guards. Checkout stays disabled. Required work includes publisher SKU confirmation, server secrets, Auth and abuse-control setup, callback/offline-clock integration checks and genuine App Tester/Live App Testing. The RVS secret stays server-side. See `docs/BILLING_INTEGRATION.md`.
 
 ## H. Submission decision and required actions
 
@@ -100,11 +101,11 @@ Evidence: 31 JVM tests, 21 Python tests, 12 synthetic Edge Function contract tes
 
 Remaining work:
 
-1. Supply Amazon package/SKU/public authentication PEM and server-side RVS secret; finish Auth, signup abuse protection and verification rate limits. Keep checkout disabled until real purchase/restore/revocation/account/offline/fulfillment tests pass.
+1. The publisher has created the draft app and supplied its public authentication PEM. Confirm Amazon package/SKU and supply the server-side RVS secret; finish Auth, signup abuse protection and verification rate limits. Keep checkout disabled until real purchase/restore/revocation/account/offline/fulfillment tests pass.
 2. Complete the wider Fire OS/model, phone, speech/TTS, notifications, reboot/offline, date/time and accessibility matrix. Speech recognition is unavailable on this tested tablet; typed fallback works. Define/test any additional Fire voice provider before claiming voice support there.
 3. Confirm the provisional twelve locales, configure translation, translate/review the ten pending languages and their listing content, and verify grammar/fonts/RTL. English assistant grammar remains the only implemented command language.
 4. Approve English store copy/screens and capture the remaining approved locale/device sets. Current Fire tablet distribution requirements govern submission; phone images are development previews.
 5. Supply publisher support details, a reviewed public privacy policy and completed Amazon disclosures, including Supabase billing-session/provider processing.
-6. Confirm publisher signing/submission policy and version; rebuild and verify the final reviewed source. Obtain explicit authorization before any store submission or live paid transaction.
+6. The dedicated publisher key and signed candidate are prepared. Back up the key/password and confirm submission policy and version; rebuild and verify the final reviewed source. Obtain explicit authorization before any store submission or live paid transaction.
 
 Source, working development candidates and English tablet captures are delivered. Critical release blockers remain explicit; this is not represented as a fully tested multilingual premium release.

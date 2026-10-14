@@ -26,7 +26,7 @@ def main():
         root=ET.parse(path).getroot(); tests.append({"suite":root.get("name"),"tests":int(root.get("tests","0")),"failures":int(root.get("failures","0")),"errors":int(root.get("errors","0")),"path":str(path.relative_to(ROOT))})
     artifacts=[]
     for path in ROOT.glob("app/build/outputs/apk/**/*.apk"):
-        artifacts.append({"path":str(path.relative_to(ROOT)),"bytes":path.stat().st_size,"sha256":hashlib.sha256(path.read_bytes()).hexdigest(),"signing":"unsigned" if "unsigned" in path.name else "debug key only; verify with apksigner"})
+        artifacts.append({"path":str(path.relative_to(ROOT)),"bytes":path.stat().st_size,"sha256":hashlib.sha256(path.read_bytes()).hexdigest(),"signing":"unsigned" if "unsigned" in path.name else "publisher key; verify with apksigner" if path.name == "app-release.apk" else "debug key only; verify with apksigner"})
     lint=[]
     for variant in ["debug","release"]:
         path=ROOT/f"app/build/reports/lint-results-{variant}.xml"
@@ -47,6 +47,7 @@ def main():
     origins_path=ROOT/"docs/artifact-origins.json"
     report["artifact_origins"]=json.loads(origins_path.read_text(encoding="utf-8")) if origins_path.exists() else None
     report["blockers"][0]="Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending"
+    report["blockers"][1]="Dedicated publisher-signed candidate prepared; secure key/password backup and submission/version approval pending"
     report["blockers"][3]="Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet"
     report["blockers"][4]="English tablet screenshots captured; remaining locale/device exports and final store-asset approval remain pending"
     out=ROOT/"docs/release-evidence.json"; out.write_text(json.dumps(report,indent=2),encoding="utf-8")

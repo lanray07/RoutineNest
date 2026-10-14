@@ -106,8 +106,8 @@
   "artifacts": [
     {
       "path": "app\\build\\outputs\\apk\\debug\\app-debug.apk",
-      "bytes": 19123689,
-      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
+      "bytes": 19105372,
+      "sha256": "60f14ad1506b9ab75ecd95f3fa608654621381adf1f7c87c978ddbc6ea8d6803",
       "signing": "debug key only; verify with apksigner"
     },
     {
@@ -118,14 +118,20 @@
     },
     {
       "path": "app\\build\\outputs\\apk\\release\\app-release-unsigned.apk",
-      "bytes": 2003945,
-      "sha256": "e4576b93d268923136e1676011dbccfe64e6c5f576a862ffe1f69b8ceb982f01",
+      "bytes": 2004455,
+      "sha256": "e2ff1aa4e4e9a58591fb1b2c2351a333039e9849056f03ca0dbc0f45636515da",
       "signing": "unsigned"
+    },
+    {
+      "path": "app\\build\\outputs\\apk\\release\\app-release.apk",
+      "bytes": 2028526,
+      "sha256": "3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213",
+      "signing": "publisher key; verify with apksigner"
     }
   ],
   "blockers": [
     "Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending",
-    "Release publisher signing/identity approval pending",
+    "Dedicated publisher-signed candidate prepared; secure key/password backup and submission/version approval pending",
     "Ten locales and listing translations pending; twelve-locale selection provisional",
     "Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet",
     "English tablet screenshots captured; remaining locale/device exports and final store-asset approval remain pending",
@@ -254,16 +260,17 @@
   "artifact_origins": {
     "release": {
       "provider": "GitHub Actions",
-      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
-      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
-      "conclusion": "success"
+      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
+      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+      "conclusion": "success",
+      "signing": "Unsigned CI input; dedicated publisher key signs app-release.apk locally"
     },
     "debug": {
-      "provider": "GitHub Actions",
-      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
-      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
-      "conclusion": "success",
-      "signing": "Existing local debug key; re-signed for device update"
+      "provider": "Local Gradle",
+      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
+      "conclusion": "assembleDebug passed",
+      "signing": "Existing local debug key",
+      "deviceExecuted": false
     },
     "androidTest": {
       "provider": "GitHub Actions",
@@ -274,7 +281,23 @@
     },
     "installedDebug": {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
-      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350"
+      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
+      "note": "Previous 13 October artifact remains on tablet; current canonical debug APK is rebuilt. No new SDK initialization device test is claimed."
+    },
+    "signedRelease": {
+      "provider": "Local apksigner",
+      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
+      "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+      "path": "app/build/outputs/apk/release/app-release.apk",
+      "sha256": "3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213",
+      "signatureVerified": true,
+      "signatureSchemes": [
+        "v2",
+        "v3"
+      ],
+      "zipAlignmentVerified": true,
+      "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
+      "deviceExecuted": false
     }
   }
 }
