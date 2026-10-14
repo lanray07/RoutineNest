@@ -232,7 +232,8 @@ fun NestApp(model: NestViewModel) {
     var text by rememberSaveable { mutableStateOf("") }; var status by remember { mutableStateOf("") }; var pending by remember { mutableStateOf<Command?>(null) }
     val voice = remember { VoiceController(context, { text = it }, { status = it }) }
     val lifecycle = LocalLifecycleOwner.current.lifecycle
-    val locale = Locale.forLanguageTag(prefs.language)
+    // The command grammar and assistant replies are currently English-only.
+    val locale = if (prefs.language == "en-US") Locale.US else Locale.UK
     val permission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { if (it) voice.listen(locale) else status = context.getString(R.string.voice_denied) }
     val notificationPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { if (!it) status = context.getString(R.string.notifications_disabled) }
     DisposableEffect(voice) { onDispose { voice.close() } }

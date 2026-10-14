@@ -107,7 +107,7 @@ def run(do_translate=False, strict=False):
         for key, text in source.items():
             if key not in values: issues.append([tag,key,"missing"]); continue
             errors = valid(text, values[key], glossary)
-            if not tag.startswith("en-") and values[key] == text and text not in glossary: errors.append("untranslated")
+            if not tag.startswith("en-") and values[key] == text and text not in glossary and key not in locale.get("allowed_identical_keys", []): errors.append("untranslated")
             issues += [[tag,key,error] for error in errors]
         # Plural forms must include other and match locale CLDR quantities before publication.
         if any("#" in key for key in source):
@@ -118,6 +118,8 @@ def run(do_translate=False, strict=False):
         publish = not issues and locale["reviewed"]
         if publish:
             write_resources(path, values); approved.append(locale)
+            pending_note = output / f"{tag}-PENDING.md"
+            if pending_note.exists(): pending_note.unlink()
         else:
             # Pending translations never enter the production resource set.
             if path.exists(): path.unlink()
@@ -125,7 +127,7 @@ def run(do_translate=False, strict=False):
             if path.parent.exists() and not any(path.parent.iterdir()): path.parent.rmdir()
             (output / f"{tag}-PENDING.md").write_text("Translations pending validation and human review. English fallback is not a completed translation.\n", encoding="utf-8")
         draft.write_text(json.dumps(values, ensure_ascii=False, indent=2), encoding="utf-8")
-        reviews.append({"locale":tag,"published":publish,"reviewed":locale["reviewed"],"issues":len(issues),"entries":len(values),"rtl":tag.startswith("ar"),"visual_review":"pending on real device"})
+        reviews.append({"locale":tag,"published":publish,"reviewed":locale["reviewed"],"review_method":locale.get("review_method","existing review"),"native_review":locale.get("native_review","unspecified"),"issues":len(issues),"entries":len(values),"rtl":tag.startswith("ar"),"visual_review":"pending on real device"})
     with (output / "missing-strings.csv").open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file); writer.writerow(["locale","key","issue"]); writer.writerows(rows)
     (output / "translation-review.json").write_text(json.dumps(reviews, indent=2), encoding="utf-8")
@@ -134,7 +136,7 @@ def run(do_translate=False, strict=False):
     locale_xml = ET.Element("locale-config", {"xmlns:android":"http://schemas.android.com/apk/res/android"})
     for item in approved: ET.SubElement(locale_xml,"locale", {"android:name":item["tag"]})
     (RES / "xml").mkdir(exist_ok=True); ET.ElementTree(locale_xml).write(RES / "xml/locales_config.xml", encoding="utf-8", xml_declaration=True)
-    print(f"{len(approved)} validated English locales; {len(rows)} pending translation issues. Reports: localization/reports")
+    print(f"{len(approved)} structurally validated locales; {len(rows)} pending translation issues. Native/device review status is recorded separately in localization/reports.")
     return 1 if strict and rows else 0
 
 if __name__ == "__main__":
