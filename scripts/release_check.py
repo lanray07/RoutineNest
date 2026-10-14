@@ -74,6 +74,10 @@ def main():
     report['blockers'][2]='19 interface locale variants and 15 storefront descriptions authored and structurally checked; native-speaker review remains pending. Assistant grammar/replies remain English-only.'
     report["blockers"][4]="Premium artwork and 90 genuine localized layouts exported; four corrected locale capture sets and French/Italian draft media refreshed. Final publisher/native-language review remains pending."
     report['blockers'][5]='Public GitHub privacy policy and Amazon draft disclosures supplied; publisher/provider review remains required before enabling billing accounts'
+    publication_path=ROOT/'docs/amazon-submission-evidence.json'
+    if publication_path.exists():
+        report['publication']=json.loads(publication_path.read_text(encoding='utf-8'))
+        report['readinessScope']='Full Premium product readiness; the free release has been submitted with purchasing disabled'
     out=ROOT/"docs/release-evidence.json"; out.write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(json.dumps(report,indent=2))
     return 1 if "--strict" in sys.argv or any(not x["passed"] for x in checks) else 0

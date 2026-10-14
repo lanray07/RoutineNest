@@ -1,6 +1,6 @@
 # RoutineNest release readiness
 
-14 October 2026 — **Not approved for Amazon submission.** The publisher authorized submission only when ready. Production billing and wider acceptance remain incomplete, so neither the app nor Premium product has been submitted.
+14 October 2026 — **The free version 0.2.0/code 2 is submitted to Amazon.** The publisher subsequently instructed submission of the current release. Amazon confirms SUBMITTED; approval is pending. Premium purchasing remains disabled. Full production Premium billing and broader acceptance remain future work. See `amazon-submission-evidence.json`.
 
 ## Implementation and build
 
@@ -42,4 +42,7 @@ Before enabling checkout, finish the main adapter's purchase/restore/cancellatio
 
 Also complete the remaining device/voice/permission acceptance and publisher review of translations, copy, artwork and disclosures. Securely back up the signing key and its password outside this machine; the external-drive or secure-vault destination is still awaiting the publisher. The Windows DPAPI password file is not a portable backup. See `SIGNING.md`.
 
-The supplied execution workflow forbids a release-ready claim with critical billing, privacy or compatibility requirements unresolved. Its readiness condition remains unmet; Submit App was not pressed.
+The current free release was submitted with the publisher's later explicit instruction. This does not claim that production Premium billing, human translation review or the wider device matrix are complete. Amazon estimates availability by 19 October 2026 at 17:30 London time, subject to review.
+
+
+The final CI run exposed a checklist assertion race; the test now waits for the persisted summary. The corrected test passed on the Fire tablet and all CI checks, including seven Android 15 tests, passed in [run 38593657669](https://github.com/lanray07/RoutineNest/actions/runs/38593657669). The production APK was unchanged. A verified local encrypted-keystore/DPAPI backup was also created; off-machine backup and portable password recovery still need an external destination.

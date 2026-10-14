@@ -12,7 +12,7 @@
   "uploadedToAmazonDraft": true,
   "reason": null,
   "previousAmazonDraftEvidence": "docs/refreshed-release-evidence.json",
-  "submissionPerformed": false,
+  "submissionPerformed": true,
   "amazonDraftDownloadMatchesExactly": true,
   "uiSmokeExecuted": true,
   "checks": [
@@ -47,5 +47,8 @@
     "Doze/reboot and permission denial",
     "Recognition-capable device",
     "Full production billing acceptance"
-  ]
+  ],
+  "submitted": true,
+  "submissionStatus": "SUBMITTED",
+  "submissionEvidence": "docs/amazon-submission-evidence.json"
 }

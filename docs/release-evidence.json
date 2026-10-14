@@ -181,8 +181,8 @@
     },
     {
       "path": "app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
-      "bytes": 1262937,
-      "sha256": "305e3ecbdf4091b8092130f72149952abd50dba7f73918cdc16dbf38b3c49ff6",
+      "bytes": 1263075,
+      "sha256": "7df448e8ea87876141d3d8071368e7f859b85e97442dfb57e61e6a55b20be607",
       "signing": "debug key only; verify with apksigner"
     },
     {
@@ -640,7 +640,9 @@
       "deviceEvidence": "docs/current-candidate-evidence.json",
       "deviceAcceptance": "Current signed smoke, persistence, offline checklist and background reminder checks passed; wider acceptance pending",
       "uploadedToAmazonDraft": true,
-      "downloadedDraftMatchesExactly": true
+      "downloadedDraftMatchesExactly": true,
+      "submittedToAmazon": true,
+      "submissionEvidence": "docs/amazon-submission-evidence.json"
     },
     "previousSignedRelease": {
       "provider": "Local apksigner",
@@ -698,9 +700,37 @@
       "downloadedDraftMatchesExactly": true
     },
     "latestCi": {
-      "sourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3",
+      "sourceCommit": "ed9015bc83e1bb379f81715610e3c4d4fc4dd0e9",
       "conclusion": "success",
-      "url": "https://github.com/lanray07/RoutineNest/actions/runs/38587862747"
+      "url": "https://github.com/lanray07/RoutineNest/actions/runs/38593657669"
     }
-  }
+  },
+  "publication": {
+    "recordedAtUtc": "2026-10-14T16:02:45.143Z",
+    "url": "https://developer.amazon.com/apps-and-games/console/app/amzn1.devportal.mobileapp.6763d44be8484593a74365da615b5537/release/amzn1.devportal.apprelease.f37aea573f3d4399a78a4bc413698c45/submission/submission-status.html?showNewUXFeedback=true",
+    "status": "SUBMITTED",
+    "activity": "Successfully submitted app submission on 14 Oct 2026",
+    "estimatedDateConsole": "Oct 19 2026, 09:30 AM PDT",
+    "estimatedDateLondon": "2026-10-19 17:30 Europe/London",
+    "estimated": true,
+    "submitted": true,
+    "versionName": "0.2.0",
+    "versionCode": 2,
+    "package": "com.routinenest.app",
+    "appId": "amzn1.devportal.mobileapp.6763d44be8484593a74365da615b5537",
+    "releaseId": "amzn1.devportal.apprelease.f37aea573f3d4399a78a4bc413698c45",
+    "scope": "Free release with Premium purchasing disabled",
+    "premiumPurchasingEnabled": false,
+    "fullPremiumProductionReady": false,
+    "apkSha256": "deac306265d62dafb5ac02c648cfc8f9ced42fdebd39e366586975a3087df307",
+    "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
+    "latestVerifiedTestSource": "ed9015bc83e1bb379f81715610e3c4d4fc4dd0e9",
+    "ci": {
+      "conclusion": "success",
+      "url": "https://github.com/lanray07/RoutineNest/actions/runs/38593657669"
+    },
+    "publisherAuthorizedSubmission": true,
+    "amazonApprovalConfirmed": false
+  },
+  "readinessScope": "Full Premium product readiness; the free release has been submitted with purchasing disabled"
 }

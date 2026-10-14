@@ -1,6 +1,6 @@
 {
   "recordedAtUtc": "2026-10-14T15:37:58.016588+00:00",
-  "draftOnly": true,
+  "draftOnly": false,
   "versionCode": 2,
   "descriptionVerification": [
     {
@@ -578,12 +578,20 @@
   "swedishCheckboxUnavailable": true,
   "exportCertificationChecked": true,
   "amazonFormStatus": "Ready to Submit",
-  "submitted": false,
-  "testingInstructions": "No RoutineNest account or login is required for core features. Complete onboarding, create a routine from a template or add custom tasks, select daily/weekday scheduling, check and undo a task, and inspect History and weekly Progress. Settings includes 19 interface locale variants, light/dark/system appearance, JSON export and Delete routine data. Assistant commands and replies remain English-only in every interface language. Voice recognition requires a compatible installed service; use the typed fallback when unavailable. Reminder delivery depends on device permissions and battery scheduling. The free version allows three active routines. Premium purchase/restore is disabled; no paid transaction should be attempted. Four acceptance tests and 19 localized capture runs passed on one Fire OS 7/API 28 tablet using the debug build. Native-speaker translation review, publisher-signed APK device acceptance, broader models, actual speech/TTS and billing integration remain pending before publication.",
+  "submitted": true,
   "apkSha256": "deac306265d62dafb5ac02c648cfc8f9ced42fdebd39e366586975a3087df307",
   "runtimeSourceCommit": "a238d3de8b52b3c44944a353082446b0a7b7a7d1",
   "refreshedScreenshotLocales": [
     "fr-FR",
     "it-IT"
-  ]
+  ],
+  "submissionPerformed": true,
+  "submissionStatus": "SUBMITTED",
+  "submissionEvidence": "docs/amazon-submission-evidence.json",
+  "previousDraftTestingInstructions": "No RoutineNest account or login is required for core features. Complete onboarding, create a routine from a template or add custom tasks, select daily/weekday scheduling, check and undo a task, and inspect History and weekly Progress. Settings includes 19 interface locale variants, light/dark/system appearance, JSON export and Delete routine data. Assistant commands and replies remain English-only in every interface language. Voice recognition requires a compatible installed service; use the typed fallback when unavailable. Reminder delivery depends on device permissions and battery scheduling. The free version allows three active routines. Premium purchase/restore is disabled; no paid transaction should be attempted. Four acceptance tests and 19 localized capture runs passed on one Fire OS 7/API 28 tablet using the debug build. Native-speaker translation review, publisher-signed APK device acceptance, broader models, actual speech/TTS and billing integration remain pending before publication.",
+  "testingInstructionVerification": {
+    "persistedBeforeSubmission": true,
+    "characters": 1249,
+    "scope": "Current eight Fire tests, signed smoke/offline/background reminder checks, English TTS, 19 interface locales and disabled Premium; human translation certification not claimed"
+  }
 }

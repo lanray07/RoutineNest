@@ -29,3 +29,5 @@ The Amazon SDK authentication PEM in `app/src/main/assets/` is a public key for
 Amazon SDK authentication. It is distinct from this private APK signing key and
 the server-only Amazon RVS shared secret. Signing a build does not make its billing
 integration tested or authorize store submission.
+
+A verified local backup of the encrypted keystore and its DPAPI password file was created on 14 October 2026, outside Git. See `signing-backup-evidence.json` for its path. This protects against accidental file changes; it remains on this machine and is not a portable/off-machine recovery copy. The publisher instructed submission of the current free release, which is now submitted.

@@ -38,7 +38,9 @@
     "deviceEvidence": "docs/current-candidate-evidence.json",
     "deviceAcceptance": "Current signed smoke, persistence, offline checklist and background reminder checks passed; wider acceptance pending",
     "uploadedToAmazonDraft": true,
-    "downloadedDraftMatchesExactly": true
+    "downloadedDraftMatchesExactly": true,
+    "submittedToAmazon": true,
+    "submissionEvidence": "docs/amazon-submission-evidence.json"
   },
   "previousSignedRelease": {
     "provider": "Local apksigner",
@@ -96,8 +98,8 @@
     "downloadedDraftMatchesExactly": true
   },
   "latestCi": {
-    "sourceCommit": "5a8e30b35a2b46a9c44715d0ee0e8ffa3eb1e7f3",
+    "sourceCommit": "ed9015bc83e1bb379f81715610e3c4d4fc4dd0e9",
     "conclusion": "success",
-    "url": "https://github.com/lanray07/RoutineNest/actions/runs/38587862747"
+    "url": "https://github.com/lanray07/RoutineNest/actions/runs/38593657669"
   }
 }
