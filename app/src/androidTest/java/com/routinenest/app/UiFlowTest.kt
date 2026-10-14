@@ -36,6 +36,9 @@ class UiFlowTest {
         compose.onNode(hasText("Today") and hasClickAction()).performClick()
         compose.waitUntil(10_000) { compose.onAllNodesWithText("Drink water").fetchSemanticsNodes().isNotEmpty() }
         compose.onAllNodes(isToggleable()).onFirst().performScrollTo().performClick()
+        compose.waitUntil(10_000) {
+            compose.onAllNodesWithText("1 of 3 steps complete").fetchSemanticsNodes().isNotEmpty()
+        }
         compose.onNodeWithText("1 of 3 steps complete").performScrollTo().assertIsDisplayed()
         compose.onNode(hasText("Assistant") and hasClickAction()).performClick()
         compose.onNodeWithText("Type a command").performTextInput("What is left on my list?")
