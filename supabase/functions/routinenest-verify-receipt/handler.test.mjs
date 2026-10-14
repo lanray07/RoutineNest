@@ -7,7 +7,7 @@ function fixture({ authStatus = 200, amazonStatus = 200, changes = {}, missing =
   const seen = [];
   const env = { SUPABASE_URL: "https://project.supabase.co", SUPABASE_ANON_KEY: "public-key", AMAZON_PREMIUM_SKU: "premium", AMAZON_RVS_ENVIRONMENT: environment,
     AMAZON_RVS_SHARED_SECRET: configured ? "server-secret" : "" };
-  const handler = createHandler({ env: name => env[name], now: () => 1000, fetch: async (url, options) => {
+  const handler = createHandler({ env: name => env[name], now: () => 1000, rateLimit: async () => ({ allowed: true, retryAfterSeconds: 60 }), fetch: async (url, options) => {
     seen.push({ url, options });
     if (url.includes("/auth/v1/user")) return Response.json({ id: "verified-subject", user_metadata: { premium: true } }, { status: authStatus });
     if (outage) throw new Error("server-secret in request URL");

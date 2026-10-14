@@ -4,7 +4,7 @@ const respond = (status, body) => new Response(JSON.stringify(body), {
 });
 const identifier = value => typeof value === "string" && value.trim().length > 0 && value.length <= 4096;
 
-async function boundedJson(response, limit) {
+export async function boundedJson(response, limit) {
   if (!response.body) throw new Error("empty response");
   const reader = response.body.getReader();
   const chunks = [];
@@ -26,7 +26,7 @@ async function boundedJson(response, limit) {
   return JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
 }
 
-export function createHandler({ env, fetch, now }) {
+export function createHandler({ env, fetch, now, rateLimit }) {
   return async request => {
     if (request.method !== "POST") return respond(405, { error: "method_not_allowed" });
     const authorization = request.headers.get("Authorization") ?? "";
@@ -50,6 +50,16 @@ export function createHandler({ env, fetch, now }) {
       if (!identifier(principal?.id)) return respond(401, { error: "invalid_session" });
       // No authorization decisions use editable user_metadata or caller-supplied subjects.
     } catch { return respond(503, { error: "auth_unavailable" }); }
+
+    try {
+      if (!rateLimit) return respond(503, { error: 'verification_rate_limit_unavailable' });
+      const slot = await rateLimit(principal.id);
+      if (!slot.allowed) {
+        const response = respond(429, { error: 'verification_rate_limit', retryAfterSeconds: slot.retryAfterSeconds });
+        response.headers.set('Retry-After', String(slot.retryAfterSeconds));
+        return response;
+      }
+    } catch { return respond(503, { error: 'verification_rate_limit_unavailable' }); }
 
     let input;
     try {

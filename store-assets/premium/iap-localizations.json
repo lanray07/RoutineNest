@@ -1,0 +1,74 @@
+[
+  {
+    "label": "German",
+    "locale": "de-DE",
+    "title": "RoutineNest Premium",
+    "description": "Unbegrenzte Routinen, Duplizieren und monatliche Einblicke. Tageschecklisten, Erinnerungen und Assistent bleiben kostenlos."
+  },
+  {
+    "label": "English (Australia)",
+    "locale": "en-AU",
+    "title": "RoutineNest Premium",
+    "description": "Unlimited routines, duplication and monthly insights. Your daily checklist, reminders and assistant stay free."
+  },
+  {
+    "label": "English (U.K.)",
+    "locale": "en-GB",
+    "title": "RoutineNest Premium",
+    "description": "Unlimited routines, duplication and monthly insights. Your daily checklist, reminders and assistant stay free."
+  },
+  {
+    "label": "English (India)",
+    "locale": "en-IN",
+    "title": "RoutineNest Premium",
+    "description": "Unlimited routines, duplication and monthly insights. Your daily checklist, reminders and assistant stay free."
+  },
+  {
+    "label": "English (U.S.)",
+    "locale": "en-US",
+    "title": "RoutineNest Premium",
+    "description": "Unlimited routines, duplication and monthly insights. Your daily checklist, reminders and assistant stay free."
+  },
+  {
+    "label": "Spanish",
+    "locale": "es-ES",
+    "title": "RoutineNest Premium",
+    "description": "Rutinas ilimitadas, duplicación y estadísticas mensuales. La lista diaria, los recordatorios y el asistente siguen siendo gratuitos."
+  },
+  {
+    "label": "Spanish (Mexico)",
+    "locale": "es-MX",
+    "title": "RoutineNest Premium",
+    "description": "Rutinas ilimitadas, duplicación y estadísticas mensuales. La lista diaria, los recordatorios y el asistente siguen siendo gratuitos."
+  },
+  {
+    "label": "French",
+    "locale": "fr-FR",
+    "title": "RoutineNest Premium",
+    "description": "Routines illimitées, duplication et statistiques mensuelles. Les listes quotidiennes, les rappels et l’assistant restent gratuits."
+  },
+  {
+    "label": "Italian",
+    "locale": "it-IT",
+    "title": "RoutineNest Premium",
+    "description": "Routine illimitate, duplicazione e statistiche mensili. Lista quotidiana, promemoria e assistente restano gratuiti."
+  },
+  {
+    "label": "Japanese",
+    "locale": "ja-JP",
+    "title": "RoutineNest プレミアム",
+    "description": "ルーティン数の制限解除、複製、月間の分析。毎日のチェックリスト、リマインダー、アシスタントは無料のままです。"
+  },
+  {
+    "label": "Portuguese (Brazil)",
+    "locale": "pt-BR",
+    "title": "RoutineNest Premium",
+    "description": "Rotinas ilimitadas, duplicação e estatísticas mensais. Sua lista diária, lembretes e assistente continuam gratuitos."
+  },
+  {
+    "label": "Chinese (Simplified)",
+    "locale": "zh-CN",
+    "title": "RoutineNest 高级版",
+    "description": "无限日常安排、复制功能和每月统计。每日清单、提醒和助手仍然免费。"
+  }
+]

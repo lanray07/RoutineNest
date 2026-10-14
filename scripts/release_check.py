@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import subprocess
 import xml.etree.ElementTree as ET
 from PIL import Image
 
@@ -52,11 +53,16 @@ def main():
     origins_path=ROOT/"docs/artifact-origins.json"
     report["artifact_origins"]=json.loads(origins_path.read_text(encoding="utf-8")) if origins_path.exists() else None
     ci_snapshot=ROOT/'build/cloud-localized/docs/release-evidence.json'
-    if ci_snapshot.exists():
+    # Historical downloaded reports must never override checks for a newer tree.
+    ci_origin=ROOT/'build/cloud-localized/provenance.json'
+    current_head=subprocess.run(['git','-c',f'safe.directory={ROOT.as_posix()}','rev-parse','HEAD'],cwd=ROOT,capture_output=True,text=True).stdout.strip()
+    dirty=subprocess.run(['git','-c',f'safe.directory={ROOT.as_posix()}','status','--porcelain','--untracked-files=no'],cwd=ROOT,capture_output=True,text=True).stdout.strip()
+    provenance=json.loads(ci_origin.read_text(encoding='utf-8')) if ci_origin.exists() else {}
+    if ci_snapshot.exists() and not dirty and provenance.get('sourceCommit') == current_head:
         ci=json.loads(ci_snapshot.read_text(encoding='utf-8'))
         report['executed_unit_tests']=ci['executed_unit_tests']
         report['lint']=ci['lint']
-        report['jvm_test_provenance']={'provider':'GitHub Actions','sourceCommit':'9a12018b033f107b56d81224386c779bfbcc5eae','runUrl':'https://github.com/lanray07/RoutineNest/actions/runs/38543978373'}
+        report['jvm_test_provenance']={'provider':'GitHub Actions',**provenance}
     report["blockers"][0]="Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending"
     report["blockers"][1]="Dedicated publisher-signed candidate prepared; secure key/password backup and submission/version approval pending"
     report["blockers"][3]="Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet"

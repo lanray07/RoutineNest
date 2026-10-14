@@ -79,7 +79,6 @@
   "day_encouragement": "兑现对自己的一个小承诺。",
   "collection_heading": "我的日常合集",
   "collection_subheading": "打造属于自己的每一天。",
-  "routine_summary": "%1$d 个步骤 · %2$s",
   "archived_state": "已归档",
   "paused_state": "已暂停",
   "editor_heading": "按你的方式安排",
@@ -102,5 +101,7 @@
   "export_failed": "导出失败：%1$s",
   "reminder_confirmation": "按设备时区，在%1$s的%2$s设置提醒？",
   "tomorrow": "明天",
-  "today_word": "今天"
+  "today_word": "今天",
+  "routine_summary#one": "%1$d 个步骤 · %2$s",
+  "routine_summary#other": "%1$d 个步骤 · %2$s"
 }

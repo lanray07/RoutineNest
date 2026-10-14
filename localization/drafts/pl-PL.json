@@ -79,7 +79,6 @@
   "day_encouragement": "Dotrzymaj małej obietnicy danej sobie.",
   "collection_heading": "Twoja kolekcja",
   "collection_subheading": "Ułóż dzień po swojemu.",
-  "routine_summary": "%1$d kroków · %2$s",
   "archived_state": "Zarchiwizowana",
   "paused_state": "Wstrzymana",
   "editor_heading": "Dopasuj do siebie",
@@ -102,5 +101,9 @@
   "export_failed": "Eksport nie powiódł się: %1$s",
   "reminder_confirmation": "Zaplanować przypomnienie %1$s o %2$s w strefie czasowej urządzenia?",
   "tomorrow": "jutro",
-  "today_word": "dzisiaj"
+  "today_word": "dzisiaj",
+  "routine_summary#one": "%1$d krok · %2$s",
+  "routine_summary#other": "%1$d kroku · %2$s",
+  "routine_summary#few": "%1$d kroki · %2$s",
+  "routine_summary#many": "%1$d kroków · %2$s"
 }

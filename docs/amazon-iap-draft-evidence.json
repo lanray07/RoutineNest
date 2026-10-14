@@ -1,0 +1,60 @@
+{
+  "sku": "com.routinenest.app.premium",
+  "productId": "amzn1.dex.title.21aa506ea8e04233853a4b81093d591d",
+  "submitted": false,
+  "priceProposal": {
+    "baseGBP": 2.99,
+    "otherMarkets": "Amazon automatic conversion"
+  },
+  "localizations": [
+    {
+      "locale": "de-DE",
+      "matches": true
+    },
+    {
+      "locale": "en-AU",
+      "matches": true
+    },
+    {
+      "locale": "en-GB",
+      "matches": true
+    },
+    {
+      "locale": "en-IN",
+      "matches": true
+    },
+    {
+      "locale": "en-US",
+      "matches": true
+    },
+    {
+      "locale": "es-ES",
+      "matches": true
+    },
+    {
+      "locale": "es-MX",
+      "matches": true
+    },
+    {
+      "locale": "fr-FR",
+      "matches": true
+    },
+    {
+      "locale": "it-IT",
+      "matches": true
+    },
+    {
+      "locale": "ja-JP",
+      "matches": true
+    },
+    {
+      "locale": "pt-BR",
+      "matches": true
+    },
+    {
+      "locale": "zh-CN",
+      "matches": true
+    }
+  ],
+  "recordedAt": "2026-10-14T13:17:34.513Z"
+}

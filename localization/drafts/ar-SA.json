@@ -79,7 +79,6 @@
   "day_encouragement": "وفِ بوعد صغير لنفسك.",
   "collection_heading": "مجموعتك",
   "collection_subheading": "اصنع يومًا يشبهك.",
-  "routine_summary": "%1$d خطوات · %2$s",
   "archived_state": "مؤرشف",
   "paused_state": "متوقف مؤقتًا",
   "editor_heading": "اجعله مناسبًا لك",
@@ -102,5 +101,11 @@
   "export_failed": "فشل التصدير: %1$s",
   "reminder_confirmation": "هل تريد جدولة تذكير %1$s الساعة %2$s بتوقيت الجهاز؟",
   "tomorrow": "غدًا",
-  "today_word": "اليوم"
+  "today_word": "اليوم",
+  "routine_summary#one": "عدد الخطوات: %1$d · %2$s",
+  "routine_summary#other": "عدد الخطوات: %1$d · %2$s",
+  "routine_summary#zero": "عدد الخطوات: %1$d · %2$s",
+  "routine_summary#two": "عدد الخطوات: %1$d · %2$s",
+  "routine_summary#few": "عدد الخطوات: %1$d · %2$s",
+  "routine_summary#many": "عدد الخطوات: %1$d · %2$s"
 }

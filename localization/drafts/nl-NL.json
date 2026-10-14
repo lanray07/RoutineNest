@@ -79,7 +79,6 @@
   "day_encouragement": "Houd een kleine belofte aan jezelf.",
   "collection_heading": "Jouw verzameling",
   "collection_subheading": "Maak een dag die bij je past.",
-  "routine_summary": "%1$d stappen · %2$s",
   "archived_state": "Gearchiveerd",
   "paused_state": "Gepauzeerd",
   "editor_heading": "Maak het van jou",
@@ -102,5 +101,7 @@
   "export_failed": "Export mislukt: %1$s",
   "reminder_confirmation": "Een herinnering plannen voor %1$s om %2$s in de tijdzone van het apparaat?",
   "tomorrow": "morgen",
-  "today_word": "vandaag"
+  "today_word": "vandaag",
+  "routine_summary#one": "%1$d stap · %2$s",
+  "routine_summary#other": "%1$d stappen · %2$s"
 }

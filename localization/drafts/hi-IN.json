@@ -79,7 +79,6 @@
   "day_encouragement": "खुद से किया एक छोटा वादा निभाएँ।",
   "collection_heading": "आपका संग्रह",
   "collection_subheading": "अपने जैसा दिन बनाएँ।",
-  "routine_summary": "%1$d चरण · %2$s",
   "archived_state": "संग्रहीत",
   "paused_state": "रुका हुआ",
   "editor_heading": "इसे अपना बनाएँ",
@@ -102,5 +101,7 @@
   "export_failed": "निर्यात विफल: %1$s",
   "reminder_confirmation": "डिवाइस के समय क्षेत्र में %1$s को %2$s पर रिमाइंडर रखें?",
   "tomorrow": "कल",
-  "today_word": "आज"
+  "today_word": "आज",
+  "routine_summary#one": "%1$d चरण · %2$s",
+  "routine_summary#other": "%1$d चरण · %2$s"
 }

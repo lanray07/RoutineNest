@@ -78,7 +78,10 @@
   <string name="restore_purchases">Aankopen herstellen</string>
   <string name="resume">Hervatten</string>
   <string name="routine_name">Naam van routine</string>
-  <string name="routine_summary">%1$d stappen · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="one">%1$d stap · %2$s</item>
+    <item quantity="other">%1$d stappen · %2$s</item>
+  </plurals>
   <string name="save">Routine opslaan</string>
   <string name="settings">Instellingen</string>
   <string name="settings_heading">Jouw routine, jouw manier</string>

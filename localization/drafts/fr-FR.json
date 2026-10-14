@@ -79,7 +79,6 @@
   "day_encouragement": "Tenez une petite promesse envers vous-même.",
   "collection_heading": "Votre collection",
   "collection_subheading": "Créez une journée qui vous ressemble.",
-  "routine_summary": "%1$d étapes · %2$s",
   "archived_state": "Archivée",
   "paused_state": "En pause",
   "editor_heading": "Personnalisez-la",
@@ -102,5 +101,8 @@
   "export_failed": "Échec de l’export : %1$s",
   "reminder_confirmation": "Programmer un rappel %1$s à %2$s dans le fuseau de l’appareil ?",
   "tomorrow": "demain",
-  "today_word": "aujourd’hui"
+  "today_word": "aujourd’hui",
+  "routine_summary#one": "%1$d étape · %2$s",
+  "routine_summary#other": "%1$d étapes · %2$s",
+  "routine_summary#many": "%1$d étapes · %2$s"
 }

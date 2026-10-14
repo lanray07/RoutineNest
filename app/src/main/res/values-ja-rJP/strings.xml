@@ -78,7 +78,10 @@
   <string name="restore_purchases">購入を復元</string>
   <string name="resume">再開</string>
   <string name="routine_name">ルーティン名</string>
-  <string name="routine_summary">%1$dステップ · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="one">%1$dステップ · %2$s</item>
+    <item quantity="other">%1$dステップ · %2$s</item>
+  </plurals>
   <string name="save">ルーティンを保存</string>
   <string name="settings">設定</string>
   <string name="settings_heading">自分らしいルーティン</string>

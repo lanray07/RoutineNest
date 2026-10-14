@@ -78,7 +78,10 @@
   <string name="restore_purchases">खरीदारी बहाल करें</string>
   <string name="resume">फिर शुरू करें</string>
   <string name="routine_name">दिनचर्या का नाम</string>
-  <string name="routine_summary">%1$d चरण · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="one">%1$d चरण · %2$s</item>
+    <item quantity="other">%1$d चरण · %2$s</item>
+  </plurals>
   <string name="save">दिनचर्या सहेजें</string>
   <string name="settings">सेटिंग्स</string>
   <string name="settings_heading">आपकी दिनचर्या, आपके तरीके से</string>

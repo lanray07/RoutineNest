@@ -78,7 +78,12 @@
   <string name="restore_purchases">Przywróć zakupy</string>
   <string name="resume">Wznów</string>
   <string name="routine_name">Nazwa rutyny</string>
-  <string name="routine_summary">%1$d kroków · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="few">%1$d kroki · %2$s</item>
+    <item quantity="many">%1$d kroków · %2$s</item>
+    <item quantity="one">%1$d krok · %2$s</item>
+    <item quantity="other">%1$d kroku · %2$s</item>
+  </plurals>
   <string name="save">Zapisz rutynę</string>
   <string name="settings">Ustawienia</string>
   <string name="settings_heading">Twoja rutyna, Twój sposób</string>

@@ -79,7 +79,6 @@
   "day_encouragement": "Cumpre uma pequena promessa a ti próprio.",
   "collection_heading": "A tua coleção",
   "collection_subheading": "Crie um dia que combine com você.",
-  "routine_summary": "%1$d etapas · %2$s",
   "archived_state": "Arquivada",
   "paused_state": "Pausada",
   "editor_heading": "Personalize",
@@ -102,5 +101,8 @@
   "export_failed": "Falha ao exportar: %1$s",
   "reminder_confirmation": "Agendar um lembrete %1$s às %2$s no fuso horário do dispositivo?",
   "tomorrow": "amanhã",
-  "today_word": "hoje"
+  "today_word": "hoje",
+  "routine_summary#one": "%1$d passo · %2$s",
+  "routine_summary#other": "%1$d etapas · %2$s",
+  "routine_summary#many": "%1$d etapas · %2$s"
 }

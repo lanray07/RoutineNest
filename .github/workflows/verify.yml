@@ -35,9 +35,12 @@ jobs:
           python scripts/test_localization.py
           python scripts/test_database_schema.py
           python scripts/test_rvs.py
-          node --test supabase/functions/routinenest-verify-receipt/handler.test.mjs
+          node --test supabase/functions/routinenest-verify-receipt/*.test.mjs
           python scripts/validate_translations.py
           python scripts/release_check.py
+      - name: Run Android 15 phone acceptance on an isolated emulator
+        timeout-minutes: 12
+        run: bash scripts/run_emulator_tests.sh
       - name: Preserve candidate APKs and verification reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -51,3 +54,5 @@ jobs:
             docs/release-evidence.json
             docs/python-test-evidence.json
             localization/reports/
+            docs/emulator-test-evidence.json
+            build/emulator-*.log

@@ -1,0 +1,31 @@
+{
+  "recordedAtUtc": "2026-10-14T13:27:09.241249+00:00",
+  "device": "KFTRWI",
+  "serial": "G001KT0620330AWU",
+  "api": 28,
+  "package": "com.routinenest.app.debug",
+  "tests": 8,
+  "passed": 8,
+  "failed": 0,
+  "appSha256": "c7a28e90707625fdb24e3729f2f3324faddf99207190e6a4f713c1441a98434e",
+  "testApkSha256": "dc174bdd3d56f85c62b53fb0a164ee13036dfb9c52bcb416f5c4f6b5931949dc",
+  "checks": [
+    "Single named checkbox with 48dp minimum target and persisted toggle",
+    "Android English and Polish plural categories",
+    "Keystore session storage",
+    "Real scheduled WorkManager notification reaches NotificationManager",
+    "Real English TTS engine generates audio beyond WAV header",
+    "Persistence across Room reopen and archive",
+    "Genuine screen capture",
+    "Onboarding template checklist navigation"
+  ],
+  "scope": "Debug package; signed release smoke remains separately recorded",
+  "speechRecognition": "Previously absent on this Fire tablet; typed fallback supported",
+  "limitations": [
+    "Other Fire models",
+    "Reboot/Doze delivery",
+    "Notification permission denial on Android 13+",
+    "Real Amazon purchases"
+  ],
+  "usbStayAwakeRestored": true
+}

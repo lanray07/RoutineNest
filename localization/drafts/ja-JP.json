@@ -79,7 +79,6 @@
   "day_encouragement": "自分との小さな約束を守りましょう。",
   "collection_heading": "あなたのコレクション",
   "collection_subheading": "自分らしい一日を作りましょう。",
-  "routine_summary": "%1$dステップ · %2$s",
   "archived_state": "アーカイブ済み",
   "paused_state": "一時停止中",
   "editor_heading": "自分らしく整える",
@@ -102,5 +101,7 @@
   "export_failed": "エクスポートに失敗しました：%1$s",
   "reminder_confirmation": "端末のタイムゾーンで%1$sの%2$sにリマインダーを設定しますか？",
   "tomorrow": "明日",
-  "today_word": "今日"
+  "today_word": "今日",
+  "routine_summary#one": "%1$dステップ · %2$s",
+  "routine_summary#other": "%1$dステップ · %2$s"
 }

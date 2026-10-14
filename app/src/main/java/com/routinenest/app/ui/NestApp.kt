@@ -10,6 +10,7 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.LocalActivityResultRegistryOwner
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.*
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -27,6 +28,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.*
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.LayoutDirection
@@ -155,7 +158,7 @@ fun NestApp(model: NestViewModel) {
                 Text(routine.routine.name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
                 Text(stringResource(R.string.streak_count, model.streak(routine)), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.secondary)
                 routine.activeTasks(today).forEach { task -> val checked = done.any { it.taskId == task.id && it.day == today.toString() }
-                    Row(Modifier.fillMaxWidth().heightIn(min = 56.dp), verticalAlignment = Alignment.CenterVertically) { Checkbox(checked, { model.toggle(task, it) }); Text(task.name, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge) }
+                    Row(Modifier.fillMaxWidth().heightIn(min = 56.dp).toggleable(value = checked, role = Role.Checkbox, onValueChange = { model.toggle(task, it) }), verticalAlignment = Alignment.CenterVertically) { Checkbox(checked, null, Modifier.size(48.dp)); Text(task.name, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge) }
                 }
             }
         }
@@ -171,7 +174,7 @@ fun NestApp(model: NestViewModel) {
         Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(routine.routine.name, style = MaterialTheme.typography.titleLarge)
-                Text(stringResource(R.string.routine_summary, routine.activeTasks().size, stringResource(if (routine.routine.archived) R.string.archived_state else if (routine.routine.paused) R.string.paused_state else if (routine.routine.days == "1,2,3,4,5,6,7") R.string.daily else R.string.weekly)))
+                Text(pluralStringResource(R.plurals.routine_summary, routine.activeTasks().size, routine.activeTasks().size, stringResource(if (routine.routine.archived) R.string.archived_state else if (routine.routine.paused) R.string.paused_state else if (routine.routine.days == "1,2,3,4,5,6,7") R.string.daily else R.string.weekly)))
                 if (routine.routine.reminder.isNotBlank()) Text("${stringResource(R.string.notification_channel)} · ${routine.routine.reminder}", style = MaterialTheme.typography.bodySmall)
                 Row(Modifier.horizontalScroll(rememberScrollState())) {
                     TextButton(onClick = { edit(routine) }) { Text(stringResource(R.string.edit)) }

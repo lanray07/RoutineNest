@@ -79,7 +79,6 @@
   "day_encouragement": "Håll ett litet löfte till dig själv.",
   "collection_heading": "Din samling",
   "collection_subheading": "Skapa en dag som känns som din.",
-  "routine_summary": "%1$d steg · %2$s",
   "archived_state": "Arkiverad",
   "paused_state": "Pausad",
   "editor_heading": "Gör den till din",
@@ -102,5 +101,7 @@
   "export_failed": "Exporten misslyckades: %1$s",
   "reminder_confirmation": "Schemalägga en påminnelse %1$s kl. %2$s i enhetens tidszon?",
   "tomorrow": "imorgon",
-  "today_word": "idag"
+  "today_word": "idag",
+  "routine_summary#one": "%1$d steg · %2$s",
+  "routine_summary#other": "%1$d steg · %2$s"
 }

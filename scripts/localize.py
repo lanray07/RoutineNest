@@ -111,7 +111,7 @@ def run(do_translate=False, strict=False):
             issues += [[tag,key,error] for error in errors]
         # Plural forms must include other and match locale CLDR quantities before publication.
         if any("#" in key for key in source):
-            required = {"ar":{"zero","one","two","few","many","other"},"fr":{"one","many","other"},"es":{"one","many","other"},"it":{"one","many","other"},"pt":{"one","many","other"},"en":{"one","other"},"ja":{"other"},"ko":{"other"},"zh":{"other"}}.get(tag.split("-")[0], {"one","other"})
+            required = {"ar":{"zero","one","two","few","many","other"},"fr":{"one","many","other"},"es":{"one","many","other"},"it":{"one","many","other"},"pt":{"one","many","other"},"pl":{"one","few","many","other"},"en":{"one","other"},"ja":{"other"},"ko":{"other"},"zh":{"other"}}.get(tag.split("-")[0], {"one","other"})
             for name in {k.split("#")[0] for k in source if "#" in k}:
                 if not required.issubset({k.split("#")[1] for k in values if k.startswith(name + "#")}): issues.append([tag,name,"plural categories pending CLDR review"])
         rows.extend(issues)

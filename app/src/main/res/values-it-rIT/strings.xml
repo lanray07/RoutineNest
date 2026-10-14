@@ -78,7 +78,11 @@
   <string name="restore_purchases">Ripristina acquisti</string>
   <string name="resume">Riprendi</string>
   <string name="routine_name">Nome della routine</string>
-  <string name="routine_summary">%1$d passaggi · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="many">%1$d passaggi · %2$s</item>
+    <item quantity="one">%1$d passaggio · %2$s</item>
+    <item quantity="other">%1$d passaggi · %2$s</item>
+  </plurals>
   <string name="save">Salva routine</string>
   <string name="settings">Impostazioni</string>
   <string name="settings_heading">La tua routine, a modo tuo</string>

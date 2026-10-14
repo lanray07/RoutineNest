@@ -78,7 +78,10 @@
   <string name="restore_purchases">Käufe wiederherstellen</string>
   <string name="resume">Fortsetzen</string>
   <string name="routine_name">Name der Routine</string>
-  <string name="routine_summary">%1$d Schritte · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="one">%1$d Schritt · %2$s</item>
+    <item quantity="other">%1$d Schritte · %2$s</item>
+  </plurals>
   <string name="save">Routine speichern</string>
   <string name="settings">Einstellungen</string>
   <string name="settings_heading">Deine Routine, dein Stil</string>

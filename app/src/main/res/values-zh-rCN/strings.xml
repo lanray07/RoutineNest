@@ -78,7 +78,10 @@
   <string name="restore_purchases">恢复购买</string>
   <string name="resume">继续</string>
   <string name="routine_name">安排名称</string>
-  <string name="routine_summary">%1$d 个步骤 · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="one">%1$d 个步骤 · %2$s</item>
+    <item quantity="other">%1$d 个步骤 · %2$s</item>
+  </plurals>
   <string name="save">保存安排</string>
   <string name="settings">设置</string>
   <string name="settings_heading">我的日常，我的方式</string>

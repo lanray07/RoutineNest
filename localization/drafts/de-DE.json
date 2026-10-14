@@ -79,7 +79,6 @@
   "day_encouragement": "Halte ein kleines Versprechen an dich selbst.",
   "collection_heading": "Deine Sammlung",
   "collection_subheading": "Gestalte einen Tag, der zu dir passt.",
-  "routine_summary": "%1$d Schritte · %2$s",
   "archived_state": "Archiviert",
   "paused_state": "Pausiert",
   "editor_heading": "Mach sie zu deiner",
@@ -102,5 +101,7 @@
   "export_failed": "Export fehlgeschlagen: %1$s",
   "reminder_confirmation": "Erinnerung für %1$s um %2$s in der Gerätezeitzone planen?",
   "tomorrow": "morgen",
-  "today_word": "heute"
+  "today_word": "heute",
+  "routine_summary#one": "%1$d Schritt · %2$s",
+  "routine_summary#other": "%1$d Schritte · %2$s"
 }

@@ -78,7 +78,14 @@
   <string name="restore_purchases">استعادة المشتريات</string>
   <string name="resume">استئناف</string>
   <string name="routine_name">اسم الروتين</string>
-  <string name="routine_summary">%1$d خطوات · %2$s</string>
+  <plurals name="routine_summary">
+    <item quantity="few">عدد الخطوات: %1$d · %2$s</item>
+    <item quantity="many">عدد الخطوات: %1$d · %2$s</item>
+    <item quantity="one">عدد الخطوات: %1$d · %2$s</item>
+    <item quantity="other">عدد الخطوات: %1$d · %2$s</item>
+    <item quantity="two">عدد الخطوات: %1$d · %2$s</item>
+    <item quantity="zero">عدد الخطوات: %1$d · %2$s</item>
+  </plurals>
   <string name="save">حفظ الروتين</string>
   <string name="settings">الإعدادات</string>
   <string name="settings_heading">روتينك بطريقتك</string>

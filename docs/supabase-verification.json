@@ -3,12 +3,12 @@
   "projectName": "lanray07's Project",
   "organizationPlan": "free",
   "function": "routinenest-verify-receipt",
-  "version": 1,
+  "version": 2,
   "verifyJwt": true,
   "deploymentStatus": "ACTIVE",
   "localContractTests": {
-    "tests": 12,
-    "passed": 12,
+    "tests": 16,
+    "passed": 16,
     "failed": 0,
     "transport": "synthetic"
   },
@@ -23,8 +23,32 @@
     }
   ],
   "anonymousSignInsEnabled": false,
-  "databaseChanges": false,
+  "databaseChanges": true,
   "globalAuthChanges": false,
   "realAmazonVerificationExecuted": false,
-  "recordedAtUtc": "2026-10-13T15:41:39.144517+00:00"
+  "recordedAtUtc": "2026-10-14T13:21:14.121714+00:00",
+  "databaseChangesScope": [
+    "routinenest_private.receipt_rate_buckets",
+    "public.routinenest_take_receipt_slot(text)"
+  ],
+  "rateLimit": {
+    "windowSeconds": 600,
+    "perSubject": 60,
+    "global": 600,
+    "databaseProbe": {
+      "allowed": 60,
+      "denied": 1
+    },
+    "rpcExecute": {
+      "anon": false,
+      "authenticated": false,
+      "service_role": true
+    },
+    "subjectStorage": "HMAC-SHA256 digest",
+    "retention": "Eligible one hour after expiry; cleaned on later requests"
+  },
+  "advisors": {
+    "privateTableRlsNoPolicy": "Expected deny-all client access",
+    "existingAuthLeakedPasswordProtection": "Disabled; unrelated shared-project setting not changed"
+  }
 }

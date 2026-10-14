@@ -10,7 +10,7 @@ Native Compose/Room/DataStore/Hilt app: onboarding, adaptive tablet/phone naviga
 
 The interface has 19 locale variants: en-GB, en-US, en-AU, en-IN, fr-FR, de-DE, es-ES, es-MX, it-IT, pt-BR, pt-PT, ja-JP, nl-NL, pl-PL, sv-SE, ko-KR, zh-CN, ar-SA and hi-IN. All 104 source keys have structurally valid translations, protected tokens and complete resource coverage. Non-English translations were authored and reviewed by the assistant; **native-speaker review remains pending**. There is no claim of professional human translation.
 
-Assistant command parsing and replies remain **English-only**, and recognition requests use English. Localized help explains this limitation. The tested Fire tablet has no speech-recognition service; typed fallback works. Actual speech/TTS engine acceptance remains pending.
+Assistant command parsing and replies remain **English-only**, and recognition requests use English. Localized help explains this limitation. The tested Fire tablet has no speech-recognition service; typed fallback works. Its actual English TTS engine now passes audio synthesis; microphone recognition on a capable device and audible response acceptance remain pending.
 
 ## Build and verification
 
@@ -24,6 +24,8 @@ Nineteen additional locale capture runs passed, saving eight actual frames each 
 
 ## Store artwork and copy
 
+The 14 October follow-up fixes checkbox accessibility (one named 56dp row control), singular/plural routine summaries across the locale resources, and distributed receipt-service limits. Eight tests passed on the connected Fire tablet with this updated debug APK, including real scheduled notification delivery and English TTS synthesis. The asynchronous checkbox assertion now waits for the persisted state. See `acceptance-device-evidence.json` for exact APK hashes and scope. JVM tests, both lint variants and release assembly also passed locally. An isolated Android 15 phone CI check is configured; its execution and the refreshed signed candidate are recorded separately when completed. These checks do not certify twelve Fire models or real payments.
+
 Original AI-generated sculptural nest/pearl artwork has light and dark variants. Exact typography, transparent 114/512 PNG marks, editable icon SVGs, 30 localized 1024×500 promotional exports and 90 localized 1920×1200 screenshot layouts are in `store-assets/premium/`. Screenshot layouts preserve genuine captured UI through uniform scaling; no interface text, controls or data were painted into fake screenshots. Demonstration routines are clearly test data.
 
 All six screenshot concepts were visually inspected across the 15 store locale sets using review sheets, with full-size representative checks. Arabic RTL and Hindi shaping were inspected on actual captures. This is layout/rendering review, not native-language certification or exhaustive accessibility acceptance. Source hashes and visual review scope are recorded with the exports.
@@ -34,8 +36,8 @@ Search-oriented descriptions, five feature bullets and relevant keyword hypothes
 
 1. Complete native-speaker translation review and broader Fire/model/accessibility acceptance, including actual speech/TTS and notification behavior.
 2. Complete the remaining signed-APK notification, voice, accessibility and broader-device acceptance, plus publisher review of store copy, artwork and privacy/provider disclosures. Basic signed-release CRUD/restart smoke checks now pass.
-3. Confirm billing SKU, server-side RVS credentials, authentication and abuse/rate controls, then test genuine purchase/restore/revocation/account/offline/fulfillment flows before enabling checkout. The selected free Supabase endpoint remains isolated; no shared database or global Auth settings were changed.
+3. The ENTITLED SKU is now saved in an unsubmitted localized Amazon product draft. Distributed receipt limits are deployed in Supabase function v2 using a private RoutineNest table and service-role-only RPC. Existing booking tables and global Auth settings were not changed. Server-side RVS credentials, signup abuse protection, authenticated client tests and genuine purchase/restore/revocation/account/offline/fulfillment flows still need completion before enabling checkout.
 4. Securely back up the dedicated signing key and its password outside this machine. The current DPAPI password storage is not a portable backup; see `docs/SIGNING.md`.
-5. Obtain explicit publication authorization before Submit App. No store submission or live purchase has been performed.
+5. Execute the publisher's conditional publication authorization only after the required checks pass. No store submission or live purchase has been performed.
 
 The publisher authorized submission on 14 October only if all is ready. That condition is not satisfied. The execution workflow explicitly prohibits a release-ready claim while critical billing or compatibility requirements remain unresolved; Submit App was not pressed.

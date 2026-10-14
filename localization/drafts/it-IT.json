@@ -79,7 +79,6 @@
   "day_encouragement": "Mantieni una piccola promessa a te stesso.",
   "collection_heading": "La tua raccolta",
   "collection_subheading": "Crea una giornata che ti somigli.",
-  "routine_summary": "%1$d passaggi · %2$s",
   "archived_state": "Archiviata",
   "paused_state": "In pausa",
   "editor_heading": "Personalizzala",
@@ -102,5 +101,8 @@
   "export_failed": "Esportazione non riuscita: %1$s",
   "reminder_confirmation": "Programmare un promemoria %1$s alle %2$s nel fuso orario del dispositivo?",
   "tomorrow": "domani",
-  "today_word": "oggi"
+  "today_word": "oggi",
+  "routine_summary#one": "%1$d passaggio · %2$s",
+  "routine_summary#other": "%1$d passaggi · %2$s",
+  "routine_summary#many": "%1$d passaggi · %2$s"
 }
