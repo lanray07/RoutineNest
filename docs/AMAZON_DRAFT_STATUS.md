@@ -12,7 +12,7 @@ The signed `com.routinenest.app` version 0.1.0/code 1 APK is uploaded to app ID
 - Category: To-Do Lists & Reminders; Amazon's review lists Business, Productivity and Lifestyle placements for this shared subcategory.
 - Target audience: adults 18+. The publisher delegated this choice; a child-targeted release has not been validated.
 - Compatibility: Amazon preselected 12 Fire tablets, no Fire TV or Automotive devices. This is manifest compatibility, not twelve passed device acceptance runs.
-- Distribution: existing all-country default retained; export certification requires publisher confirmation.
+- Distribution: existing all-country default retained; export certification confirmed by the publisher.
 - English US description: search-friendly display title, 170-character short description, 1,723-character long description, five feature bullets and relevant planner/habit/checklist keywords.
 - English US assets: original 512/114 transparent PNG icons, six genuine tablet screenshot exports (01, 03, 04, 05, 07, 08) and original 1024x500 promotional artwork. Amazon marks both descriptions and assets Complete.
 - Content-rating questionnaire: completed from the app's content, with personal-data and editable user-content disclosures; no supplied mature content, advertising, gambling or location services.
@@ -24,6 +24,6 @@ The signed `com.routinenest.app` version 0.1.0/code 1 APK is uploaded to app ID
 
 ## Remaining work
 
-Amazon's export-compliance checkbox is a publisher certification, covering applicable import/export laws and encryption in selected countries. It remains unchecked pending explicit confirmation. Clicking Submit App is a separate action and has not been requested or performed.
+Amazon's export-compliance checkbox is a publisher certification, covering applicable import/export laws and encryption in selected countries. The publisher explicitly confirmed this certification on 14 October 2026 and authorized checking the box; the checkbox is now checked. Clicking Submit App is a separate action and has not been requested or performed.
 
 The completed draft forms do not resolve the release report's billing, additional-language and broader-device blockers. The current APK containing the Amazon authentication public key still needs SDK/device validation. The privacy policy and disclosures must change before billing accounts or receipt verification are enabled.
