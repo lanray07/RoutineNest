@@ -20,7 +20,7 @@ Java 17, Gradle 8.13, AGP 8.11.1, Kotlin 2.1.20, minimum API 26 and target/compi
 
 Four acceptance tests passed on the physical KFTRWI/API 28 tablet: persistence, Keystore session storage, core UI flow and seeded screenshot capture. A test assertion initially failed because its summary was offscreen after scrolling to a checkbox; the assertion now scrolls to the summary and the complete suite passes. The capture harness also waits for the requested locale preference before rendering.
 
-Nineteen additional locale capture runs passed, saving eight actual frames each (152 raw captures). The original USB stay-awake setting was restored to 0. Raw frames are ignored; durable results are in `docs/localized-device-evidence.json`. These tests execute the debug build, **not the publisher-signed minified APK**. Genuine billing transactions, broader models, notifications/reboot/offline/date-time and accessibility coverage remain pending.
+Nineteen additional locale capture runs passed, saving eight actual frames each (152 raw captures). The original USB stay-awake setting was restored to 0. Raw frames are ignored; durable results are in `docs/localized-device-evidence.json`. The instrumentation tests and locale capture runs execute the debug build. A subsequent check on the exact publisher-signed minified APK passed installation, startup/onboarding, routine/task creation, task completion and force-stop/restart persistence. Its assistant-created test routine was archived reversibly, as verified visually. See `docs/signed-release-smoke-evidence.json`; this is partial release acceptance, not a completed notification/voice/accessibility/billing matrix. Genuine billing transactions, broader models, notifications/reboot/offline/date-time and accessibility coverage remain pending.
 
 ## Store artwork and copy
 
@@ -33,7 +33,9 @@ Search-oriented descriptions, five feature bullets and relevant keyword hypothes
 ## Remaining release gates
 
 1. Complete native-speaker translation review and broader Fire/model/accessibility acceptance, including actual speech/TTS and notification behavior.
-2. Verify the publisher-signed minified APK on devices and complete publisher review of store copy, artwork and privacy/provider disclosures.
+2. Complete the remaining signed-APK notification, voice, accessibility and broader-device acceptance, plus publisher review of store copy, artwork and privacy/provider disclosures. Basic signed-release CRUD/restart smoke checks now pass.
 3. Confirm billing SKU, server-side RVS credentials, authentication and abuse/rate controls, then test genuine purchase/restore/revocation/account/offline/fulfillment flows before enabling checkout. The selected free Supabase endpoint remains isolated; no shared database or global Auth settings were changed.
 4. Securely back up the dedicated signing key and its password outside this machine. The current DPAPI password storage is not a portable backup; see `docs/SIGNING.md`.
 5. Obtain explicit publication authorization before Submit App. No store submission or live purchase has been performed.
+
+The publisher authorized submission on 14 October only if all is ready. That condition is not satisfied. The execution workflow explicitly prohibits a release-ready claim while critical billing or compatibility requirements remain unresolved; Submit App was not pressed.

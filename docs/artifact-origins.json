@@ -36,8 +36,10 @@
     ],
     "zipAlignmentVerified": true,
     "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
-    "deviceExecuted": false,
+    "deviceExecuted": true,
     "versionName": "0.2.0",
-    "versionCode": 2
+    "versionCode": 2,
+    "deviceEvidence": "docs/signed-release-smoke-evidence.json",
+    "deviceAcceptance": "Partial smoke check only; full release acceptance pending"
   }
 }
