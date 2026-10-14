@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "headline": "Daily routines, a calmer rhythm",
+    "caption": "A daily checklist built around you."
+  },
+  {
+    "id": "03",
+    "headline": "Your English assistant",
+    "caption": "Type a command. Speak where supported."
+  },
+  {
+    "id": "04",
+    "headline": "Morning, evening, focus",
+    "caption": "Start with a template. Make it yours."
+  },
+  {
+    "id": "05",
+    "headline": "Every step counts",
+    "caption": "See weekly progress and scheduled-day streaks."
+  },
+  {
+    "id": "07",
+    "headline": "A quieter way to plan",
+    "caption": "Your routine data stays on your device."
+  },
+  {
+    "id": "08",
+    "headline": "Your routine, your way",
+    "caption": "Choose your appearance and interface language."
+  }
+]

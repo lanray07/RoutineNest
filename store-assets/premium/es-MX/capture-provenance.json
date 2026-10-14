@@ -1,0 +1,68 @@
+[
+  {
+    "id": "01",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\01.png",
+    "source_sha256": "25eb740fef91b46277642ba193a500b53de575e5cf9aa573be7a215bc3feff06",
+    "output": "store-assets\\premium\\es-MX\\tablet\\01.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "7a8a8ab864dc5ac4b021dabaec96d026d7702f8af5f10b7e2328b776f9b5c582"
+  },
+  {
+    "id": "03",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\03.png",
+    "source_sha256": "7ad4daebd3f62ef9a4ffccf072614d664b0564a632148047fb5b5c71c49c5236",
+    "output": "store-assets\\premium\\es-MX\\tablet\\03.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "68b66a357c8e8981272aea8bd95248db99bc79f6a6b2b8ed8220e4881f11f6f0"
+  },
+  {
+    "id": "04",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\04.png",
+    "source_sha256": "43876dba38ad004366433be83f8ddeb07bdd353d1b46257bb28876d0c7295ea1",
+    "output": "store-assets\\premium\\es-MX\\tablet\\04.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "0d804b1077527b9f32092eeb5e1bc61887accfe30676df3de236fc85626484f2"
+  },
+  {
+    "id": "05",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\05.png",
+    "source_sha256": "fe08938d1cbed0e526c5d4bae5744a703ae820dc5fe027ca1a4068c9d439e313",
+    "output": "store-assets\\premium\\es-MX\\tablet\\05.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "457f4ccf14de265bb7d78590875fac041c59fe04c3a77862a44b4c933bcd3a71"
+  },
+  {
+    "id": "07",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\07.png",
+    "source_sha256": "a02604a81b9d4e13b4121b940ef09cdfed774efabc60d1bfa25ea9ce6d6e647a",
+    "output": "store-assets\\premium\\es-MX\\tablet\\07.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "3b792a3ad6485503f425b45403a5444c9e71fcab01b6ebdabab95c965b0b58c3"
+  },
+  {
+    "id": "08",
+    "status": "captured_visual_reviewed",
+    "source": "store-assets\\screenshots\\raw\\es-MX\\tablet\\08.png",
+    "source_sha256": "24e38b501a7dc4560eeb874b6155a46c4d93cfb8b60eb34073b1036d148d792a",
+    "output": "store-assets\\premium\\es-MX\\tablet\\08.png",
+    "dimensions": "1920x1200",
+    "review_scope": "Assistant visual inspection of all six concepts across locale review sheets; full-size representative CJK, European and dark checks. Native-speaker review pending.",
+    "ui_pixels_preserved_after_uniform_scaling": true,
+    "output_sha256": "623ff32b85903a4765cf8a6a0273fca6f63cb70409f115a5b6030c38ad2970bf"
+  }
+]

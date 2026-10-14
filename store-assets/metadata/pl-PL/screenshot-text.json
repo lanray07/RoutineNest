@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "headline": "planer rutyn i nawyków",
+    "caption": "Jeden mały krok naraz."
+  },
+  {
+    "id": "03",
+    "headline": "Mała pomoc",
+    "caption": "Wpisz polecenie po angielsku"
+  },
+  {
+    "id": "04",
+    "headline": "Twoja kolekcja",
+    "caption": "Zacznij od szablonu"
+  },
+  {
+    "id": "05",
+    "headline": "Postępy tygodniowe",
+    "caption": "Regularność rośnie spokojnie."
+  },
+  {
+    "id": "07",
+    "headline": "Spokojniejszy rytm",
+    "caption": "Ułóż dzień po swojemu."
+  },
+  {
+    "id": "08",
+    "headline": "Twoja rutyna, Twój sposób",
+    "caption": "Masz kontrolę"
+  }
+]

@@ -1,36 +1,34 @@
 {
   "release": {
     "provider": "GitHub Actions",
-    "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
-    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
     "conclusion": "success",
-    "signing": "Unsigned CI input; dedicated publisher key signs app-release.apk locally"
+    "signing": "CI unsigned APK signed locally with dedicated publisher key"
   },
   "debug": {
     "provider": "Local Gradle",
-    "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
+    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
     "conclusion": "assembleDebug passed",
     "signing": "Existing local debug key",
-    "deviceExecuted": false
+    "deviceExecuted": true
   },
   "androidTest": {
-    "provider": "GitHub Actions",
-    "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
-    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
-    "conclusion": "success",
-    "signing": "Existing local debug key"
+    "provider": "Local Gradle",
+    "appSourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+    "harness": "locale preference readiness guard and scroll-to summary assertion",
+    "conclusion": "assembleDebugAndroidTest passed; four acceptance tests plus nineteen capture runs passed"
   },
   "installedDebug": {
     "path": "app/build/outputs/apk/debug/app-debug.apk",
-    "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
-    "note": "Previous 13 October artifact remains on tablet; current canonical debug APK is rebuilt. No new SDK initialization device test is claimed."
+    "sha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4"
   },
   "signedRelease": {
     "provider": "Local apksigner",
-    "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
-    "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+    "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
     "path": "app/build/outputs/apk/release/app-release.apk",
-    "sha256": "3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213",
+    "sha256": "2dcece3b807b92a01cdad22d25f8f5c36f2bf627d8b6b084a6bdcd5765ad6d33",
     "signatureVerified": true,
     "signatureSchemes": [
       "v2",
@@ -38,6 +36,8 @@
     ],
     "zipAlignmentVerified": true,
     "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
-    "deviceExecuted": false
+    "deviceExecuted": false,
+    "versionName": "0.2.0",
+    "versionCode": 2
   }
 }

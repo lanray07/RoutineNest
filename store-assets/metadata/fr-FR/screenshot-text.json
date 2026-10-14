@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "headline": "routines et suivi des habitudes",
+    "caption": "Un petit pas à la fois."
+  },
+  {
+    "id": "03",
+    "headline": "Un petit coup de main",
+    "caption": "Saisir une commande en anglais"
+  },
+  {
+    "id": "04",
+    "headline": "Votre collection",
+    "caption": "Commencer avec un modèle"
+  },
+  {
+    "id": "05",
+    "headline": "Progrès hebdomadaires",
+    "caption": "La constance grandit doucement."
+  },
+  {
+    "id": "07",
+    "headline": "Un rythme plus serein",
+    "caption": "Créez une journée qui vous ressemble."
+  },
+  {
+    "id": "08",
+    "headline": "Vos routines, à votre façon",
+    "caption": "Vous gardez le contrôle"
+  }
+]

@@ -1,1 +1,1 @@
-Initial development version: routines, checklists, history, English assistant and tablet layouts. Billing verification and Fire testing pending.
+RoutineNest 0.2.0

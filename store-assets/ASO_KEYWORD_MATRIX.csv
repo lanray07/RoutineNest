@@ -1,27 +1,122 @@
 locale,search_intent,placement,evidence,review
-en-GB,daily routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,morning routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,evening routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,daily checklist,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,offline habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,routine reminders,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-GB,voice routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,daily routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,morning routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,evening routine,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,daily checklist,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,offline habit tracker,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,routine reminders,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-en-US,voice routine planner,title/description or screenshot copy where relevant,intent hypothesis; unmeasured,human review pending
-fr-FR,pending native-language research,pending,no research metrics claimed,translation pending
-de-DE,pending native-language research,pending,no research metrics claimed,translation pending
-es-ES,pending native-language research,pending,no research metrics claimed,translation pending
-it-IT,pending native-language research,pending,no research metrics claimed,translation pending
-pt-BR,pending native-language research,pending,no research metrics claimed,translation pending
-ja-JP,pending native-language research,pending,no research metrics claimed,translation pending
-ko-KR,pending native-language research,pending,no research metrics claimed,translation pending
-zh-CN,pending native-language research,pending,no research metrics claimed,translation pending
-ar-SA,pending native-language research,pending,no research metrics claimed,translation pending
-hi-IN,pending native-language research,pending,no research metrics claimed,translation pending
+fr-FR,planificateur de routines,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,suivi des habitudes,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,liste quotidienne,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,routine du matin,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,routine du soir,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,rappels,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+fr-FR,productivité,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Routineplaner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Gewohnheitstracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Tagescheckliste,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Morgenroutine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Abendroutine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Erinnerungen,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+de-DE,Produktivität,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,planificador de rutinas,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,seguimiento de hábitos,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,lista diaria,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,rutina matutina,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,rutina nocturna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,recordatorios,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-ES,productividad,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,pianificatore routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,abitudini,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,lista quotidiana,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,routine mattutina,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,routine serale,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,promemoria,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+it-IT,produttività,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,planejador de rotinas,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,hábitos,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,lista diária,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,rotina matinal,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,rotina noturna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,lembretes,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-BR,produtividade,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,planeador de rotinas,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,hábitos,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,lista diária,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,rotina matinal,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,rotina noturna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,lembretes,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pt-PT,produtividade,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,ルーティン,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,習慣管理,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,チェックリスト,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,朝の習慣,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,夜の習慣,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,リマインダー,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+ja-JP,予定管理,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,routineplanner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,gewoontetracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,dagelijkse checklist,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,ochtendroutine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,avondroutine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,herinneringen,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+nl-NL,productiviteit,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,planer rutyn,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,nawyki,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,lista codzienna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,poranna rutyna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,wieczorna rutyna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,przypomnienia,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+pl-PL,produktywność,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,rutinplanerare,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,vanespårning,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,daglig checklista,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,morgonrutin,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,kvällsrutin,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,påminnelser,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+sv-SE,produktivitet,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,routine planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,habit tracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,daily checklist,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,morning routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,evening routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,daily habits,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,routine reminders,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,task organizer,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,weekly progress,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,productivity planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-US,focus routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,routine planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,habit tracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,daily checklist,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,morning routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,evening routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,daily habits,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,routine reminders,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,task organiser,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,weekly progress,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,productivity planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-GB,focus routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,routine planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,habit tracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,daily checklist,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,morning routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,evening routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,daily habits,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,routine reminders,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,task organiser,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,weekly progress,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,productivity planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-AU,focus routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,routine planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,habit tracker,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,daily checklist,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,morning routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,evening routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,daily habits,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,routine reminders,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,task organiser,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,weekly progress,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,productivity planner,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+en-IN,focus routine,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,planificador de rutinas,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,seguimiento de hábitos,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,lista diaria,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,rutina matutina,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,rutina nocturna,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,recordatorios,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending
+es-MX,productividad,relevant title/description/keyword field,search-intent hypothesis; unmeasured,native editorial review pending

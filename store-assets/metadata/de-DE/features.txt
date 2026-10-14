@@ -1,0 +1,5 @@
+Tägliche oder wöchentliche Routinen mit Vorlagen
+Schrittlisten mit Abhaken und Rückgängig-Funktion
+Verlauf, Serien und wöchentliche Fortschritte
+Erinnerungen und englische Textbefehle
+Lokale Daten, Offline-Nutzung, Export und Löschen

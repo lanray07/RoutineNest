@@ -1,0 +1,147 @@
+{
+  "version": "0.2.0",
+  "appSourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+  "appSha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4",
+  "captureGuard": "locale preference must match requested locale before screenshot",
+  "locales": [
+    {
+      "locale": "en-GB",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "en-US",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "fr-FR",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "de-DE",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "es-ES",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "it-IT",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "pt-BR",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "ja-JP",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "ko-KR",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "zh-CN",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "ar-SA",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "hi-IN",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "en-AU",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "en-IN",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "es-MX",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "pt-PT",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "nl-NL",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "pl-PL",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    },
+    {
+      "locale": "sv-SE",
+      "tests": 1,
+      "failures": 0,
+      "captures": 8,
+      "device": "KFTRWI API 28"
+    }
+  ],
+  "acceptance": {
+    "tests": 4,
+    "failures": 0
+  },
+  "originalStayAwakeRestored": true,
+  "recordedAtUtc": "2026-10-14T10:07:01.973449+00:00"
+}

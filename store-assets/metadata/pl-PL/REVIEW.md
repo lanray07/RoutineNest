@@ -1,0 +1,1 @@
+Assistant-authored translation and factual/technical review. Native editorial review remains pending. Command grammar/replies are English-only. Premium purchasing is disabled. Screens must be actual captured UI; captions do not establish UI localization. Search intent is unmeasured.

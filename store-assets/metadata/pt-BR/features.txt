@@ -1,0 +1,5 @@
+Rotinas diárias ou semanais com modelos
+Listas de etapas com marcar e desfazer
+Histórico, sequências e progresso semanal
+Lembretes e comandos escritos em inglês
+Dados locais, uso offline, exportação e exclusão

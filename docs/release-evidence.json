@@ -10,11 +10,63 @@
       "passed": true
     },
     {
-      "check": "metadata limits en-GB",
+      "check": "metadata limits fr-FR",
+      "passed": true
+    },
+    {
+      "check": "metadata limits de-DE",
+      "passed": true
+    },
+    {
+      "check": "metadata limits es-ES",
+      "passed": true
+    },
+    {
+      "check": "metadata limits it-IT",
+      "passed": true
+    },
+    {
+      "check": "metadata limits pt-BR",
+      "passed": true
+    },
+    {
+      "check": "metadata limits pt-PT",
+      "passed": true
+    },
+    {
+      "check": "metadata limits ja-JP",
+      "passed": true
+    },
+    {
+      "check": "metadata limits nl-NL",
+      "passed": true
+    },
+    {
+      "check": "metadata limits pl-PL",
+      "passed": true
+    },
+    {
+      "check": "metadata limits sv-SE",
       "passed": true
     },
     {
       "check": "metadata limits en-US",
+      "passed": true
+    },
+    {
+      "check": "metadata limits en-GB",
+      "passed": true
+    },
+    {
+      "check": "metadata limits en-AU",
+      "passed": true
+    },
+    {
+      "check": "metadata limits en-IN",
+      "passed": true
+    },
+    {
+      "check": "metadata limits es-MX",
       "passed": true
     }
   ],
@@ -24,47 +76,38 @@
       "tests": 1,
       "failures": 0,
       "errors": 0,
-      "path": "app\\build\\test-results\\testDebugUnitTest\\TEST-com.routinenest.app.billing.TestBillingTest.xml"
+      "path": "app/build/test-results/testDebugUnitTest/TEST-com.routinenest.app.billing.TestBillingTest.xml"
     },
     {
       "suite": "com.routinenest.app.ScheduleHistoryTest",
       "tests": 3,
       "failures": 0,
       "errors": 0,
-      "path": "app\\build\\test-results\\testDebugUnitTest\\TEST-com.routinenest.app.ScheduleHistoryTest.xml"
-    },
-    {
-      "suite": "com.routinenest.core.EngineTest",
-      "tests": 21,
-      "failures": 0,
-      "errors": 0,
-      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.EngineTest.xml"
+      "path": "app/build/test-results/testDebugUnitTest/TEST-com.routinenest.app.ScheduleHistoryTest.xml"
     },
     {
       "suite": "com.routinenest.core.VoicePolicyTest",
       "tests": 6,
       "failures": 0,
       "errors": 0,
-      "path": "core\\build\\test-results\\test\\TEST-com.routinenest.core.VoicePolicyTest.xml"
+      "path": "core/build/test-results/test/TEST-com.routinenest.core.VoicePolicyTest.xml"
+    },
+    {
+      "suite": "com.routinenest.core.EngineTest",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "path": "core/build/test-results/test/TEST-com.routinenest.core.EngineTest.xml"
     }
   ],
   "executed_python_tests": [
-    {
-      "suite": "Amazon RVS server contract (synthetic transport)",
-      "tests": 12,
-      "failures": 0,
-      "errors": 0,
-      "skipped": 0,
-      "executedAtUtc": "2026-10-13T13:46:48.391069+00:00",
-      "failedCases": []
-    },
     {
       "suite": "localization guards",
       "tests": 5,
       "failures": 0,
       "errors": 0,
       "skipped": 0,
-      "executedAtUtc": "2026-10-13T13:46:48.850989+00:00",
+      "executedAtUtc": "2026-10-14T09:43:50.682046+00:00",
       "failedCases": []
     },
     {
@@ -73,7 +116,16 @@
       "failures": 0,
       "errors": 0,
       "skipped": 0,
-      "executedAtUtc": "2026-10-13T13:46:52.727311+00:00",
+      "executedAtUtc": "2026-10-14T09:43:50.806840+00:00",
+      "failedCases": []
+    },
+    {
+      "suite": "Amazon RVS server contract (synthetic transport)",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "executedAtUtc": "2026-10-14T09:43:51.219984+00:00",
       "failedCases": []
     }
   ],
@@ -81,22 +133,39 @@
     {
       "variant": "debug",
       "errors": 0,
-      "warnings": 45,
-      "report": "app\\build\\reports\\lint-results-debug.xml"
+      "warnings": 52,
+      "report": "app/build/reports/lint-results-debug.xml"
     },
     {
       "variant": "release",
       "errors": 0,
-      "warnings": 45,
-      "report": "app\\build\\reports\\lint-results-release.xml"
+      "warnings": 52,
+      "report": "app/build/reports/lint-results-release.xml"
     }
   ],
   "localization": {
     "published": [
       "en-GB",
-      "en-US"
+      "en-US",
+      "fr-FR",
+      "de-DE",
+      "es-ES",
+      "it-IT",
+      "pt-BR",
+      "ja-JP",
+      "ko-KR",
+      "zh-CN",
+      "ar-SA",
+      "hi-IN",
+      "en-AU",
+      "en-IN",
+      "es-MX",
+      "pt-PT",
+      "nl-NL",
+      "pl-PL",
+      "sv-SE"
     ],
-    "pending_issues": 1040
+    "pending_issues": 0
   },
   "instrumentation": {
     "compiled": true,
@@ -106,36 +175,36 @@
   "artifacts": [
     {
       "path": "app\\build\\outputs\\apk\\debug\\app-debug.apk",
-      "bytes": 19105372,
-      "sha256": "60f14ad1506b9ab75ecd95f3fa608654621381adf1f7c87c978ddbc6ea8d6803",
+      "bytes": 19199736,
+      "sha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4",
       "signing": "debug key only; verify with apksigner"
     },
     {
       "path": "app\\build\\outputs\\apk\\androidTest\\debug\\app-debug-androidTest.apk",
-      "bytes": 1233770,
-      "sha256": "e4675e21c23e4d6bc27bd508eac0296b0e9f9958f784813d4849248f71f77c0e",
+      "bytes": 1244059,
+      "sha256": "2c18ef7e16b66b6a08fbbd7d3b2d44031ee084e5917829c414c9ef2eaec14aaf",
       "signing": "debug key only; verify with apksigner"
     },
     {
       "path": "app\\build\\outputs\\apk\\release\\app-release-unsigned.apk",
-      "bytes": 2004455,
-      "sha256": "e2ff1aa4e4e9a58591fb1b2c2351a333039e9849056f03ca0dbc0f45636515da",
+      "bytes": 2098775,
+      "sha256": "afe8019887e0872618981895829d713b19a318d0cbb27a6f3839c6615c440fce",
       "signing": "unsigned"
     },
     {
       "path": "app\\build\\outputs\\apk\\release\\app-release.apk",
-      "bytes": 2028526,
-      "sha256": "3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213",
+      "bytes": 2122734,
+      "sha256": "2dcece3b807b92a01cdad22d25f8f5c36f2bf627d8b6b084a6bdcd5765ad6d33",
       "signing": "publisher key; verify with apksigner"
     }
   ],
   "blockers": [
     "Supabase endpoint and Android client implemented; Amazon credentials, Auth/abuse-control setup and real billing integration tests remain pending",
     "Dedicated publisher-signed candidate prepared; secure key/password backup and submission/version approval pending",
-    "Ten locales and listing translations pending; twelve-locale selection provisional",
+    "19 interface locale variants and 15 storefront descriptions authored and structurally checked; native-speaker review remains pending. Assistant grammar/replies remain English-only.",
     "Broader Fire OS/device, speech/TTS, notifications and accessibility acceptance remains pending; four tests pass on one Fire tablet",
-    "English tablet screenshots captured; remaining locale/device exports and final store-asset approval remain pending",
-    "Privacy disclosures need publisher review and public policy URL"
+    "Premium artwork and 90 genuine localized tablet layouts exported; broader-device captures and final publisher approval remain pending",
+    "Public GitHub privacy policy and Amazon draft disclosures supplied; publisher/provider review remains required before enabling billing accounts"
   ],
   "device_tests": {
     "model": "KFTRWI",
@@ -227,6 +296,153 @@
       "capturesVisuallyAccepted": false
     }
   },
+  "localized_device_tests": {
+    "version": "0.2.0",
+    "appSourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+    "appSha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4",
+    "captureGuard": "locale preference must match requested locale before screenshot",
+    "locales": [
+      {
+        "locale": "en-GB",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "en-US",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "fr-FR",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "de-DE",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "es-ES",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "it-IT",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "pt-BR",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "ja-JP",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "ko-KR",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "zh-CN",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "ar-SA",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "hi-IN",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "en-AU",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "en-IN",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "es-MX",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "pt-PT",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "nl-NL",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "pl-PL",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      },
+      {
+        "locale": "sv-SE",
+        "tests": 1,
+        "failures": 0,
+        "captures": 8,
+        "device": "KFTRWI API 28"
+      }
+    ],
+    "acceptance": {
+      "tests": 4,
+      "failures": 0
+    },
+    "originalStayAwakeRestored": true,
+    "recordedAtUtc": "2026-10-14T10:07:01.973449+00:00"
+  },
   "supabase": {
     "projectRef": "guigiqacxpvcxrnajvlz",
     "projectName": "lanray07's Project",
@@ -260,36 +476,34 @@
   "artifact_origins": {
     "release": {
       "provider": "GitHub Actions",
-      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
-      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+      "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
       "conclusion": "success",
-      "signing": "Unsigned CI input; dedicated publisher key signs app-release.apk locally"
+      "signing": "CI unsigned APK signed locally with dedicated publisher key"
     },
     "debug": {
       "provider": "Local Gradle",
-      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
+      "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
       "conclusion": "assembleDebug passed",
       "signing": "Existing local debug key",
-      "deviceExecuted": false
+      "deviceExecuted": true
     },
     "androidTest": {
-      "provider": "GitHub Actions",
-      "sourceCommit": "4763b4dfd81be00ae834a532284c711ad532ec0c",
-      "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38431357950",
-      "conclusion": "success",
-      "signing": "Existing local debug key"
+      "provider": "Local Gradle",
+      "appSourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+      "harness": "locale preference readiness guard and scroll-to summary assertion",
+      "conclusion": "assembleDebugAndroidTest passed; four acceptance tests plus nineteen capture runs passed"
     },
     "installedDebug": {
       "path": "app/build/outputs/apk/debug/app-debug.apk",
-      "sha256": "0369e51e0dfcd5eb5155bbd49b623b5b06c3571377c83b05d64e6e78e3652350",
-      "note": "Previous 13 October artifact remains on tablet; current canonical debug APK is rebuilt. No new SDK initialization device test is claimed."
+      "sha256": "a8e0128bd6bc597594040a7fc9859d997f5f5cb6f20180b6fe1fe3daff9b92e4"
     },
     "signedRelease": {
       "provider": "Local apksigner",
-      "sourceCommit": "3dc65a90ac730a213903b1ac4f7b440360a5e9b1",
-      "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38535671144",
+      "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+      "inputRunUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373",
       "path": "app/build/outputs/apk/release/app-release.apk",
-      "sha256": "3affc15a0e9e0746f61ec726e8c866f3c5343288df132445888e9e1dc375c213",
+      "sha256": "2dcece3b807b92a01cdad22d25f8f5c36f2bf627d8b6b084a6bdcd5765ad6d33",
       "signatureVerified": true,
       "signatureSchemes": [
         "v2",
@@ -297,7 +511,14 @@
       ],
       "zipAlignmentVerified": true,
       "certificateSha256": "c9438d60c3f444da9d7d8765b0635925ae89f08c6ec419ed64a91d4d0f801f3c",
-      "deviceExecuted": false
+      "deviceExecuted": false,
+      "versionName": "0.2.0",
+      "versionCode": 2
     }
+  },
+  "jvm_test_provenance": {
+    "provider": "GitHub Actions",
+    "sourceCommit": "9a12018b033f107b56d81224386c779bfbcc5eae",
+    "runUrl": "https://github.com/lanray07/RoutineNest/actions/runs/38543978373"
   }
 }

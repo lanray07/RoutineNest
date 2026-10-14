@@ -21,7 +21,7 @@ Prepared 13 October 2026. Every box remains unchecked until verified against the
 - [ ] Required icons and screenshot set meet the linked asset specifications.
 - [ ] Screenshots are actual released app screens with demonstration data.
 - [ ] Optional promotional artwork is reviewed for legibility and rights.
-- [ ] Metadata translations match app support; the intended twelve-language list is obtained and recorded.
+- [ ] Metadata translations match app support; 19 interface variants and 15 storefront description locales are recorded.
 - [ ] Every localized listing and screenshot has fluent-speaker review.
 
 ## Billing, privacy, and release evidence
@@ -41,13 +41,13 @@ Prepared 13 October 2026. Every box remains unchecked until verified against the
 
 | Evidence | Current status |
 | --- | --- |
-| Developer account and app listing ID | Not verified |
-| Signed release APK/AAB checksum | Not recorded |
-| Physical Fire tablet test report | Not recorded |
+| Developer account and app listing ID | Existing draft verified; see AMAZON_DRAFT_STATUS.md |
+| Signed release APK/AAB checksum | Version 0.2.0/code 2 signature/hash recorded in artifact-origins.json |
+| Physical Fire tablet test report | Four acceptance tests plus 19 capture runs; localized-device-evidence.json |
 | Screenshots from release binary | Not verified |
 | SKU catalog and live prices | Not verified |
 | Sandbox and Live App Testing results | Not recorded |
 | Production receipt verification service | Not verified |
-| Intended twelve-language list and review | Missing from supplied context |
-| Live privacy/support URLs | Not verified |
+| Locale list and review | 19 interface variants; 15 descriptions; native-speaker review pending |
+| Live privacy/support URLs | GitHub policy and publisher support contact saved in draft |
 | Submission/review outcome | Not submitted by this work |

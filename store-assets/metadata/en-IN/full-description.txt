@@ -1,0 +1,18 @@
+Build a calmer day, one routine at a time. RoutineNest is a daily routine planner, habit tracker and checklist app that helps you organise morning routines, evening routines and focused work sessions.
+
+PLAN ROUTINES THAT FIT YOUR DAY
+Create your own routine steps or start with a ready-made template. Schedule routines every day or on selected weekdays. Edit tasks, pause a routine or archive it when your plans change.
+
+TURN PLANS INTO A DAILY CHECKLIST
+See today’s scheduled routines in one place. Check off each step as you finish it and undo a completion when needed. Your routines and completion history stay on your device, and core planning works offline.
+
+TRACK HABITS AND WEEKLY PROGRESS
+Review completion history, weekly insights and streaks based on your scheduled days. Keep an overview of your progress without turning a missed day into a fresh start.
+
+SET REMINDERS AND USE SIMPLE COMMANDS
+Add routine reminders and use typed English commands to create routines, add tasks or mark a step complete. Voice input is available only with a compatible speech-recognition service; text commands remain available on devices without one. Optional spoken responses require a compatible text-to-speech engine. Reminder delivery depends on device permissions and battery settings.
+
+MAKE IT YOUR OWN
+Choose light, dark or system appearance and enjoy a layout that adapts to your tablet. Export your routine data or delete routines and completion history from Settings. No advertising is included.
+
+The free version supports up to three active routines, templates, daily checklists, reminders and weekly insights. Premium purchasing is unavailable in this version. Choose from 19 interface locale variants in Settings. Assistant commands and replies remain English-only.

@@ -1,0 +1,579 @@
+{
+  "recordedAtUtc": "2026-10-14T10:42:35.690Z",
+  "draftOnly": true,
+  "versionCode": 2,
+  "descriptionVerification": [
+    {
+      "locale": "en-US",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "de-DE",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "en-AU",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "en-GB",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "en-IN",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "es-ES",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "es-MX",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "fr-FR",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "it-IT",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "ja-JP",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "nl-NL",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "pl-PL",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "pt-BR",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "pt-PT",
+      "fieldsMatched": 4
+    },
+    {
+      "locale": "sv-SE",
+      "fieldsMatched": 4
+    }
+  ],
+  "mediaVerification": [
+    {
+      "locale": "en-US",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.46f450913fbd496f982fff547e9709a5_5f28422c-bf90-483d-9f6e-e0d49c0b75b2_909b9e0094b930d8865150965bc75d34"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.27ce04bca8784885a58e1911e37e4170_ab28dd50-a631-423f-88f0-5868e54f5677_233745abeff64a6c8d6a1a3e779aab1d"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.62906284bbfe41fd9d4012a4825f219f",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.f8df0c2c903b4ddf9ce6b17a9314007b_90e910ac-ac47-4253-8b38-d7ab3b15ef9d_bc7521030cc8632be93aab264111fee5"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.87c5fa5bd9264f05913d19eebf829786",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.f2bfa3571a874005bd4ee917102e655d_fb6d5339-ffda-4522-8170-2c933b814809_adc0141a32f1cd4aad6062c35a460f46"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.d3881572551541d2b53f64581b65dd59",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.8d49704522574d948a0419f5a7794a58_fb14e712-569c-49e8-ad94-992512fd9323_1daf3b7fd0c405aa1551576d3ed3c873"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.95afa2447d9e44c986966633d5c9dfda",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.1ed739b3841c4847aa0580aae500345f_9fb1d460-d102-44d5-9035-11fc3e43bd36_38ffc53d650eea1c69b379d40be5a77e"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.0635924f112b466bb7a47a7bbb2fc908",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.cb5a1b721b014749af382991f051f5fe_1e377866-7e8b-442a-acc7-267ed16079ad_c80ca54edcddbbe4e2c69ca73743a8b7"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.69f987f1f18c43b1aaf7d8c4e00db181",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.2d5e31cc12c24a4cad1380c3f33be86f_8c415a6f-4f85-4499-9f3b-8b27bc9b57c3_018e7cf48c9b7f18114b12e6a7413b92"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.d9b5605ed501453e9e57ab5f8b69afda_0b5dfdf3-d3b3-43cb-93ff-6083877e9376_6730df4617343ca3d8a7a8c488753f8d"
+        }
+      ]
+    },
+    {
+      "locale": "de-DE",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c5cdfa2c1dd7447f9ab1c5e7eea2a992_82c63463-f593-44a9-a30f-5df1922bffae_54bee93aaeb8a3ee998486cfdc0e4ed0"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.360bef24fc614534aa2ade3fed22d201_db3c5b70-3d1a-4944-8af7-510dc498be5c_84390f4fe183b221da99d7d8d526b4ac"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.27790105caa14e08976bd91bef85b767",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.01f73d6b642848198da53d53230a4de3_ee229bb7-70f5-4b9c-8095-a53e2a4bb81c_24fb78c060543c0d8ea2fff8592ce919"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.6eb7821c87214b0abf23270956be0dc1",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.6fda985ed1c7414e9fc8cc56c968d943_49c12bf3-07ae-4ae9-8796-150485cd13cd_04854fb4fa62c6d657cf92656f12def9"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.407b90f04dea43958a7ae68aa33f4cf1",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.b83ce8aab24243888ac4a64e49421277_030b6fc0-07c6-41fd-829a-c205783fe9fb_29808d027e8ad9e41968bc27f293fd0d"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.1cbf478832e746a298ea8295b2b6ff16",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.4e5383ee9a9940afbcdde2ae3c7f9dc9_50d0e290-a920-443d-99aa-2a6ff55a8433_14df00ac4f5625dccb32f85c9b91736f"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.1f5d2adaaf764055b0a6e2dc607d6629",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.a7dd0c81a8ba4e8eb753574ad0ed0778_69fc4098-6394-40d9-ac84-12b48cf923e4_f240f26cda28dfe14acc70ae08383f29"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.a00b0c1001374d1cb3fc76cebd82f7e7",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.dfa0620caade4c99a268855684f8d851_a2cda0b0-59b9-47e3-84e1-137794814627_507f3a5f758e7605e3ff80bc9fac3d79"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.806e0af0a5e346aeb4c462f86b736c40_60a7d657-bf34-4ead-b5f3-ca82a113d810_ea25319af78a0528bc1588e4bcbb7b16"
+        }
+      ]
+    },
+    {
+      "locale": "en-AU",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.4c9d8a9419cc4a9fab13e5f7f99ada25_e6c1afba-c908-4ba2-bd7c-70fd98315d93_2115eb26a939b15ac2d44f3d2c627db7"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.189d5473270e4320917a96273751370b_16429a23-ca1f-4656-a0b5-d04e16f87bce_bc867b1fb80b6c830220d949d37afeb4"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.0ab8c1f5b884486998aa1f9fdb821f39",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.fa9c1a05f71e4c848c489d608f187d2a_aca66257-ae5f-4847-81f8-41fa9afa74ac_d08483b1b202a822327e84441f846f34"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.8b181fc27fb04b34a97eef90afc4be5b",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.0f52cd3d582649bb836979d47824465f_6741eb96-f418-472a-bd0f-5c01ed4756fc_8130729b07a27bb0d362b4a1a6929dda"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.7ed7b80d1e6a443f8f8d3890baab7ce3",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.585451c002614849a122fcc041592ed2_d4342502-910a-4142-84bf-639240a433fe_7d048916c8ea9ed917615976a710aafb"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.73a9166b3c10439eaeef3ba77d7d81f7",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.39dcd464036a43119ad0ba0581a8d2b9_69eac7e3-4159-49ca-b9dc-c897083491ff_a6337d58c5e0158a4bd04f82f7456967"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.2bcaacc710b149f8be95218651fcd23b",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c895f2656f84414ab99be6be5d3303c5_ff86f818-ffc2-4f53-8771-7901c5cec1a6_6e889c3592726ffb74ec2d87bf100ce0"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.54246576aa9d4fe68f9166fcd8fbb34a",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.0de6cc7ddf434157ac552f1c5a804f53_d94b761e-903c-4921-842b-39dcff6be6bc_d0eb7efa957413ecd7646fe4c1fef30d"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.f413f05a776f456f9a420227888d7fb0_21eb9a9e-af94-425a-a7db-df8f7eff13c5_826d2bee6eff1d3799e0eeb3af70c14d"
+        }
+      ]
+    },
+    {
+      "locale": "en-GB",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.e735b3f44a76428c895eeef9fd6d6d63_231c1dd0-c953-42a6-91f9-fb8fc8b034c4_129fa239be7d2c6c8bd242037b2a612c"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.23bc7880839941e68da23725cd646b44_e7587548-606e-4b47-9404-c38abbe9ab65_02bcd44be5e03b788dab74b19ecd5b01"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.38b5c381fd4e493ab3e708baca08235f",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.6cd134f4a3684c40bebef55842b3f11b_a337bdb8-ff51-415e-a566-84b1a9779a90_3742cc0abc846f224b5a906313b7fec5"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.485cb13f34da4839a0a764035c76d2a3",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c4f3995a8da248d7a35ebef5e389ec40_acef3429-fda2-4ed1-8cfe-8ad4635194f2_5984daf6b4411df5fb1117881bc2fcbe"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.92d95be10b6b4cd9a8d614b097e9f1b3",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.9946ff5eab254e6789f0d5f2098e0824_7f25967b-347f-4ee4-80bf-49195ed4c361_c2afeb16362f62f762050abf5ce67177"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.fd68ecb426714eefa30e6ff1130b5a0f",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.ebb06a9d753c4a89819a1eda12e5baa7_e06611e1-eea3-4cc3-8e8d-ca4c1773d02d_cae66691b189552ba60c9795742fee57"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.b311f06b085346b59cbf3360608760e6",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.241d050553aa456891f42bb2fc3f8157_b086f40d-65ef-4a6d-a6a7-488b7bf97fd0_9fa6855a8e7ad9fb97e59c756b482256"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.20a9d818632e4fa29b4fd44195c966e0",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c502741254bc4135ab9a4c67d0c22f90_75252fd3-c830-4924-bf92-b89b13e78e5d_7505684c38575a6ff80c5d2e97f17e46"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.e416e2567aa24c23a26547c8205cc164_8f4ef893-aea0-4c79-8ba7-f73fa491bd71_3c72e636a0383722c3c3f3c5b58918f6"
+        }
+      ]
+    },
+    {
+      "locale": "en-IN",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.803691d7823e47c7810a831ceabeba12_05a0bdce-23b6-4542-8156-424fb91d4033_75bdfc6b41fb0c87dee8aea713c48bd3"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.2605d295a0474ef09770e8c5c907beb9_7b121928-b1ad-452c-b82f-a226d9ecc242_daf06c35e8119fd8805455e33e9cc752"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.fa2cc3e770aa4f42b84a0f90d9d62dda",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.cba69e5c1c6b44f18c2844a70d131940_93935eab-5da6-4a22-9240-42ceca1192ec_4317c8028156234e856c47786437d79c"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.966d7ec5724e49e1a6a64b8d8334b268",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.3500039558354dc5842bbfbf4f66c9de_8e7baacd-01b9-43ab-b271-85369359e3c0_ceab1dd4f66757ec78517da49bd29703"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.35c2f60d8f4c49619e61c2f48f8d5bda",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c2c63a3ff1c44dd19ae15a1a3c219fd9_a36c10a2-7da8-474f-a8c3-f2849aa561ee_4ef14ba5ae3453245b4d0646960df922"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.95c4091e802a45538b9b97e5844b1285",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c660caf95e9347d185bad6b9e09159ce_95c4afe0-62e5-4907-988e-0044fe794e0b_79089668a241f3c51d6fdbd8dda63b53"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.3879744cfa6f4aa1892841e17bc8c6fc",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.0f7531caf9eb451d85d9fbca63a725e4_959964f6-8a1e-49d7-ac7e-ce317a8f6377_3ae4461afe8d01e48fe0d714b203087f"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.f8414962cfb849609cbad2cf1199e026",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.1d51b7ab35194e248d879262734f870c_e76143b9-6975-432d-8797-c9c4d89546c0_d14551de3eb5b5e56ac9842a7de32b64"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.ba5276d073894bbd946cf91a6b3f8719_260b1d9b-b5e2-4caa-8d25-9e0dd4b1ffbc_04889a81772a1f752b4600988ac4a3fa"
+        }
+      ]
+    },
+    {
+      "locale": "es-ES",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.bf5bcf70ee5e4243a816e482be4891c2_22d9946a-8100-475c-ab6c-aa46d194bf94_3b9b421dc9c613cdbe045049bd0adb50"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.7dd1972584af40639df4e9517278b58f_fc9e3c68-cdf4-418d-97dd-818fa05593e1_7a638aab392ef8d7df6f1214157600b6"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.a3c46fbd51e144fe9ca3bb41f49a2513",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.ee553113c6bc4209b1c5ccea95ecf496_e6ff1c38-b60a-4726-afb2-b180ab5cf59b_09f5842831179234cbbebd9c7b2c90fd"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.e473efc13bfa4db79a73d9e5dc34d14d",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.035ddb2889a54d5589ca2b5a4580c17d_dd60d64f-0903-4a2d-974a-c622713679db_db52d55d92e521d1c18ae63cdefa91e2"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.d50b33a304c34acc8301f1448544b39d",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.1cef580ffc4848ff9a77ac64e7919b25_fd884580-c0e7-4d2a-b72f-69c1c3fbb801_0b1bf99b1ba43be0636eb7fe75b7715a"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.7280ffe018b942b997e5a462af9b4ead",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.264dc20a88814d7e85769d5e6452dc47_52a9c5ac-b0cf-40c2-8005-e63567beabe4_4d365cc837a1b0b886c01feb13758987"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.ed5a9572c5c045689c9345b762d8021d",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.2610030c59ae41fbba97fd0cd891aadb_e710a154-3cdc-4c4c-85ff-1285078f6cb7_fc361140608aa8cc4472b6772b7a4f0e"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.619548624ede48489c0f1c5bfefcad33",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.41ed4912c96142f18d81a90e16e491ee_619e365d-8259-4aa8-96bc-51275b461ff1_bc446160292a5791ffc37db190f77ee7"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c54b100c18734425acd41316eb1871dc_3089b29c-5680-4e06-9107-4765047f8366_c533da10a96f1fe35a753cf6c4c7b183"
+        }
+      ]
+    },
+    {
+      "locale": "es-MX",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.1eb22ae7867e467dba1c65c19f52d45b_fb88d774-f641-4a02-98da-75dff5fe434a_c8ad895f9945d6dc44193f487e6a5385"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.2e46a06ca779497bbaeb676d466c7a5d_0b58f22b-276c-42b8-8d54-3733b128d59a_ca87c8659b7ce687e08e0501258f1c56"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.710baa4fb37e4b14ba2e361088e2c0ce",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.e34073aeabab4c3f8ab23ec1655464fa_07e1fbfa-e298-4cb4-964c-355b23e70bae_8ad9eeea51aa3db9872feeeea5c42339"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.e992d705361d4fbb8461bd60e1b22cfb",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.0ab555ded5444af3a69c63be0959a7d9_e5ac1c66-df45-47bf-9384-e25f0bd779c8_699221e87715daee07dcb52d90203ca1"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.ce71cc3f61a34dcdafd5ef3add3166d6",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.1ed237ce0b3a4ac38bfeafaa4a3a371b_2303ff35-498f-4cbb-85d7-03881f79161d_8a569f57c1c455bfa8511dad24da6c3d"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.621c8aec51fd42278c432ebac278a952",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.8765a2076ea14f88b8d766fcda2de063_7aaeb7bd-f6b0-4f66-8428-b7ab6de15ad9_890e253e1d0af7411b44248ccfab1d23"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.48eeadb229e64121a991588dbf023855",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.2557c1dbb8fe4d74984ec9dbb36f07b2_d648bd25-f6e2-4f52-9da7-b89636acd8a6_c9e4714a44b901cb830bd26ef9d38f57"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.9da0e0a82c7143609a489807b9abe626",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.b11c63170b7e407c8a83a3de26578a83_7a9810a5-3cdf-4a13-a2e1-a073e2b87fa9_aa4dced4f5ff70138edfa101267f51e0"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.b1fbd2c918d345bca41ab0109cd4be74_df1a67b8-dc01-44cc-a5cf-07cab0301e28_38fd80eebe6cbdac84c8885aebbd64e7"
+        }
+      ]
+    },
+    {
+      "locale": "fr-FR",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.f198644e16b14382a062f74e4887b4ab_51ff67d4-525d-4885-81ea-7f807602066c_71428f05b2915986069c48d8f8c851b9"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.7388ac8f957b43258fdd2043bac507a6_4c523856-8625-49fd-86ef-d52f1c5fb0cc_3a426e5a7de2c7e89aaf349a4a531414"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.85dd8f9a75da4d03b78bdc93dd9e5651",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.77aec42982db4d6c803376fee31694de_a2e10f62-dd73-4c65-9c99-dbf16241fecd_e046f0fc147ff1f5176d18834f4d211e"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.933724d89c314937bb93bfb65d8a95c2",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.e2352c1e88854366929f9a2f9ed264e3_13e57d3a-30b3-4d67-be22-4d8c023cf3e1_1118783d27ea36f020e0084b9acec9d9"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.fedffbca7937449384fcda86f87cd28b",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.070b211929a24c628e2dc3a408d0edcc_274022e2-42b4-476a-bd2e-215eadfeaae1_ab99926c1dad482d44f95125a1507d28"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.98d38b5ab9c2428381292fd798f8b435",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.b7c6dd9c422944f9ba36b2f3ab40807e_c5d35ea9-e651-44ff-a5ca-b357be2383bd_4e1f854de93fc60cecbccc415984e150"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.974208f8393445129f717f1795229a8c",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.43943353b90b415c9b6a65e0e5006a57_a712f9d8-5112-47d3-adc2-233e3f2bac7c_ea8df4512351959f98aa3c236d9e1e4f"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.22fe5c1e0d7640d7b8b2bb3e4d700d5f",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.e4fb4416c66346a59d2f361b4d24fe27_4ae476d1-34fe-4981-9d0b-648d4c5d63fa_62bd5c0bf7e3fbf9b5eded399493d2fa"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.741d73e96ebe42f580dc27e9eb89dd6b_194d4ff1-2f7b-4bb5-8f5b-9b52e1987275_1d84119b611e4e8363c5db4f5b883230"
+        }
+      ]
+    },
+    {
+      "locale": "it-IT",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.ab9c0a8a4fd840609dcceecf7e14b031_c7851f91-d486-4e09-a01d-7081835d9bf5_74450716ada446c0671d553efd854771"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.144987e9564a4660ae4379512d219760_d952b9e9-987d-475d-a55f-0d87622b55dd_3a07240cfd712ee388c4e2df12e6490a"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.a6d4fbb7a9bc4788a48ed1d080fa33d2",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.592de208dba0410ba6f8958e261a0526_11fa1cf9-c9b0-4ccc-be37-f111db070be9_a7b3c9762a5f0396cefca9099131b187"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.c5d728dc1eb248eabb285ef7af8d504e",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.d3c8db13e0e64e90b928b280328bc9d4_fd76445f-ba79-4775-bb90-112fa8a2c999_2351a92fc0ad917d6dcb524c7ee3e38c"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.0ce9ba1309b242a4b66ad8d845fba8d9",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.6f9270abf8694bd6baed5b177e9b89ed_3b53bd20-bc0e-4b73-83b0-0cde4df47c00_ba132bb8ab9cec88ba409834a898a7f6"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.6a1f29d0a25a49d9a763a2144322ab47",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.d8a6a225034f493493c026a3f7a25f47_788f345f-b733-47de-80b2-c94c463ca448_5ce549684ee4a8ec523e1ccf84300e11"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.e283dbf376424e5ebcacb30b9821e2fe",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.6b9e51044f4b44f3b89082ea92683c18_4b945c7e-04ca-4b3c-bfb2-1dd6752c2380_3abe39579b872514e8cdd747e9f12518"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.485b84951a004e718ac8072d16d8a459",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.8bd5bdd7330b4d018b2e8dd5beaebece_36dea23e-7c3d-486c-befe-c4a60fe90809_c5d94aa21a0d56a4447e8067580d4f54"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.9f40a0bbca9b4d8ebfcd701f01a236ee_e2f78d1d-192a-40a9-bcf8-f1979154f37b_f2967f1b3acb9676e55d3eb3c18fd25a"
+        }
+      ]
+    },
+    {
+      "locale": "ja-JP",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.238cf09f7d7245e28297d7113a7abdd8_04389539-c631-4d85-a41f-6370563546d4_90e90e2e229454251083a1be763a1f41"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.c667dc83a16a42fc83d13318116049b5_4d1f3726-ece0-4154-9650-b0f95c4c73a1_6abfadd5464c7781c4bd3a3d350b7d85"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.daf4fa18079045088f02496a1c315665",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.678984f9a3ed480dbff3cdf63ad0b631_b988ae51-e315-4f4c-9ca3-4d3f2e2b8cd9_bbcf683ca60ccb387a3983b903c7419b"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.bbb1aa26b046451b81505b8b9ce8c224",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.eedbe8ae1a974b01a75abe1e7d0a909c_6ef27224-ae19-4f79-92e3-de339db329df_dfdf67604be839f532d8906c5a9eb56e"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.c5a2fa1a961144f7b817432683ee3d50",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.25df672f44774da9936def4ef32c1a7b_7ba2877b-6fc4-4d57-9b18-e5ea636c46de_a6efc24a3b37392e5ab65e6a6574ab37"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.4b988bc6d4eb4fa9bc997798b2841d5e",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.a0a1d0f203ba41a7a17a693e2d449d7b_739196fb-7999-4a15-a8cd-dea1006bc09c_94ff2e245ffb3723519e786b3aca2f15"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.0b17630c221d4e638428d817f1964741",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.ddb92293cd3b43e0ba1b008e751f5407_ad80d7f6-8c44-452f-88ef-2fada02f03d5_34a2cc89e23b686778491eee4311e900"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.15241b5f989d4b1e96088d71ad38b94e",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.95e2b8c588ce44b9a45fc8d2811529af_801d3d02-f20f-41ea-a129-baaf50c8e9b7_afb848fa45350e225242d4d496d3870b"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.a0b9aac0137a469f9d184e35223741da_076ed354-6e26-4e41-9e2c-86ed3892e84c_1ceaa4c26a3f826b41e56c96f3a53799"
+        }
+      ]
+    },
+    {
+      "locale": "pt-BR",
+      "screenshots": 6,
+      "icons": 2,
+      "promotionalImage": 1,
+      "images": [
+        {
+          "name": "tablet_large_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.897eff70c7814dcf9cae6daa08c61861_ba382855-51ff-48e4-a89a-e7706bd62b1d_a18b6b63e10d43be23164df763cf2545"
+        },
+        {
+          "name": "tablet_small_icon",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.7ce2ef2ab7ba49ca9893f68c381b1d6e_df72291f-6fa0-493e-b464-325f46ca8a0a_2be38a07298c5ebcbb57f96f1d5b6703"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.1941328e5a8d4b6098ff5e2f963f5337",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.5eeeb6493ba548248d7677d824518bb1_806fb145-cb55-4bb2-9aed-bc4583c78964_5bde89886ed643c9b72b0103c4c2a245"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.469c7c0ebdbb43a1b69cc3190f8de6f6",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.5951fcebf60e47649340994e045f94db_aa51f0b1-d954-45eb-9472-9c85fd7b9e86_73d83a2a4334316a90a499f3bd8baedf"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.831b451dcd5d45bd9f4fa0524e36b778",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.24a72a76b97045ff88696cbed9656d66_10920a6a-6bc0-4000-8c5d-f227a496e491_ef67b1f2005c078febbb30d5270f0f8b"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.f0db424c920d4252a33e687671be45e6",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.9e47d1eb10e641719d9e25e40e74dfd0_859f2b0e-8b94-4ee4-9b0e-ddf8d42d2cc2_240654cda17991631901f6f915cfe605"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.c7dc2a3511de4320bda2b5bb78998642",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.3fee5809a0db468caa1aaa46cb6cc2c9_429d7505-8227-4dc8-950e-6ffaedc529f2_7eb62f3fd4dee2dd4cba300d06cc3bcf"
+        },
+        {
+          "name": "screenshot amzn1.dex.asset.6715b769d2f14258984b2cbc21c875f9",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.9fb72d1d6bc94d5c91af4d233edf8e12_0b56a752-b3f6-49e0-aefe-5dbd711cbafd_d70f831c337ac114b8289319bb2af069"
+        },
+        {
+          "name": "tablet_promotional_image",
+          "src": "https://com-amazon-mas-catalog.s3.amazonaws.com/amzn1.devportal.assetupload.8b5d6f5817924314825b1cc6269696d8_92147909-3a09-4b73-9700-1ce0e37b960c_bbeac2e6d46c6baedf66cd568da2c69f"
+        }
+      ]
+    }
+  ],
+  "noImageSlot": [
+    "nl-NL",
+    "pl-PL",
+    "pt-PT",
+    "sv-SE"
+  ],
+  "languageSupport": [
+    "Arabic",
+    "Chinese",
+    "Dutch",
+    "English",
+    "French",
+    "German",
+    "Hindi",
+    "Italian",
+    "Japanese",
+    "Korean",
+    "Polish",
+    "Portuguese",
+    "Spanish"
+  ],
+  "swedishCheckboxUnavailable": true,
+  "exportCertificationChecked": true,
+  "amazonFormStatus": "Ready to Submit",
+  "submitted": false,
+  "testingInstructions": "No RoutineNest account or login is required for core features. Complete onboarding, create a routine from a template or add custom tasks, select daily/weekday scheduling, check and undo a task, and inspect History and weekly Progress. Settings includes 19 interface locale variants, light/dark/system appearance, JSON export and Delete routine data. Assistant commands and replies remain English-only in every interface language. Voice recognition requires a compatible installed service; use the typed fallback when unavailable. Reminder delivery depends on device permissions and battery scheduling. The free version allows three active routines. Premium purchase/restore is disabled; no paid transaction should be attempted. Four acceptance tests and 19 localized capture runs passed on one Fire OS 7/API 28 tablet using the debug build. Native-speaker translation review, publisher-signed APK device acceptance, broader models, actual speech/TTS and billing integration remain pending before publication."
+}

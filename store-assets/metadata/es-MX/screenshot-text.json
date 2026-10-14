@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "headline": "planificador de rutinas y hábitos",
+    "caption": "Un pequeño paso cada vez."
+  },
+  {
+    "id": "03",
+    "headline": "Una pequeña ayuda",
+    "caption": "Escribe un comando en inglés"
+  },
+  {
+    "id": "04",
+    "headline": "Tu colección",
+    "caption": "Empezar con una plantilla"
+  },
+  {
+    "id": "05",
+    "headline": "Progreso semanal",
+    "caption": "La constancia crece poco a poco."
+  },
+  {
+    "id": "07",
+    "headline": "Un ritmo más tranquilo",
+    "caption": "Crea un día a tu medida."
+  },
+  {
+    "id": "08",
+    "headline": "Tu rutina, a tu manera",
+    "caption": "Tú tienes el control"
+  }
+]

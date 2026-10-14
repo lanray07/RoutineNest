@@ -1,48 +1,36 @@
-"""Prepare honest listing drafts; untranslated markets receive explicit pending files."""
+"""Export authored marketplace translations with explicit native-review provenance."""
 import csv
 import json
 from pathlib import Path
-
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 
 def main():
-    config=json.loads((ROOT/"localization/config.json").read_text(encoding="utf-8"))
-    concepts=json.loads((ROOT/"store-assets/screenshot-concepts.json").read_text(encoding="utf-8"))
-    description="""Make room for a better day with RoutineNest, a daily routine planner and habit tracker designed for a calmer rhythm.
-
-Create morning, evening and focus routines with your own steps. Choose daily or selected weekday schedules, tick off your checklist and undo a completion when plans change. Your routines and completion history stay on your device and work offline.
-
-Start with a template or build a routine from scratch. See weekly progress and scheduled-day streaks. Pause or archive routines whenever you need space. Choose light, dark or system appearance and a layout that adapts to your tablet.
-
-Use the assistant to create routines, add tasks, complete a step or read your checklist. Speech input requires a compatible speech service and microphone permission; equivalent text commands are available when recognition is unavailable. Commands currently support English. Optional spoken responses require a compatible text-to-speech engine.
-
-Set reminders to help you return to your routine. Notification permission and device battery settings affect delivery, so reminders are not guaranteed exact alarms.
-
-The free plan includes up to three active routines, checklists, templates, weekly insights, reminders and the assistant. Premium is intended to unlock unlimited routines, duplication and monthly insights through a one-time Amazon purchase. Premium purchasing is not yet configured in this development build; the store price will be shown when available.
-
-Export routine data to a file you control or delete it from the app. RoutineNest includes no advertising or analytics trackers. Your speech service and Amazon may process audio or purchase information respectively.
-
-This listing is a pre-submission draft. Premium billing and Fire hardware validation must be completed before publication.
-"""
-    short="Daily routines, habit checklists, streaks and an English voice or text assistant. Plan morning and evening rhythms with on-device data, weekly progress and reminders."
-    assert len(description)<=4000 and len(short.encode("utf-8"))<=2000
-    keyword_rows=[]
-    for locale in config["locales"]:
-        tag=locale["tag"]; out=ROOT/"store-assets/metadata"/tag; out.mkdir(parents=True,exist_ok=True)
-        if tag.startswith("en-"):
-            files={"title.txt":"RoutineNest: Daily Routine Planner", "short-description.txt":short,"full-description.txt":description,"release-notes.txt":"Initial development version: routines, checklists, history, English assistant and tablet layouts. Billing verification and Fire testing pending.","features.txt":"Daily and weekly routines\nOn-device checklist and history\nWeekly progress and streaks\nVoice recognition where available; equivalent text commands\nLight and dark appearance\nConfigurable reminders\nData export and deletion"}
-            for name,text in files.items(): (out/name).write_text(text+"\n",encoding="utf-8")
-            (out/"screenshot-text.json").write_text(json.dumps(concepts,indent=2),encoding="utf-8")
-            (out/"REVIEW.md").write_text("Pre-submission draft. Review factual feature claims after final device tests. Remove the development billing disclaimer only once genuine purchasing, restore and RVS have passed. Validate title in the live console; official docs give no numerical title cap. Proposed £2.99 one-time price needs publisher/market validation, not a hardcoded app price. Screenshots require real captures. No search-volume claims have been measured.\n",encoding="utf-8")
-            for keyword in ["daily routine planner","habit tracker","morning routine","evening routine","daily checklist","offline habit tracker","routine reminders","voice routine planner"]:
-                keyword_rows.append([tag,keyword,"title/description or screenshot copy where relevant","intent hypothesis; unmeasured","human review pending"])
+    source = json.loads((ROOT / 'store-assets/listing-translations.json').read_text(encoding='utf-8'))
+    matrix = []
+    for locale, values in source.items():
+        assert len(values) == 5, locale
+        title, short, full, bullets, keywords = values
+        assert 0 < len(title) <= 200 and 0 < len(short) <= 1200 and len(short.encode('utf-8')) <= 2000
+        assert 0 < len(full) <= 4000 and 3 <= len(bullets.splitlines()) <= 5
+        out = ROOT / 'store-assets/metadata' / locale
+        out.mkdir(parents=True, exist_ok=True)
+        for filename, text in zip(('title.txt', 'short-description.txt', 'full-description.txt', 'features.txt', 'keywords.txt'), values):
+            (out / filename).write_text(text + '\n', encoding='utf-8')
+        (out / 'release-notes.txt').write_text('RoutineNest 0.2.0\n', encoding='utf-8')
+        resource = json.loads((ROOT / f'localization/drafts/{locale}.json').read_text(encoding='utf-8'))
+        if locale.startswith('en-'):
+            heads = ['Daily routines, a calmer rhythm', 'Your English assistant', 'Morning, evening, focus', 'Every step counts', 'A quieter way to plan', 'Your routine, your way']
+            captions = ['A daily checklist built around you.', 'Type a command. Speak where supported.', 'Start with a template. Make it yours.', 'See weekly progress and scheduled-day streaks.', 'Your routine data stays on your device.', 'Choose your appearance and interface language.']
         else:
-            (out/"PENDING.md").write_text(f"# {tag} listing pending\n\nNo translation provider credentials or reviewed listing translation supplied. Translate English source title, short/full descriptions, features, release notes and screenshot-text.json, validate store limits and review natural search intent. Do not submit English files as completed localisation. Locale set is provisional.\n",encoding="utf-8")
-            for filename in ["title.txt","short-description.txt","full-description.txt","features.txt","release-notes.txt"]:
-                (out/(filename+".pending")).write_text("Translation and native-language review required.\n",encoding="utf-8")
-            keyword_rows.append([tag,"pending native-language research","pending","no research metrics claimed","translation pending"])
-    with (ROOT/"store-assets/ASO_KEYWORD_MATRIX.csv").open("w",encoding="utf-8",newline="") as file:
-        writer=csv.writer(file); writer.writerow(["locale","search_intent","placement","evidence","review"]); writer.writerows(keyword_rows)
-    print("English listing drafts validated; ten locale listing packages explicitly pending.")
-
-if __name__=="__main__": main()
+            heads = [title.split(': ', 1)[-1].split(chr(0xff1a), 1)[-1], resource['assistant_heading'], resource['collection_heading'], resource['weekly_progress'], resource['today_heading'], resource['settings_heading']]
+            captions = [resource['today_subheading'], resource['command'], resource['templates'], resource['progress_subheading'], resource['collection_subheading'], resource['privacy_heading']]
+        concepts = [dict(id=identifier, headline=head, caption=caption) for identifier, head, caption in zip(('01','03','04','05','07','08'), heads, captions)]
+        (out / 'screenshot-text.json').write_text(json.dumps(concepts, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        for pending in list(out.glob('*.pending')) + [out / 'PENDING.md']:
+            if pending.exists(): pending.unlink()
+        (out / 'REVIEW.md').write_text('Assistant-authored translation and factual/technical review. Native editorial review remains pending. Command grammar/replies are English-only. Premium purchasing is disabled. Screens must be actual captured UI; captions do not establish UI localization. Search intent is unmeasured.\n', encoding='utf-8')
+        matrix.extend([locale, term.strip(), 'relevant title/description/keyword field', 'search-intent hypothesis; unmeasured', 'native editorial review pending'] for term in keywords.split(','))
+    with (ROOT / 'store-assets/ASO_KEYWORD_MATRIX.csv').open('w', encoding='utf-8', newline='') as stream:
+        writer = csv.writer(stream); writer.writerow(('locale','search_intent','placement','evidence','review')); writer.writerows(matrix)
+    print(f'{len(source)} Amazon marketplace copy sets exported within field limits; native review recorded separately.')
+if __name__ == '__main__': main()

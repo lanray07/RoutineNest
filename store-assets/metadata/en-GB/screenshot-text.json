@@ -1,50 +1,32 @@
 [
   {
     "id": "01",
-    "screen": "today",
-    "headline": "Daily Routine Planner",
-    "caption": "Small steps for a calmer day."
-  },
-  {
-    "id": "02",
-    "screen": "today",
-    "headline": "Habit Tracker & Streaks",
-    "caption": "See your small wins add up."
+    "headline": "Daily routines, a calmer rhythm",
+    "caption": "A daily checklist built around you."
   },
   {
     "id": "03",
-    "screen": "voice",
-    "headline": "Voice-Powered Routine Planner",
-    "caption": "Speak where supported, or type the same commands."
+    "headline": "Your English assistant",
+    "caption": "Type a command. Speak where supported."
   },
   {
     "id": "04",
-    "screen": "library",
-    "headline": "Morning & Evening Routines",
-    "caption": "Start with a template. Make it your own."
+    "headline": "Morning, evening, focus",
+    "caption": "Start with a template. Make it yours."
   },
   {
     "id": "05",
-    "screen": "progress",
-    "headline": "Track Your Daily Progress",
-    "caption": "Reflect on the steps you completed."
-  },
-  {
-    "id": "06",
-    "screen": "library",
-    "headline": "Daily Reminders & Checklists",
-    "caption": "Plan your rhythm and tick off each step."
+    "headline": "Every step counts",
+    "caption": "See weekly progress and scheduled-day streaks."
   },
   {
     "id": "07",
-    "screen": "library",
-    "headline": "Offline Habit Tracker",
-    "caption": "Your routines and checklist stay on your device."
+    "headline": "A quieter way to plan",
+    "caption": "Your routine data stays on your device."
   },
   {
     "id": "08",
-    "screen": "settings",
-    "headline": "Your Routine, Your Way",
-    "caption": "Choose the appearance that feels right."
+    "headline": "Your routine, your way",
+    "caption": "Choose your appearance and interface language."
   }
 ]

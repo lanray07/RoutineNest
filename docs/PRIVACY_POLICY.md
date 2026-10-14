@@ -2,7 +2,7 @@
 
 Effective date: 14 October 2026
 
-RoutineNest is published by Lanray. This policy describes the current RoutineNest Android app, version 0.1.0, which provides local routine planning, checklists, reminders and optional speech features. Premium purchasing is disabled in this version.
+RoutineNest is published by Lanray. This policy describes the current RoutineNest Android app, version 0.2.0, which provides local routine planning, checklists, reminders and optional speech features. Premium purchasing is disabled in this version.
 
 ## Routine data on your device
 

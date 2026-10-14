@@ -46,7 +46,7 @@ class ScreenshotCaptureTest {
         }
         lateinit var model: NestViewModel
         compose.runOnUiThread { compose.activity.window.addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON); model = ViewModelProvider(compose.activity)[NestViewModel::class.java] }
-        compose.waitUntil(10_000) { model.routines.value.size == 3 && model.completions.value.size == 46 && model.prefs.value.onboarded }
+        compose.waitUntil(10_000) { model.routines.value.size == 3 && model.completions.value.size == 46 && model.prefs.value.onboarded && model.prefs.value.language == locale }
         val output = File(context.getExternalFilesDir(null), "screenshots/$locale").apply { mkdirs() }
         listOf("today","today","voice","library","progress","library","library","settings").forEachIndexed { index, screen ->
             runBlocking { dependencies.preferences().theme(if (index == 6) "dark" else "light") }

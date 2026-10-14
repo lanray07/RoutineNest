@@ -15,4 +15,4 @@ Add routine reminders and use typed English commands to create routines, add tas
 MAKE IT YOUR OWN
 Choose light, dark or system appearance and enjoy a layout that adapts to your tablet. Export your routine data or delete routines and completion history from Settings. No advertising is included.
 
-The free version supports up to three active routines, templates, daily checklists, reminders and weekly insights. Premium purchasing is unavailable in this version. Interface and assistant commands are currently in English.
+The free version supports up to three active routines, templates, daily checklists, reminders and weekly insights. Premium purchasing is unavailable in this version. Choose from 19 interface locale variants in Settings. Assistant commands and replies remain English-only.

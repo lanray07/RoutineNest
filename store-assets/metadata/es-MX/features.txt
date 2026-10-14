@@ -1,0 +1,5 @@
+Rutinas diarias o semanales con plantillas
+Listas de pasos para marcar y deshacer
+Historial, rachas y progreso semanal
+Recordatorios y comandos escritos en inglés
+Datos locales, uso sin conexión, exportación y eliminación

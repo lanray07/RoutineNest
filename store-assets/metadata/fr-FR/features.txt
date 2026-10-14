@@ -1,0 +1,5 @@
+Routines quotidiennes ou hebdomadaires avec modèles
+Listes d’étapes avec validation et annulation
+Historique, séries et progrès hebdomadaires
+Rappels et commandes écrites en anglais
+Données locales, mode hors ligne, export et suppression
