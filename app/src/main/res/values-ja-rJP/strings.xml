@@ -13,7 +13,10 @@
   <string name="collection_heading">あなたのコレクション</string>
   <string name="collection_subheading">自分らしい一日を作りましょう。</string>
   <string name="command">英語のコマンドを入力</string>
-  <string name="completed_count">%2$dステップ中%1$d完了</string>
+  <plurals name="completed_count">
+    <item quantity="one">%2$dステップ中%1$d完了</item>
+    <item quantity="other">%2$dステップ中%1$d完了</item>
+  </plurals>
   <string name="completion_percent">%1$d%%完了</string>
   <string name="confirm">確認</string>
   <string name="confirm_command">この操作を確認</string>
@@ -85,7 +88,10 @@
   <string name="save">ルーティンを保存</string>
   <string name="settings">設定</string>
   <string name="settings_heading">自分らしいルーティン</string>
-  <string name="streak_count">予定のある日に%1$d日連続達成</string>
+  <plurals name="streak_count">
+    <item quantity="one">予定のある日に%1$d日連続達成</item>
+    <item quantity="other">予定のある日に%1$d日連続達成</item>
+  </plurals>
   <string name="stretch">ストレッチ</string>
   <string name="system_theme">システムに合わせる</string>
   <string name="take_break">休憩する</string>

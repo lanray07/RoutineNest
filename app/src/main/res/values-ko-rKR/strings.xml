@@ -13,7 +13,10 @@
   <string name="collection_heading">나의 루틴 모음</string>
   <string name="collection_subheading">나에게 맞는 하루를 만드세요.</string>
   <string name="command">영어 명령 입력</string>
-  <string name="completed_count">%2$d단계 중 %1$d단계 완료</string>
+  <plurals name="completed_count">
+    <item quantity="one">%2$d단계 중 %1$d단계 완료</item>
+    <item quantity="other">%2$d단계 중 %1$d단계 완료</item>
+  </plurals>
   <string name="completion_percent">%1$d%% 완료</string>
   <string name="confirm">확인</string>
   <string name="confirm_command">이 작업 확인</string>
@@ -85,7 +88,10 @@
   <string name="save">루틴 저장</string>
   <string name="settings">설정</string>
   <string name="settings_heading">내 루틴, 내 방식으로</string>
-  <string name="streak_count">예정된 날 %1$d일 연속 완료</string>
+  <plurals name="streak_count">
+    <item quantity="one">예정된 날 %1$d일 연속 완료</item>
+    <item quantity="other">예정된 날 %1$d일 연속 완료</item>
+  </plurals>
   <string name="stretch">스트레칭</string>
   <string name="system_theme">시스템 설정 사용</string>
   <string name="take_break">휴식하기</string>

@@ -13,7 +13,10 @@
   <string name="collection_heading">Din samling</string>
   <string name="collection_subheading">Skapa en dag som känns som din.</string>
   <string name="command">Skriv ett kommando på engelska</string>
-  <string name="completed_count">%1$d av %2$d steg klara</string>
+  <plurals name="completed_count">
+    <item quantity="one">%1$d av %2$d steg klart</item>
+    <item quantity="other">%1$d av %2$d steg klara</item>
+  </plurals>
   <string name="completion_percent">%1$d%% klart</string>
   <string name="confirm">Bekräfta</string>
   <string name="confirm_command">Bekräfta åtgärden</string>
@@ -85,7 +88,10 @@
   <string name="save">Spara rutin</string>
   <string name="settings">Inställningar</string>
   <string name="settings_heading">Din rutin, ditt sätt</string>
-  <string name="streak_count">%1$d schemalagda dagar i rad</string>
+  <plurals name="streak_count">
+    <item quantity="one">%1$d schemalagd dag i rad</item>
+    <item quantity="other">%1$d schemalagda dagar i rad</item>
+  </plurals>
   <string name="stretch">Stretcha</string>
   <string name="system_theme">Följ systemet</string>
   <string name="take_break">Ta en paus</string>

@@ -13,7 +13,12 @@
   <string name="collection_heading">Twoja kolekcja</string>
   <string name="collection_subheading">Ułóż dzień po swojemu.</string>
   <string name="command">Wpisz polecenie po angielsku</string>
-  <string name="completed_count">Ukończono %1$d z %2$d kroków</string>
+  <plurals name="completed_count">
+    <item quantity="few">Ukończono %1$d z %2$d kroków</item>
+    <item quantity="many">Ukończono %1$d z %2$d kroków</item>
+    <item quantity="one">Ukończono %1$d z %2$d kroku</item>
+    <item quantity="other">Ukończono %1$d z %2$d kroków</item>
+  </plurals>
   <string name="completion_percent">Ukończono %1$d%%</string>
   <string name="confirm">Potwierdź</string>
   <string name="confirm_command">Potwierdź tę czynność</string>
@@ -87,7 +92,12 @@
   <string name="save">Zapisz rutynę</string>
   <string name="settings">Ustawienia</string>
   <string name="settings_heading">Twoja rutyna, Twój sposób</string>
-  <string name="streak_count">%1$d zaplanowanych dni z rzędu</string>
+  <plurals name="streak_count">
+    <item quantity="few">%1$d zaplanowane dni z rzędu</item>
+    <item quantity="many">%1$d zaplanowanych dni z rzędu</item>
+    <item quantity="one">%1$d zaplanowany dzień z rzędu</item>
+    <item quantity="other">%1$d zaplanowanych dni z rzędu</item>
+  </plurals>
   <string name="stretch">Rozciągnij się</string>
   <string name="system_theme">Zgodnie z systemem</string>
   <string name="take_break">Zrób przerwę</string>

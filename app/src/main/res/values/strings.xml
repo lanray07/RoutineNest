@@ -66,8 +66,6 @@
   <string name="clear_desk">Clear desk</string>
   <string name="focus_work">Focused work</string>
   <string name="take_break">Take a break</string>
-  <string name="completed_count">%1$d of %2$d steps complete</string>
-  <string name="streak_count">%1$d scheduled days in a row</string>
   <string name="completion_percent">%1$d%% completed</string>
   <string name="no_history">Your completed steps will appear here.</string>
   <string name="remove_task">Remove task</string>
@@ -107,4 +105,12 @@
   <string name="reminder_confirmation">Schedule a reminder %1$s at %2$s in the device timezone?</string>
   <string name="tomorrow">tomorrow</string>
   <string name="today_word">today</string>
+  <plurals name="completed_count">
+    <item quantity="one">%1$d of %2$d step complete</item>
+    <item quantity="other">%1$d of %2$d steps complete</item>
+  </plurals>
+  <plurals name="streak_count">
+    <item quantity="one">%1$d scheduled day in a row</item>
+    <item quantity="other">%1$d scheduled days in a row</item>
+  </plurals>
 </resources>

@@ -13,7 +13,14 @@
   <string name="collection_heading">مجموعتك</string>
   <string name="collection_subheading">اصنع يومًا يشبهك.</string>
   <string name="command">اكتب أمرًا باللغة الإنجليزية</string>
-  <string name="completed_count">اكتملت %1$d من %2$d خطوة</string>
+  <plurals name="completed_count">
+    <item quantity="few">الخطوات المكتملة: %1$d من %2$d</item>
+    <item quantity="many">الخطوات المكتملة: %1$d من %2$d</item>
+    <item quantity="one">الخطوات المكتملة: %1$d من %2$d</item>
+    <item quantity="other">الخطوات المكتملة: %1$d من %2$d</item>
+    <item quantity="two">الخطوات المكتملة: %1$d من %2$d</item>
+    <item quantity="zero">الخطوات المكتملة: %1$d من %2$d</item>
+  </plurals>
   <string name="completion_percent">اكتمل %1$d%%</string>
   <string name="confirm">تأكيد</string>
   <string name="confirm_command">تأكيد هذا الإجراء</string>
@@ -89,7 +96,14 @@
   <string name="save">حفظ الروتين</string>
   <string name="settings">الإعدادات</string>
   <string name="settings_heading">روتينك بطريقتك</string>
-  <string name="streak_count">%1$d أيام مجدولة متتالية</string>
+  <plurals name="streak_count">
+    <item quantity="few">أيام مجدولة متتالية: %1$d</item>
+    <item quantity="many">أيام مجدولة متتالية: %1$d</item>
+    <item quantity="one">أيام مجدولة متتالية: %1$d</item>
+    <item quantity="other">أيام مجدولة متتالية: %1$d</item>
+    <item quantity="two">أيام مجدولة متتالية: %1$d</item>
+    <item quantity="zero">أيام مجدولة متتالية: %1$d</item>
+  </plurals>
   <string name="stretch">تمدد</string>
   <string name="system_theme">حسب النظام</string>
   <string name="take_break">أخذ استراحة</string>

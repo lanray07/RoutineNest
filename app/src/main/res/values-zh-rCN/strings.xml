@@ -13,7 +13,10 @@
   <string name="collection_heading">我的日常合集</string>
   <string name="collection_subheading">打造属于自己的每一天。</string>
   <string name="command">输入英文指令</string>
-  <string name="completed_count">已完成 %1$d/%2$d 个步骤</string>
+  <plurals name="completed_count">
+    <item quantity="one">已完成 %1$d/%2$d 个步骤</item>
+    <item quantity="other">已完成 %1$d/%2$d 个步骤</item>
+  </plurals>
   <string name="completion_percent">已完成 %1$d%%</string>
   <string name="confirm">确认</string>
   <string name="confirm_command">确认此操作</string>
@@ -85,7 +88,10 @@
   <string name="save">保存安排</string>
   <string name="settings">设置</string>
   <string name="settings_heading">我的日常，我的方式</string>
-  <string name="streak_count">连续完成 %1$d 个计划日</string>
+  <plurals name="streak_count">
+    <item quantity="one">连续完成 %1$d 个计划日</item>
+    <item quantity="other">连续完成 %1$d 个计划日</item>
+  </plurals>
   <string name="stretch">伸展</string>
   <string name="system_theme">跟随系统</string>
   <string name="take_break">休息一下</string>

@@ -65,8 +65,6 @@
   "clear_desk": "Rensa skrivbordet",
   "focus_work": "Fokuserat arbete",
   "take_break": "Ta en paus",
-  "completed_count": "%1$d av %2$d steg klara",
-  "streak_count": "%1$d schemalagda dagar i rad",
   "completion_percent": "%1$d%% klart",
   "no_history": "Dina slutförda steg visas här.",
   "remove_task": "Ta bort steg",
@@ -103,5 +101,9 @@
   "tomorrow": "imorgon",
   "today_word": "idag",
   "routine_summary#one": "%1$d steg · %2$s",
-  "routine_summary#other": "%1$d steg · %2$s"
+  "routine_summary#other": "%1$d steg · %2$s",
+  "completed_count#one": "%1$d av %2$d steg klart",
+  "completed_count#other": "%1$d av %2$d steg klara",
+  "streak_count#one": "%1$d schemalagd dag i rad",
+  "streak_count#other": "%1$d schemalagda dagar i rad"
 }

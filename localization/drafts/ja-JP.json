@@ -65,8 +65,6 @@
   "clear_desk": "机を片付ける",
   "focus_work": "集中して作業する",
   "take_break": "休憩する",
-  "completed_count": "%2$dステップ中%1$d完了",
-  "streak_count": "予定のある日に%1$d日連続達成",
   "completion_percent": "%1$d%%完了",
   "no_history": "完了したステップがここに表示されます。",
   "remove_task": "ステップを削除",
@@ -103,5 +101,9 @@
   "tomorrow": "明日",
   "today_word": "今日",
   "routine_summary#one": "%1$dステップ · %2$s",
-  "routine_summary#other": "%1$dステップ · %2$s"
+  "routine_summary#other": "%1$dステップ · %2$s",
+  "completed_count#one": "%2$dステップ中%1$d完了",
+  "completed_count#other": "%2$dステップ中%1$d完了",
+  "streak_count#one": "予定のある日に%1$d日連続達成",
+  "streak_count#other": "予定のある日に%1$d日連続達成"
 }

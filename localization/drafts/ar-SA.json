@@ -65,8 +65,6 @@
   "clear_desk": "ترتيب المكتب",
   "focus_work": "العمل بتركيز",
   "take_break": "أخذ استراحة",
-  "completed_count": "اكتملت %1$d من %2$d خطوة",
-  "streak_count": "%1$d أيام مجدولة متتالية",
   "completion_percent": "اكتمل %1$d%%",
   "no_history": "ستظهر خطواتك المكتملة هنا.",
   "remove_task": "إزالة الخطوة",
@@ -107,5 +105,17 @@
   "routine_summary#zero": "عدد الخطوات: %1$d · %2$s",
   "routine_summary#two": "عدد الخطوات: %1$d · %2$s",
   "routine_summary#few": "عدد الخطوات: %1$d · %2$s",
-  "routine_summary#many": "عدد الخطوات: %1$d · %2$s"
+  "routine_summary#many": "عدد الخطوات: %1$d · %2$s",
+  "completed_count#one": "الخطوات المكتملة: %1$d من %2$d",
+  "completed_count#other": "الخطوات المكتملة: %1$d من %2$d",
+  "completed_count#zero": "الخطوات المكتملة: %1$d من %2$d",
+  "completed_count#two": "الخطوات المكتملة: %1$d من %2$d",
+  "completed_count#few": "الخطوات المكتملة: %1$d من %2$d",
+  "completed_count#many": "الخطوات المكتملة: %1$d من %2$d",
+  "streak_count#one": "أيام مجدولة متتالية: %1$d",
+  "streak_count#other": "أيام مجدولة متتالية: %1$d",
+  "streak_count#zero": "أيام مجدولة متتالية: %1$d",
+  "streak_count#two": "أيام مجدولة متتالية: %1$d",
+  "streak_count#few": "أيام مجدولة متتالية: %1$d",
+  "streak_count#many": "أيام مجدولة متتالية: %1$d"
 }

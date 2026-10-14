@@ -65,8 +65,6 @@
   "clear_desk": "Uporządkuj biurko",
   "focus_work": "Praca w skupieniu",
   "take_break": "Zrób przerwę",
-  "completed_count": "Ukończono %1$d z %2$d kroków",
-  "streak_count": "%1$d zaplanowanych dni z rzędu",
   "completion_percent": "Ukończono %1$d%%",
   "no_history": "Tutaj pojawią się ukończone kroki.",
   "remove_task": "Usuń krok",
@@ -105,5 +103,13 @@
   "routine_summary#one": "%1$d krok · %2$s",
   "routine_summary#other": "%1$d kroku · %2$s",
   "routine_summary#few": "%1$d kroki · %2$s",
-  "routine_summary#many": "%1$d kroków · %2$s"
+  "routine_summary#many": "%1$d kroków · %2$s",
+  "completed_count#one": "Ukończono %1$d z %2$d kroku",
+  "completed_count#other": "Ukończono %1$d z %2$d kroków",
+  "completed_count#few": "Ukończono %1$d z %2$d kroków",
+  "completed_count#many": "Ukończono %1$d z %2$d kroków",
+  "streak_count#one": "%1$d zaplanowany dzień z rzędu",
+  "streak_count#other": "%1$d zaplanowanych dni z rzędu",
+  "streak_count#few": "%1$d zaplanowane dni z rzędu",
+  "streak_count#many": "%1$d zaplanowanych dni z rzędu"
 }

@@ -65,8 +65,6 @@
   "clear_desk": "Dégager le bureau",
   "focus_work": "Travail concentré",
   "take_break": "Faire une pause",
-  "completed_count": "%1$d étapes terminées sur %2$d",
-  "streak_count": "%1$d jours programmés de suite",
   "completion_percent": "%1$d%% terminés",
   "no_history": "Vos étapes terminées apparaîtront ici.",
   "remove_task": "Supprimer l’étape",
@@ -104,5 +102,11 @@
   "today_word": "aujourd’hui",
   "routine_summary#one": "%1$d étape · %2$s",
   "routine_summary#other": "%1$d étapes · %2$s",
-  "routine_summary#many": "%1$d étapes · %2$s"
+  "routine_summary#many": "%1$d étapes · %2$s",
+  "completed_count#one": "%1$d étape terminée sur %2$d",
+  "completed_count#other": "%1$d étapes terminées sur %2$d",
+  "completed_count#many": "%1$d étapes terminées sur %2$d",
+  "streak_count#one": "%1$d jour programmé de suite",
+  "streak_count#other": "%1$d jours programmés de suite",
+  "streak_count#many": "%1$d jours programmés de suite"
 }

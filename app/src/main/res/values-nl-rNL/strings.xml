@@ -13,7 +13,10 @@
   <string name="collection_heading">Jouw verzameling</string>
   <string name="collection_subheading">Maak een dag die bij je past.</string>
   <string name="command">Typ een opdracht in het Engels</string>
-  <string name="completed_count">%1$d van %2$d stappen voltooid</string>
+  <plurals name="completed_count">
+    <item quantity="one">%1$d van %2$d stap voltooid</item>
+    <item quantity="other">%1$d van %2$d stappen voltooid</item>
+  </plurals>
   <string name="completion_percent">%1$d%% voltooid</string>
   <string name="confirm">Bevestigen</string>
   <string name="confirm_command">Deze actie bevestigen</string>
@@ -85,7 +88,10 @@
   <string name="save">Routine opslaan</string>
   <string name="settings">Instellingen</string>
   <string name="settings_heading">Jouw routine, jouw manier</string>
-  <string name="streak_count">%1$d geplande dagen op rij</string>
+  <plurals name="streak_count">
+    <item quantity="one">%1$d geplande dag op rij</item>
+    <item quantity="other">%1$d geplande dagen op rij</item>
+  </plurals>
   <string name="stretch">Rekken</string>
   <string name="system_theme">Systeeminstelling</string>
   <string name="take_break">Pauze nemen</string>

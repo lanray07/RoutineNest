@@ -65,8 +65,6 @@
   "clear_desk": "Despejar el escritorio",
   "focus_work": "Trabajo concentrado",
   "take_break": "Tomar un descanso",
-  "completed_count": "%1$d de %2$d pasos completados",
-  "streak_count": "%1$d días programados seguidos",
   "completion_percent": "%1$d%% completado",
   "no_history": "Los pasos completados aparecerán aquí.",
   "remove_task": "Eliminar paso",
@@ -104,5 +102,11 @@
   "today_word": "hoy",
   "routine_summary#one": "%1$d paso · %2$s",
   "routine_summary#other": "%1$d pasos · %2$s",
-  "routine_summary#many": "%1$d pasos · %2$s"
+  "routine_summary#many": "%1$d pasos · %2$s",
+  "completed_count#one": "%1$d de %2$d paso completado",
+  "completed_count#other": "%1$d de %2$d pasos completados",
+  "completed_count#many": "%1$d de %2$d pasos completados",
+  "streak_count#one": "%1$d día programado seguido",
+  "streak_count#other": "%1$d días programados seguidos",
+  "streak_count#many": "%1$d días programados seguidos"
 }

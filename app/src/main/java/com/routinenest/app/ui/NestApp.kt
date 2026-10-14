@@ -62,6 +62,14 @@ private val taskDraftSaver = Saver<List<Pair<String?, String>>, ArrayList<String
 private val dayDraftSaver = Saver<Set<DayOfWeek>, IntArray>(save = { days -> days.map { it.value }.toIntArray() }, restore = { values -> values.map(DayOfWeek::of).toSet() })
 
 @Composable
+private fun completionText(completed: Int, total: Int): String {
+    // French/Italian describe the completed steps; the other wording counts the total.
+    val language = LocalConfiguration.current.locales[0].language
+    val quantity = if (language == "fr" || language == "it") completed else total
+    return pluralStringResource(R.plurals.completed_count, quantity, completed, total)
+}
+
+@Composable
 fun NestApp(model: NestViewModel) {
     val prefs by model.prefs.collectAsStateWithLifecycle()
     val ready by model.ready.collectAsStateWithLifecycle()
@@ -146,7 +154,7 @@ fun NestApp(model: NestViewModel) {
     val tasks = due.flatMap { it.activeTasks(today) }; val completed = tasks.count { task -> done.any { it.taskId == task.id && it.day == today.toString() } }
     Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer), shape = RoundedCornerShape(24.dp)) {
         Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Text(stringResource(R.string.completed_count, completed, tasks.size), style = MaterialTheme.typography.titleLarge)
+            Text(completionText(completed, tasks.size), style = MaterialTheme.typography.titleLarge)
             LinearProgressIndicator(progress = { if (tasks.isEmpty()) 0f else completed.toFloat() / tasks.size }, Modifier.fillMaxWidth())
             Text(stringResource(if (tasks.isNotEmpty() && completed == tasks.size) R.string.day_complete else R.string.day_encouragement))
         }
@@ -156,7 +164,8 @@ fun NestApp(model: NestViewModel) {
         Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(24.dp)) {
             Column(Modifier.padding(20.dp)) {
                 Text(routine.routine.name, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.SemiBold)
-                Text(stringResource(R.string.streak_count, model.streak(routine)), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.secondary)
+                val streak = model.streak(routine)
+                Text(pluralStringResource(R.plurals.streak_count, streak, streak), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.secondary)
                 routine.activeTasks(today).forEach { task -> val checked = done.any { it.taskId == task.id && it.day == today.toString() }
                     Row(Modifier.fillMaxWidth().heightIn(min = 56.dp).toggleable(value = checked, role = Role.Checkbox, onValueChange = { model.toggle(task, it) }), verticalAlignment = Alignment.CenterVertically) { Checkbox(checked, null, Modifier.size(48.dp)); Text(task.name, Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge) }
                 }
@@ -217,7 +226,7 @@ fun NestApp(model: NestViewModel) {
     @Suppress("UNUSED_VARIABLE") val revision = routines.size + completions.size + today.dayOfYear
     listOf(7L to R.string.weekly_progress, 30L to R.string.monthly_progress).forEach { (length, title) ->
         if (length == 7L || premium.premium) { val (done, total) = model.stats(length)
-            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(24.dp)) { Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) { Text(stringResource(title), style = MaterialTheme.typography.titleLarge); Text(stringResource(R.string.completion_percent, Progress.percentage(done, total)), style = MaterialTheme.typography.displaySmall, color = MaterialTheme.colorScheme.primary); LinearProgressIndicator(progress = { if (total == 0) 0f else done.toFloat() / total }, Modifier.fillMaxWidth()); Text(stringResource(R.string.completed_count, done, total)) } }
+            Card(Modifier.fillMaxWidth(), shape = RoundedCornerShape(24.dp)) { Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) { Text(stringResource(title), style = MaterialTheme.typography.titleLarge); Text(stringResource(R.string.completion_percent, Progress.percentage(done, total)), style = MaterialTheme.typography.displaySmall, color = MaterialTheme.colorScheme.primary); LinearProgressIndicator(progress = { if (total == 0) 0f else done.toFloat() / total }, Modifier.fillMaxWidth()); Text(completionText(done, total)) } }
         } else OutlinedButton(onClick = { model.screen.value = "premium" }) { Text(stringResource(R.string.unlock_monthly)) }
     }
     Text(stringResource(R.string.progress_method), style = MaterialTheme.typography.bodySmall)

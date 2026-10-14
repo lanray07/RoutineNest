@@ -65,8 +65,6 @@
   "clear_desk": "책상 정리하기",
   "focus_work": "집중해서 작업하기",
   "take_break": "휴식하기",
-  "completed_count": "%2$d단계 중 %1$d단계 완료",
-  "streak_count": "예정된 날 %1$d일 연속 완료",
   "completion_percent": "%1$d%% 완료",
   "no_history": "완료한 단계가 여기에 표시됩니다.",
   "remove_task": "단계 삭제",
@@ -103,5 +101,9 @@
   "tomorrow": "내일",
   "today_word": "오늘",
   "routine_summary#one": "%1$d단계 · %2$s",
-  "routine_summary#other": "%1$d단계 · %2$s"
+  "routine_summary#other": "%1$d단계 · %2$s",
+  "completed_count#one": "%2$d단계 중 %1$d단계 완료",
+  "completed_count#other": "%2$d단계 중 %1$d단계 완료",
+  "streak_count#one": "예정된 날 %1$d일 연속 완료",
+  "streak_count#other": "예정된 날 %1$d일 연속 완료"
 }

@@ -13,7 +13,10 @@
   <string name="collection_heading">Deine Sammlung</string>
   <string name="collection_subheading">Gestalte einen Tag, der zu dir passt.</string>
   <string name="command">Englischen Befehl eingeben</string>
-  <string name="completed_count">%1$d von %2$d Schritten erledigt</string>
+  <plurals name="completed_count">
+    <item quantity="one">%1$d von %2$d Schritt erledigt</item>
+    <item quantity="other">%1$d von %2$d Schritten erledigt</item>
+  </plurals>
   <string name="completion_percent">%1$d%% erledigt</string>
   <string name="confirm">Bestätigen</string>
   <string name="confirm_command">Diese Aktion bestätigen</string>
@@ -85,7 +88,10 @@
   <string name="save">Routine speichern</string>
   <string name="settings">Einstellungen</string>
   <string name="settings_heading">Deine Routine, dein Stil</string>
-  <string name="streak_count">%1$d geplante Tage in Folge</string>
+  <plurals name="streak_count">
+    <item quantity="one">%1$d geplanter Tag in Folge</item>
+    <item quantity="other">%1$d geplante Tage in Folge</item>
+  </plurals>
   <string name="stretch">Dehnen</string>
   <string name="system_theme">Systemeinstellung</string>
   <string name="take_break">Pause machen</string>

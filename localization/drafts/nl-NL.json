@@ -65,8 +65,6 @@
   "clear_desk": "Bureau opruimen",
   "focus_work": "Geconcentreerd werken",
   "take_break": "Pauze nemen",
-  "completed_count": "%1$d van %2$d stappen voltooid",
-  "streak_count": "%1$d geplande dagen op rij",
   "completion_percent": "%1$d%% voltooid",
   "no_history": "Je voltooide stappen verschijnen hier.",
   "remove_task": "Stap verwijderen",
@@ -103,5 +101,9 @@
   "tomorrow": "morgen",
   "today_word": "vandaag",
   "routine_summary#one": "%1$d stap · %2$s",
-  "routine_summary#other": "%1$d stappen · %2$s"
+  "routine_summary#other": "%1$d stappen · %2$s",
+  "completed_count#one": "%1$d van %2$d stap voltooid",
+  "completed_count#other": "%1$d van %2$d stappen voltooid",
+  "streak_count#one": "%1$d geplande dag op rij",
+  "streak_count#other": "%1$d geplande dagen op rij"
 }

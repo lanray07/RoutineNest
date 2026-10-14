@@ -65,8 +65,6 @@
   "clear_desk": "Libera la scrivania",
   "focus_work": "Lavoro concentrato",
   "take_break": "Fai una pausa",
-  "completed_count": "%1$d passaggi completati su %2$d",
-  "streak_count": "%1$d giorni programmati consecutivi",
   "completion_percent": "%1$d%% completato",
   "no_history": "I passaggi completati appariranno qui.",
   "remove_task": "Rimuovi passaggio",
@@ -104,5 +102,11 @@
   "today_word": "oggi",
   "routine_summary#one": "%1$d passaggio · %2$s",
   "routine_summary#other": "%1$d passaggi · %2$s",
-  "routine_summary#many": "%1$d passaggi · %2$s"
+  "routine_summary#many": "%1$d passaggi · %2$s",
+  "completed_count#one": "%1$d passaggio completato su %2$d",
+  "completed_count#other": "%1$d passaggi completati su %2$d",
+  "completed_count#many": "%1$d passaggi completati su %2$d",
+  "streak_count#one": "%1$d giorno programmato consecutivo",
+  "streak_count#other": "%1$d giorni programmati consecutivi",
+  "streak_count#many": "%1$d giorni programmati consecutivi"
 }

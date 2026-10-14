@@ -13,7 +13,11 @@
   <string name="collection_heading">Votre collection</string>
   <string name="collection_subheading">Créez une journée qui vous ressemble.</string>
   <string name="command">Saisir une commande en anglais</string>
-  <string name="completed_count">%1$d étapes terminées sur %2$d</string>
+  <plurals name="completed_count">
+    <item quantity="many">%1$d étapes terminées sur %2$d</item>
+    <item quantity="one">%1$d étape terminée sur %2$d</item>
+    <item quantity="other">%1$d étapes terminées sur %2$d</item>
+  </plurals>
   <string name="completion_percent">%1$d%% terminés</string>
   <string name="confirm">Confirmer</string>
   <string name="confirm_command">Confirmer cette action</string>
@@ -86,7 +90,11 @@
   <string name="save">Enregistrer la routine</string>
   <string name="settings">Paramètres</string>
   <string name="settings_heading">Vos routines, à votre façon</string>
-  <string name="streak_count">%1$d jours programmés de suite</string>
+  <plurals name="streak_count">
+    <item quantity="many">%1$d jours programmés de suite</item>
+    <item quantity="one">%1$d jour programmé de suite</item>
+    <item quantity="other">%1$d jours programmés de suite</item>
+  </plurals>
   <string name="stretch">S’étirer</string>
   <string name="system_theme">Selon le système</string>
   <string name="take_break">Faire une pause</string>

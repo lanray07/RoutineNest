@@ -65,8 +65,6 @@
   "clear_desk": "Schreibtisch aufräumen",
   "focus_work": "Konzentriert arbeiten",
   "take_break": "Pause machen",
-  "completed_count": "%1$d von %2$d Schritten erledigt",
-  "streak_count": "%1$d geplante Tage in Folge",
   "completion_percent": "%1$d%% erledigt",
   "no_history": "Deine erledigten Schritte erscheinen hier.",
   "remove_task": "Schritt entfernen",
@@ -103,5 +101,9 @@
   "tomorrow": "morgen",
   "today_word": "heute",
   "routine_summary#one": "%1$d Schritt · %2$s",
-  "routine_summary#other": "%1$d Schritte · %2$s"
+  "routine_summary#other": "%1$d Schritte · %2$s",
+  "completed_count#one": "%1$d von %2$d Schritt erledigt",
+  "completed_count#other": "%1$d von %2$d Schritten erledigt",
+  "streak_count#one": "%1$d geplanter Tag in Folge",
+  "streak_count#other": "%1$d geplante Tage in Folge"
 }

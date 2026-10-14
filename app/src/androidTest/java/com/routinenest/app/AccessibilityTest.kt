@@ -55,5 +55,10 @@ class AccessibilityTest {
         assertEquals("2 steps · Daily", summary("en-GB", 2))
         assertTrue(summary("pl-PL", 2).contains("kroki"))
         assertTrue(summary("pl-PL", 5).contains("kroków"))
+        val english = context.createConfigurationContext(Configuration(context.resources.configuration).apply { setLocale(Locale.UK) })
+        assertEquals("0 of 1 step complete", english.resources.getQuantityString(R.plurals.completed_count, 1, 0, 1))
+        assertEquals("1 scheduled day in a row", english.resources.getQuantityString(R.plurals.streak_count, 1, 1))
+        val french = context.createConfigurationContext(Configuration(context.resources.configuration).apply { setLocale(Locale.FRANCE) })
+        assertEquals("1 étape terminée sur 3", french.resources.getQuantityString(R.plurals.completed_count, 1, 1, 3))
     }
 }

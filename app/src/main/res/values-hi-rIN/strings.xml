@@ -13,7 +13,10 @@
   <string name="collection_heading">आपका संग्रह</string>
   <string name="collection_subheading">अपने जैसा दिन बनाएँ।</string>
   <string name="command">अंग्रेज़ी में आदेश लिखें</string>
-  <string name="completed_count">%2$d में से %1$d चरण पूरे</string>
+  <plurals name="completed_count">
+    <item quantity="one">%2$d में से %1$d चरण पूरे</item>
+    <item quantity="other">%2$d में से %1$d चरण पूरे</item>
+  </plurals>
   <string name="completion_percent">%1$d%% पूरा</string>
   <string name="confirm">पुष्टि करें</string>
   <string name="confirm_command">इस कार्रवाई की पुष्टि करें</string>
@@ -85,7 +88,10 @@
   <string name="save">दिनचर्या सहेजें</string>
   <string name="settings">सेटिंग्स</string>
   <string name="settings_heading">आपकी दिनचर्या, आपके तरीके से</string>
-  <string name="streak_count">लगातार %1$d निर्धारित दिन</string>
+  <plurals name="streak_count">
+    <item quantity="one">लगातार %1$d निर्धारित दिन</item>
+    <item quantity="other">लगातार %1$d निर्धारित दिन</item>
+  </plurals>
   <string name="stretch">स्ट्रेच करें</string>
   <string name="system_theme">सिस्टम के अनुसार</string>
   <string name="take_break">विराम लें</string>

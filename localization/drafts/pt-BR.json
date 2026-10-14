@@ -65,8 +65,6 @@
   "clear_desk": "Organizar a mesa",
   "focus_work": "Trabalho focado",
   "take_break": "Fazer uma pausa",
-  "completed_count": "%1$d de %2$d etapas concluídas",
-  "streak_count": "%1$d dias programados seguidos",
   "completion_percent": "%1$d%% concluído",
   "no_history": "Suas etapas concluídas aparecerão aqui.",
   "remove_task": "Remover etapa",
@@ -104,5 +102,11 @@
   "today_word": "hoje",
   "routine_summary#one": "%1$d passo · %2$s",
   "routine_summary#other": "%1$d etapas · %2$s",
-  "routine_summary#many": "%1$d etapas · %2$s"
+  "routine_summary#many": "%1$d etapas · %2$s",
+  "completed_count#one": "%1$d de %2$d etapa concluída",
+  "completed_count#other": "%1$d de %2$d etapas concluídas",
+  "completed_count#many": "%1$d de %2$d etapas concluídas",
+  "streak_count#one": "%1$d dia programado seguido",
+  "streak_count#other": "%1$d dias programados seguidos",
+  "streak_count#many": "%1$d dias programados seguidos"
 }

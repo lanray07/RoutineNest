@@ -13,7 +13,11 @@
   <string name="collection_heading">Tu colección</string>
   <string name="collection_subheading">Crea un día a tu medida.</string>
   <string name="command">Escribe un comando en inglés</string>
-  <string name="completed_count">%1$d de %2$d pasos completados</string>
+  <plurals name="completed_count">
+    <item quantity="many">%1$d de %2$d pasos completados</item>
+    <item quantity="one">%1$d de %2$d paso completado</item>
+    <item quantity="other">%1$d de %2$d pasos completados</item>
+  </plurals>
   <string name="completion_percent">%1$d%% completado</string>
   <string name="confirm">Confirmar</string>
   <string name="confirm_command">Confirmar esta acción</string>
@@ -86,7 +90,11 @@
   <string name="save">Guardar rutina</string>
   <string name="settings">Ajustes</string>
   <string name="settings_heading">Tu rutina, a tu manera</string>
-  <string name="streak_count">%1$d días programados seguidos</string>
+  <plurals name="streak_count">
+    <item quantity="many">%1$d días programados seguidos</item>
+    <item quantity="one">%1$d día programado seguido</item>
+    <item quantity="other">%1$d días programados seguidos</item>
+  </plurals>
   <string name="stretch">Estirar</string>
   <string name="system_theme">Según el sistema</string>
   <string name="take_break">Tomar un descanso</string>

@@ -65,8 +65,6 @@
   "clear_desk": "मेज़ साफ करें",
   "focus_work": "ध्यान से काम करें",
   "take_break": "विराम लें",
-  "completed_count": "%2$d में से %1$d चरण पूरे",
-  "streak_count": "लगातार %1$d निर्धारित दिन",
   "completion_percent": "%1$d%% पूरा",
   "no_history": "पूरे किए गए चरण यहाँ दिखेंगे।",
   "remove_task": "चरण हटाएँ",
@@ -103,5 +101,9 @@
   "tomorrow": "कल",
   "today_word": "आज",
   "routine_summary#one": "%1$d चरण · %2$s",
-  "routine_summary#other": "%1$d चरण · %2$s"
+  "routine_summary#other": "%1$d चरण · %2$s",
+  "completed_count#one": "%2$d में से %1$d चरण पूरे",
+  "completed_count#other": "%2$d में से %1$d चरण पूरे",
+  "streak_count#one": "लगातार %1$d निर्धारित दिन",
+  "streak_count#other": "लगातार %1$d निर्धारित दिन"
 }

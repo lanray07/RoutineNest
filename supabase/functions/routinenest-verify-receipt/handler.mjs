@@ -90,7 +90,8 @@ export function createHandler({ env, fetch, now, rateLimit }) {
         return respond(200, { ...binding, decision: "rejected" });
       }
       if (receipt.cancelDate !== null) return respond(200, { ...binding, decision: "revoked" });
-      return respond(200, { ...binding, decision: "verified", verifiedAt: now(), expiresAt: now() + 6 * 60 * 60 * 1000 });
+      const verifiedAt = now();
+      return respond(200, { ...binding, decision: "verified", verifiedAt, expiresAt: verifiedAt + 6 * 60 * 60 * 1000 });
     } catch {
       // Never echo Amazon URL/errors: its path contains the server's shared secret.
       return respond(503, { error: "verification_unavailable" });

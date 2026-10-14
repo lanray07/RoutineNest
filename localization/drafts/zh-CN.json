@@ -65,8 +65,6 @@
   "clear_desk": "整理桌面",
   "focus_work": "专注工作",
   "take_break": "休息一下",
-  "completed_count": "已完成 %1$d/%2$d 个步骤",
-  "streak_count": "连续完成 %1$d 个计划日",
   "completion_percent": "已完成 %1$d%%",
   "no_history": "已完成的步骤将显示在这里。",
   "remove_task": "移除步骤",
@@ -103,5 +101,9 @@
   "tomorrow": "明天",
   "today_word": "今天",
   "routine_summary#one": "%1$d 个步骤 · %2$s",
-  "routine_summary#other": "%1$d 个步骤 · %2$s"
+  "routine_summary#other": "%1$d 个步骤 · %2$s",
+  "completed_count#one": "已完成 %1$d/%2$d 个步骤",
+  "completed_count#other": "已完成 %1$d/%2$d 个步骤",
+  "streak_count#one": "连续完成 %1$d 个计划日",
+  "streak_count#other": "连续完成 %1$d 个计划日"
 }
